@@ -53,16 +53,16 @@ def _score_rsi(prices: List[float], reasons: List[str]) -> float:
     if value is None:
         return 0.0
     if value < 30:
-        reasons.append(f"RSI {value:.0f} (oversold)")
+        reasons.append(f"RSI {value:.0f} oversold")
         return 2.0
     if value < 40:
-        reasons.append(f"RSI {value:.0f} (mendekati oversold)")
+        reasons.append(f"RSI {value:.0f} mendekati oversold")
         return 1.0
     if value > 70:
-        reasons.append(f"RSI {value:.0f} (overbought)")
+        reasons.append(f"RSI {value:.0f} overbought")
         return -2.0
     if value > 60:
-        reasons.append(f"RSI {value:.0f} (mendekati overbought)")
+        reasons.append(f"RSI {value:.0f} mendekati overbought")
         return -1.0
     return 0.0
 
@@ -72,9 +72,9 @@ def _score_trend(prices: List[float], reasons: List[str]) -> float:
     if avg is None or not prices:
         return 0.0
     if prices[-1] > avg:
-        reasons.append("harga di atas SMA 24j")
+        reasons.append("Atas SMA 24j")
         return 1.5
-    reasons.append("harga di bawah SMA 24j")
+    reasons.append("Bawah SMA 24j")
     return -1.5
 
 
@@ -87,26 +87,26 @@ def _score_momentum(coin: Dict[str, Any], reasons: List[str]) -> float:
     if p1h is not None:
         if p1h >= 1.5:
             score += 1.0
-            reasons.append(f"momentum 1j +{p1h:.1f}%")
+            reasons.append(f"Momentum 1j +{p1h:.1f}%")
         elif p1h <= -1.5:
             score -= 1.0
-            reasons.append(f"momentum 1j {p1h:.1f}%")
+            reasons.append(f"Momentum 1j {p1h:.1f}%")
 
     if p24h is not None:
         if p24h >= 3.0:
             score += 1.5
-            reasons.append(f"momentum 24j +{p24h:.1f}%")
+            reasons.append(f"Momentum 24j +{p24h:.1f}%")
         elif p24h <= -3.0:
             score -= 1.5
-            reasons.append(f"momentum 24j {p24h:.1f}%")
+            reasons.append(f"Momentum 24j {p24h:.1f}%")
 
     if p7d is not None:
         if p7d >= 8.0:
             score += 1.0
-            reasons.append(f"momentum 7h +{p7d:.1f}%")
+            reasons.append(f"Momentum 7d +{p7d:.1f}%")
         elif p7d <= -8.0:
             score -= 1.0
-            reasons.append(f"momentum 7h {p7d:.1f}%")
+            reasons.append(f"Momentum 7d {p7d:.1f}%")
 
     return score
 
@@ -116,10 +116,10 @@ def _score_volume(turnover_pct: float, price_change_24h: float, reasons: List[st
         return 0.0
     direction = 1.0 if price_change_24h > 0 else -1.0
     if turnover_pct >= 0.90:
-        reasons.append("volume sangat aktif")
+        reasons.append("Volume sangat aktif")
         return direction * 1.5
     if turnover_pct >= 0.75:
-        reasons.append("volume aktif")
+        reasons.append("Volume aktif")
         return direction * 1.0
     return 0.0
 
@@ -207,11 +207,31 @@ def _format_price(value: float) -> str:
     return f"${value:.6f}"
 
 
+def _levels(sig: Signal) -> tuple:
+    """Entry/SL/TP berdasarkan arah sinyal.
+
+    BUY/LONG:  SL 8% di bawah entry, TP1 +5%, TP2 +10%.
+    SELL/SHORT: SL 8% di atas entry, TP1 -5%, TP2 -10%.
+    """
+    if sig.action == ACTION_SELL:
+        return sig.price * 1.08, sig.price * 0.95, sig.price * 0.90
+    return sig.price * 0.92, sig.price * 1.05, sig.price * 1.10
+
+
 def _signal_lines(sig: Signal, number: int) -> List[str]:
+    sl, tp1, tp2 = _levels(sig)
+    summary = " | ".join(sig.reasons) if sig.reasons else "—"
+    levels = (
+        f"   SL: <b>{_format_price(sl)}</b> (8%) | "
+        f"TP1: <b>{_format_price(tp1)}</b> (5%) | "
+        f"TP2: <b>{_format_price(tp2)}</b> (10%)"
+    )
     return [
-        f"{number}. <b>{sig.symbol}</b> — {sig.action} ({sig.confidence}%)",
-        f"   {sig.name} · {_format_price(sig.price)} ({sig.price_change_24h:+.1f}% 24j)",
-        f"   <i>{', '.join(sig.reasons)}</i> · skor {sig.score:+.1f}",
+        f"{number}. <b>#{sig.symbol}</b> — {sig.action} ({sig.confidence}%)",
+        f"   Entry: <b>{_format_price(sig.price)}</b>",
+        levels,
+        f"   <i>{summary}</i>",
+        "---",
     ]
 
 
@@ -237,25 +257,25 @@ def format_message(signals: List[Signal], timestamp: str, total_scanned: int) ->
 
     number = 1
     if buys:
-        lines.append("<b>🟢 Sinyal LONG (BUY)</b>")
+        lines.append("<b>🟢 SINYAL LONG (BUY)</b>")
+        lines.append("")
         for sig in buys:
             lines.extend(_signal_lines(sig, number))
             number += 1
-        lines.append("")
 
     if sells:
-        lines.append("<b>🔴 Sinyal SHORT (SELL)</b>")
+        lines.append("<b>🔴 SINYAL SHORT (SELL)</b>")
+        lines.append("")
         for sig in sells:
             lines.extend(_signal_lines(sig, number))
             number += 1
-        lines.append("")
 
     if neutrals:
         lines.append("<b>⚪ WATCHLIST (NEUTRAL)</b>")
+        lines.append("")
         for sig in neutrals:
             lines.extend(_signal_lines(sig, number))
             number += 1
-        lines.append("")
 
     lines.append(DISCLAIMER)
     return "\n".join(lines)
