@@ -6,7 +6,7 @@ Bot Telegram yang mengirim sinyal trading crypto setiap 1 jam berdasarkan data p
 
 Setiap jam penuh, GitHub Actions menjalankan `bot.py`:
 1. Ambil 10 koin teratas (CoinGecko) — stablecoin disaring.
-2. Ambil harga & volume 48 bar per jam (Binance, fallback CoinGecko).
+2. Ambil harga & volume 48 titik per jam dari CoinGecko.
 3. Ambil perubahan TVL harian per chain (DefiLlama).
 4. Hitung skor gabungan (SMA, RSI, volume spike, TVL) → `BUY` / `SELL` / `NEUTRAL`.
 5. Kirim ringkasan ke Telegram.
@@ -31,7 +31,7 @@ Setiap jam penuh, GitHub Actions menjalankan `bot.py`:
 bot.py                        # Entry point: scan + kirim
 config.py                     # Konfigurasi & kredensial dari .env
 telegram_sender.py            # Kirim pesan ke Telegram
-data/market.py                # Binance + CoinGecko (OHLC, top coins)
+data/market.py                # CoinGecko (OHLC, top coins)
 data/onchain.py               # DefiLlama (TVL chain)
 signals/indicators.py         # RSI, SMA, volume spike
 signals/engine.py             # Skoring BUY/SELL/NEUTRAL + format pesan

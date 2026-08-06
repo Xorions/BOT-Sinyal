@@ -17,12 +17,7 @@ if sys.stdout and hasattr(sys.stdout, "reconfigure"):
         pass
 
 from config import TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
-from data.market import (
-    MarketDataError,
-    get_ohlc_binance,
-    get_ohlc_coingecko,
-    get_top_coins,
-)
+from data.market import MarketDataError, get_ohlc, get_top_coins
 from data.onchain import get_tvl_change
 from signals.engine import build_signal, format_message
 from telegram_sender import TelegramSendError, send_telegram
@@ -38,15 +33,8 @@ def run_scan() -> str:
 
     signals = []
     for i, coin in enumerate(coins):
-        prices: list = []
-        volumes: list = []
-        source = "binance"
         try:
-            ohlc = get_ohlc_binance(coin["symbol"])
-            if ohlc is None:
-                source = "coingecko"
-                ohlc = get_ohlc_coingecko(coin["id"], days=2)
-            prices, volumes = ohlc
+            prices, volumes = get_ohlc(coin["id"], days=2)
         except MarketDataError as exc:
             log.warning("Lewati %s: %s", coin["id"], exc)
             continue
@@ -55,11 +43,11 @@ def run_scan() -> str:
 
         signals.append(build_signal(coin, prices, volumes, tvl_change))
         log.info(
-            "Sinyal %s -> %s (skor %.1f, sumber %s)",
-            coin["symbol"].upper(), signals[-1].action, signals[-1].score, source,
+            "Sinyal %s -> %s (skor %.1f)",
+            coin["symbol"].upper(), signals[-1].action, signals[-1].score,
         )
 
-        if source == "coingecko" and i < len(coins) - 1:
+        if i < len(coins) - 1:
             time.sleep(2.0)
 
     timestamp = datetime.now().strftime("%d %b %Y, %H:%M WIB")

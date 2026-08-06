@@ -11,7 +11,7 @@ Bot sinyal trading Telegram yang dijalankan **sekali setiap jam** melalui GitHub
 bot.py                        # Entry point: scan + kirim ke Telegram
 config.py                     # Memuat konfigurasi & kredensial dari .env
 telegram_sender.py            # Kirim pesan ke Telegram (HTTP Bot API)
-data/market.py                # Binance (utama) + CoinGecko (fallback): OHLC, daftar top koin
+data/market.py                # CoinGecko: daftar top koin + OHLC (harga & volume)
 data/onchain.py               # DefiLlama: perubahan TVL harian per chain
 signals/indicators.py         # RSI (Wilder), SMA, rasio volume spike
 signals/engine.py             # Skoring → BUY/SELL/NEUTRAL + confidence; format pesan
@@ -24,7 +24,7 @@ signals/engine.py             # Skoring → BUY/SELL/NEUTRAL + confidence; forma
 - **requests** untuk semua HTTP (Binance, CoinGecko, DefiLlama, Telegram)
 - **python-dotenv** untuk memuat `.env`
 - **GitHub Actions** (cron `0 * * * *`) sebagai scheduler gratis — tidak butuh server 24/7
-- **Sumber data publik gratis**: Binance Public API, CoinGecko API, DefiLlama API, Telegram Bot API
+- **Sumber data publik gratis**: CoinGecko API, DefiLlama API, Telegram Bot API
 
 ## 2. Aturan Skoring Sinyal
 
@@ -51,7 +51,7 @@ Skor positif = bullish (**BUY**), negatif = bearish (**SELL**). Skor dihitung di
 
 ### Alur per koin
 1. Ambil daftar top-N koin dari CoinGecko (stablecoin disaring).
-2. Ambil harga + volume 48 bar per jam — Binance dulu, fallback CoinGecko bila gagal.
+2. Ambil harga + volume 48 titik per jam dari CoinGecko.
 3. Ambil perubahan TVL harian chain terkait dari DefiLlama (opsional; dapat bernilai `None`).
 4. Hitung skor & sinyal, lalu kumpulkan alasan untuk ditampilkan di pesan.
 

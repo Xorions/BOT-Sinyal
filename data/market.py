@@ -1,7 +1,6 @@
-"""Data pasar dari Binance & CoinGecko (keduanya gratis, tanpa API key).
+"""Data pasar dari CoinGecko (gratis, tanpa API key).
 
-Binance digunakan sebagai sumber utama OHLC karena rate limit-nya besar.
-CoinGecko dipakai untuk daftar top koin & sebagai fallback bila pair tidak ada.
+CoinGecko dipakai untuk daftar top koin & data harga+volume (OHLC).
 """
 
 import time
@@ -16,8 +15,6 @@ from config import (
     REQUEST_TIMEOUT,
     TOP_COINS,
 )
-
-BINANCE_BASE_URL = "https://api.binance.com/api/v3"
 
 STABLECOINS = {
     "usdt", "usdc", "dai", "busd", "tusd", "usdd", "usde", "pyusd",
@@ -77,33 +74,7 @@ def get_top_coins() -> List[Dict[str, Any]]:
     return filtered[:TOP_COINS]
 
 
-def get_ohlc_binance(symbol: str) -> Optional[Tuple[List[float], List[float]]]:
-    """Harga + volume per jam dari Binance (48 candle terakhir).
-
-    Mengembalikan (prices, volumes) atau None bila pair tidak tersedia.
-    """
-    base = symbol.upper().replace("USDT", "")
-    if not base or base == "USDT":
-        return None
-    pair = f"{base}USDT"
-    try:
-        resp = requests.get(
-            f"{BINANCE_BASE_URL}/klines",
-            params={"symbol": pair, "interval": "1h", "limit": 48},
-            timeout=REQUEST_TIMEOUT,
-        )
-        if resp.status_code != 200:
-            return None
-        data = resp.json()
-        prices = [float(k[4]) for k in data]
-        volumes = [float(k[5]) for k in data]
-        return (prices, volumes)
-    except (requests.RequestException, ValueError, IndexError):
-        return None
-
-
-def get_ohlc_coingecko(coin_id: str, days: int = 2) -> Tuple[List[float], List[float]]:
-    """Harga + volume dari CoinGecko sebagai fallback."""
+def get_ohlc(coin_id: str, days: int = 2) -> Tuple[List[float], List[float]]:
     url = f"{COINGECKO_BASE_URL}/coins/{coin_id}/market_chart"
     data = _get(url, {"vs_currency": "usd", "days": days}, headers=_coingecko_headers())
     prices = [p[1] for p in data.get("prices", [])]
