@@ -220,19 +220,20 @@ def _levels(sig: Signal) -> tuple:
 
 def _signal_lines(sig: Signal, number: int) -> List[str]:
     sl, tp1, tp2 = _levels(sig)
-    summary = " | ".join(sig.reasons) if sig.reasons else "—"
-    levels = (
-        f"   SL: <b>{_format_price(sl)}</b> (8%) | "
-        f"TP1: <b>{_format_price(tp1)}</b> (5%) | "
-        f"TP2: <b>{_format_price(tp2)}</b> (10%)"
-    )
-    return [
+    lines = [
         f"{number}. <b>#{sig.symbol}</b> — {sig.action} ({sig.confidence}%)",
-        f"   Entry: <b>{_format_price(sig.price)}</b>",
-        levels,
-        f"   <i>{summary}</i>",
-        "---",
+        f"🔑 Entry: <b>{_format_price(sig.price)}</b>",
+        f"🪓 SL: <b>{_format_price(sl)}</b> (8%)",
+        f"💰 TP1: <b>{_format_price(tp1)}</b> (5%)",
+        f"💰 TP2: <b>{_format_price(tp2)}</b> (10%)",
+        "📝 Note:",
     ]
+    if sig.reasons:
+        lines.extend(f"   - {reason}" for reason in sig.reasons)
+    else:
+        lines.append("   - —")
+    lines.append("---")
+    return lines
 
 
 def format_message(signals: List[Signal], timestamp: str, total_scanned: int) -> str:
@@ -257,14 +258,14 @@ def format_message(signals: List[Signal], timestamp: str, total_scanned: int) ->
 
     number = 1
     if buys:
-        lines.append("<b>🟢 SINYAL LONG (BUY)</b>")
+        lines.append("<b>📈 SINYAL LONG (BUY)</b>")
         lines.append("")
         for sig in buys:
             lines.extend(_signal_lines(sig, number))
             number += 1
 
     if sells:
-        lines.append("<b>🔴 SINYAL SHORT (SELL)</b>")
+        lines.append("<b>📉 SINYAL SHORT (SELL)</b>")
         lines.append("")
         for sig in sells:
             lines.extend(_signal_lines(sig, number))
