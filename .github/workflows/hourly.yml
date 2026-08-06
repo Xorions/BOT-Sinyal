@@ -8,6 +8,7 @@ on:
 jobs:
   run-signal-bot:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout kode
         uses: actions/checkout@v4
