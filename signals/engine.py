@@ -1,17 +1,25 @@
-"""Mesin skoring sinyal: gabungkan tren, RSI, volume, dan data on-chain.
+"""Mesin skoring sinyal harian untuk Daily Briefing.
 
-Skor positif = bullish (BUY), negatif = bearish (SELL).
+Sinyal dihitung hanya dari satu panggilan CoinGecko (markets + sparkline 7d):
+- RSI dari sparkline harga (oversold/overbought)
+- Tren: harga vs SMA 24 jam
+- Momentum: perubahan harga 1j / 24j / 7d
+- Volume aktif: rasio volume terhadap market cap dibanding seluruh koin
+
+Skor positif = bullish (BUY/LONG), negatif = bearish (SELL/SHORT).
 """
 
 from dataclasses import dataclass, field
-from typing import Dict, List, Optional
+from typing import Any, Dict, List
 
-from config import BUY_THRESHOLD, DISCLAIMER, SELL_THRESHOLD
-from signals.indicators import sma, rsi, volume_spike_ratio
+from config import BUY_THRESHOLD, DISCLAIMER, SELL_THRESHOLD, TOP_SIGNALS
+from signals.indicators import rsi, sma
 
 ACTION_BUY = "BUY"
 ACTION_SELL = "SELL"
 ACTION_NEUTRAL = "NEUTRAL"
+
+MIN_SPARKLINE_POINTS = 24
 
 
 @dataclass
@@ -27,24 +35,17 @@ class Signal:
     reasons: List[str] = field(default_factory=list)
 
 
-def _score_trend(prices: List[float], price_change_24h: float, reasons: List[str]) -> float:
-    score = 0.0
-    avg = sma(prices)
-    current = prices[-1] if prices else None
-    if avg and current:
-        if current > avg:
-            score += 1.5
-            reasons.append(f"harga di atas SMA 12j")
-        else:
-            score -= 1.5
-            reasons.append(f"harga di bawah SMA 12j")
-    if price_change_24h >= 2.0:
-        score += 1.0
-        reasons.append(f"naik {price_change_24h:.1f}% (24j)")
-    elif price_change_24h <= -2.0:
-        score -= 1.0
-        reasons.append(f"turun {price_change_24h:.1f}% (24j)")
-    return score
+def _sparkline_prices(coin: Dict[str, Any]) -> List[float]:
+    raw = coin.get("sparkline_in_7d", {}).get("price", []) or []
+    prices: List[float] = []
+    for value in raw:
+        try:
+            p = float(value)
+        except (TypeError, ValueError):
+            continue
+        if p > 0:
+            prices.append(p)
+    return prices
 
 
 def _score_rsi(prices: List[float], reasons: List[str]) -> float:
@@ -66,45 +67,92 @@ def _score_rsi(prices: List[float], reasons: List[str]) -> float:
     return 0.0
 
 
-def _score_volume(volumes: List[float], prices: List[float], reasons: List[str]) -> float:
-    ratio = volume_spike_ratio(volumes)
-    if ratio is None or ratio < 1.4:
+def _score_trend(prices: List[float], reasons: List[str]) -> float:
+    avg = sma(prices, period=24)
+    if avg is None or not prices:
         return 0.0
-    up = len(prices) >= 2 and prices[-1] >= prices[-2]
-    direction = 1.5 if up else -1.5
-    trend = "kenaikan" if up else "penurunan"
-    reasons.append(f"volume spike {ratio:.1f}x ({trend})")
-    return direction
+    if prices[-1] > avg:
+        reasons.append("harga di atas SMA 24j")
+        return 1.5
+    reasons.append("harga di bawah SMA 24j")
+    return -1.5
 
 
-def _score_onchain(tvl_change: Optional[float], reasons: List[str]) -> float:
-    if tvl_change is None:
+def _score_momentum(coin: Dict[str, Any], reasons: List[str]) -> float:
+    score = 0.0
+    p1h = coin.get("price_change_percentage_1h_in_currency")
+    p24h = coin.get("price_change_percentage_24h")
+    p7d = coin.get("price_change_percentage_7d_in_currency")
+
+    if p1h is not None:
+        if p1h >= 1.5:
+            score += 1.0
+            reasons.append(f"momentum 1j +{p1h:.1f}%")
+        elif p1h <= -1.5:
+            score -= 1.0
+            reasons.append(f"momentum 1j {p1h:.1f}%")
+
+    if p24h is not None:
+        if p24h >= 3.0:
+            score += 1.5
+            reasons.append(f"momentum 24j +{p24h:.1f}%")
+        elif p24h <= -3.0:
+            score -= 1.5
+            reasons.append(f"momentum 24j {p24h:.1f}%")
+
+    if p7d is not None:
+        if p7d >= 8.0:
+            score += 1.0
+            reasons.append(f"momentum 7h +{p7d:.1f}%")
+        elif p7d <= -8.0:
+            score -= 1.0
+            reasons.append(f"momentum 7h {p7d:.1f}%")
+
+    return score
+
+
+def _score_volume(turnover_pct: float, price_change_24h: float, reasons: List[str]) -> float:
+    if turnover_pct is None or price_change_24h is None or abs(price_change_24h) < 0.5:
         return 0.0
-    if tvl_change >= 2.0:
-        reasons.append(f"TVL chain +{tvl_change:.1f}%")
-        return 1.0
-    if tvl_change <= -2.0:
-        reasons.append(f"TVL chain {tvl_change:.1f}%")
-        return -1.0
+    direction = 1.0 if price_change_24h > 0 else -1.0
+    if turnover_pct >= 0.90:
+        reasons.append("volume sangat aktif")
+        return direction * 1.5
+    if turnover_pct >= 0.75:
+        reasons.append("volume aktif")
+        return direction * 1.0
     return 0.0
 
 
-def _confidence(score: float) -> int:
-    return max(40, min(95, 55 + int(abs(score) * 7)))
+def _turnover(coin: Dict[str, Any]) -> float:
+    try:
+        volume = float(coin.get("total_volume") or 0)
+        cap = float(coin.get("market_cap") or 0)
+    except (TypeError, ValueError):
+        return 0.0
+    if volume <= 0 or cap <= 0:
+        return 0.0
+    return volume / cap
 
 
-def build_signal(
-    coin: Dict[str, object],
-    prices: List[float],
-    volumes: List[float],
-    tvl_change: Optional[float],
-) -> Signal:
+def _turnover_percentiles(coins: List[Dict[str, Any]]) -> Dict[str, float]:
+    values = [(c["id"], _turnover(c)) for c in coins]
+    values = [(cid, v) for cid, v in values if v > 0]
+    values.sort(key=lambda item: item[1])
+    count = len(values)
+    if count == 0:
+        return {}
+    return {cid: (index + 1) / count for index, (cid, _) in enumerate(values)}
+
+
+def build_signal(coin: Dict[str, Any], turnover_pct: float) -> Signal:
+    prices = _sparkline_prices(coin)
     reasons: List[str] = []
     score = 0.0
-    score += _score_trend(prices, float(coin.get("price_change_percentage_24h") or 0), reasons)
     score += _score_rsi(prices, reasons)
-    score += _score_volume(volumes, prices, reasons)
-    score += _score_onchain(tvl_change, reasons)
+    score += _score_trend(prices, reasons)
+    score += _score_momentum(coin, reasons)
+    score += _score_volume(turnover_pct, coin.get("price_change_percentage_24h"), reasons)
 
     if score >= BUY_THRESHOLD:
         action = ACTION_BUY
@@ -113,17 +161,42 @@ def build_signal(
     else:
         action = ACTION_NEUTRAL
 
+    try:
+        price_change_24h = float(coin.get("price_change_percentage_24h") or 0)
+    except (TypeError, ValueError):
+        price_change_24h = 0.0
+
     return Signal(
         coin_id=coin["id"],
         symbol=coin["symbol"].upper(),
         name=coin["name"],
         price=float(coin["current_price"] or 0),
-        price_change_24h=float(coin.get("price_change_percentage_24h") or 0),
+        price_change_24h=price_change_24h,
         score=score,
         action=action,
-        confidence=_confidence(score),
+        confidence=max(45, min(95, 55 + int(abs(score) * 5))),
         reasons=reasons,
     )
+
+
+def rank_signals(coins: List[Dict[str, Any]]) -> List[Signal]:
+    """Hitung skor semua koin lalu pilih TOP-N sinyal paling solid."""
+    percentiles = _turnover_percentiles(coins)
+    signals: List[Signal] = []
+    for coin in coins:
+        try:
+            price = float(coin["current_price"] or 0)
+            cap = float(coin["market_cap"] or 0)
+        except (TypeError, ValueError):
+            continue
+        if price <= 0 or cap <= 0:
+            continue
+        if len(_sparkline_prices(coin)) < MIN_SPARKLINE_POINTS:
+            continue
+        signals.append(build_signal(coin, percentiles.get(coin["id"])))
+
+    signals.sort(key=lambda s: abs(s.score), reverse=True)
+    return signals[:TOP_SIGNALS]
 
 
 def _format_price(value: float) -> str:
@@ -134,27 +207,55 @@ def _format_price(value: float) -> str:
     return f"${value:.6f}"
 
 
-def _icon(action: str) -> str:
-    return {"BUY": "🟢", "SELL": "🔴", "NEUTRAL": "⚪"}.get(action, "⚪")
+def _signal_lines(sig: Signal, number: int) -> List[str]:
+    return [
+        f"{number}. <b>{sig.symbol}</b> — {sig.action} ({sig.confidence}%)",
+        f"   {sig.name} · {_format_price(sig.price)} ({sig.price_change_24h:+.1f}% 24j)",
+        f"   <i>{', '.join(sig.reasons)}</i> · skor {sig.score:+.1f}",
+    ]
 
 
-def format_message(signals: List[Signal], timestamp: str) -> str:
+def format_message(signals: List[Signal], timestamp: str, total_scanned: int) -> str:
+    buys = sorted(
+        (s for s in signals if s.action == ACTION_BUY),
+        key=lambda s: abs(s.score),
+        reverse=True,
+    )
+    sells = sorted(
+        (s for s in signals if s.action == ACTION_SELL),
+        key=lambda s: abs(s.score),
+        reverse=True,
+    )
+    neutrals = [s for s in signals if s.action == ACTION_NEUTRAL]
+
     lines = [
-        f"<b>📊 Crypto Signal Bot</b>",
+        "<b>📊 Daily Briefing Crypto</b>",
         f"🕐 {timestamp}",
+        f"🔎 Dipantau: {total_scanned} koin (Top market cap)",
         "",
     ]
-    for sig in sorted(signals, key=lambda s: abs(s.score), reverse=True):
-        icon = _icon(sig.action)
-        lines.append(
-            f"{icon} <b>{sig.symbol}</b> — {sig.action} ({sig.confidence}%)"
-        )
-        lines.append(
-            f"   {sig.name} · {_format_price(sig.price)} "
-            f"({sig.price_change_24h:+.1f}% 24j)"
-        )
-        if sig.reasons:
-            lines.append(f"   <i>{', '.join(sig.reasons)}</i>")
+
+    number = 1
+    if buys:
+        lines.append("<b>🟢 Sinyal LONG (BUY)</b>")
+        for sig in buys:
+            lines.extend(_signal_lines(sig, number))
+            number += 1
         lines.append("")
+
+    if sells:
+        lines.append("<b>🔴 Sinyal SHORT (SELL)</b>")
+        for sig in sells:
+            lines.extend(_signal_lines(sig, number))
+            number += 1
+        lines.append("")
+
+    if neutrals:
+        lines.append("<b>⚪ WATCHLIST (NEUTRAL)</b>")
+        for sig in neutrals:
+            lines.extend(_signal_lines(sig, number))
+            number += 1
+        lines.append("")
+
     lines.append(DISCLAIMER)
     return "\n".join(lines)

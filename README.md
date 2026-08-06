@@ -1,15 +1,14 @@
 # BOT-Sinyal-Trading
 
-Bot Telegram yang mengirim sinyal trading crypto setiap 1 jam berdasarkan data pasar & on-chain (gratis, tanpa API key berbayar).
+Bot Telegram yang mengirim **Daily Briefing sinyal trading crypto** setiap hari jam 07:00 WIB, berdasarkan data pasar CoinGecko (gratis, tanpa API key berbayar).
 
 ## Cara Kerja
 
-Setiap jam penuh, GitHub Actions menjalankan `bot.py`:
-1. Ambil 10 koin teratas (CoinGecko) — stablecoin disaring.
-2. Ambil harga & volume 48 titik per jam dari CoinGecko.
-3. Ambil perubahan TVL harian per chain (DefiLlama).
-4. Hitung skor gabungan (SMA, RSI, volume spike, TVL) → `BUY` / `SELL` / `NEUTRAL`.
-5. Kirim ringkasan ke Telegram.
+Setiap hari (07:00 WIB), GitHub Actions menjalankan `bot.py`:
+1. Satu panggilan CoinGecko mengambil **Top 250 koin** (market cap) + sparkline harga 7 hari — stablecoin disaring.
+2. Hitung skor tiap koin dari indikator teknikal: **RSI, tren (SMA 24j), momentum 1j/24j/7d, volume aktif**.
+3. Pilih **TOP 5 sinyal terbaik** (BUY/LONG maupun SELL/SHORT paling solid).
+4. Kirim Daily Briefing ke Telegram.
 
 ## Setup
 
@@ -28,14 +27,13 @@ Setiap jam penuh, GitHub Actions menjalankan `bot.py`:
 ## Struktur
 
 ```
-bot.py                        # Entry point: scan + kirim
+bot.py                        # Entry point: scan + kirim Daily Briefing
 config.py                     # Konfigurasi & kredensial dari .env
 telegram_sender.py            # Kirim pesan ke Telegram
-data/market.py                # CoinGecko (OHLC, top coins)
-data/onchain.py               # DefiLlama (TVL chain)
-signals/indicators.py         # RSI, SMA, volume spike
-signals/engine.py             # Skoring BUY/SELL/NEUTRAL + format pesan
-.github/workflows/hourly.yml  # Scheduler tiap jam
+data/market.py                # CoinGecko (top coins + sparkline 7d)
+signals/indicators.py         # RSI, SMA
+signals/engine.py             # Skoring BUY/SELL/NEUTRAL, pilih TOP-5
+.github/workflows/daily.yml   # Scheduler harian (07:00 WIB)
 ```
 
 ## Disclaimer

@@ -1,10 +1,11 @@
 """Data pasar dari CoinGecko (gratis, tanpa API key).
 
-CoinGecko dipakai untuk daftar top koin & data harga+volume (OHLC).
+Satu panggilan endpoint `markets` sudah mencakup daftar top koin, perubahan
+harga (1j/24j/7d), dan sparkline harga 7 hari untuk semua koin — hemat kuota API.
 """
 
 import time
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional
 
 import requests
 
@@ -18,7 +19,7 @@ from config import (
 
 STABLECOINS = {
     "usdt", "usdc", "dai", "busd", "tusd", "usdd", "usde", "pyusd",
-    "fdusd", "eurs", "ustc",
+    "fdusd", "eurs", "ustc", "susde", "euroc", "usd1", "usdx",
 }
 
 
@@ -60,23 +61,21 @@ def _get(url: str, params: Optional[Dict[str, Any]] = None, headers: Optional[Di
 
 
 def get_top_coins() -> List[Dict[str, Any]]:
-    """Daftar top-N koin berdasarkan market cap, tanpa stablecoin."""
+    """Daftar top-N koin berdasarkan market cap, tanpa stablecoin.
+
+    Satu panggilan API menyediakan harga terkini, perubahan harga 1j/24j/7d,
+    dan sparkline harga 7 hari untuk setiap koin.
+    """
     url = f"{COINGECKO_BASE_URL}/coins/markets"
+    per_page = min(TOP_COINS + len(STABLECOINS), 250)
     params = {
         "vs_currency": "usd",
         "order": "market_cap_desc",
-        "per_page": TOP_COINS + len(STABLECOINS),
+        "per_page": per_page,
         "page": 1,
-        "sparkline": "false",
+        "sparkline": "true",
+        "price_change_percentage": "1h,24h,7d",
     }
     data = _get(url, params, headers=_coingecko_headers())
     filtered = [c for c in data if c["symbol"].lower() not in STABLECOINS]
     return filtered[:TOP_COINS]
-
-
-def get_ohlc(coin_id: str, days: int = 2) -> Tuple[List[float], List[float]]:
-    url = f"{COINGECKO_BASE_URL}/coins/{coin_id}/market_chart"
-    data = _get(url, {"vs_currency": "usd", "days": days}, headers=_coingecko_headers())
-    prices = [p[1] for p in data.get("prices", [])]
-    volumes = [v[1] for v in data.get("total_volumes", [])]
-    return (prices, volumes)

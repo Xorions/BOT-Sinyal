@@ -5,55 +5,54 @@ Panduan untuk AI agent dan developer yang bekerja di project **BOT-Sinyal-Tradin
 ## 1. Overview Arsitektur & Tech Stack
 
 ### Arsitektur
-Bot sinyal trading Telegram yang dijalankan **sekali setiap jam** melalui GitHub Actions (cron). Alur per eksekusi: ambil data pasar & on-chain → hitung skor sinyal per koin → kirim ringkasan ke Telegram.
+Bot sinyal trading Telegram yang dijalankan **sekali setiap hari (07:00 WIB)** melalui GitHub Actions (cron). Alur per eksekusi: scan top koin dalam satu panggilan CoinGecko → hitung skor sinyal → pilih TOP-5 sinyal terbaik → kirim Daily Briefing ke Telegram.
 
 ```
-bot.py                        # Entry point: scan + kirim ke Telegram
+bot.py                        # Entry point: scan + kirim Daily Briefing
 config.py                     # Memuat konfigurasi & kredensial dari .env
 telegram_sender.py            # Kirim pesan ke Telegram (HTTP Bot API)
-data/market.py                # CoinGecko: daftar top koin + OHLC (harga & volume)
-data/onchain.py               # DefiLlama: perubahan TVL harian per chain
-signals/indicators.py         # RSI (Wilder), SMA, rasio volume spike
-signals/engine.py             # Skoring → BUY/SELL/NEUTRAL + confidence; format pesan
-.github/workflows/hourly.yml  # Scheduler tiap jam penuh (cron 0 * * * *)
+data/market.py                # CoinGecko: top koin + sparkline 7d (1 panggilan API)
+signals/indicators.py         # RSI (Wilder), SMA
+signals/engine.py             # Skoring → BUY/SELL/NEUTRAL, pilih TOP-5, format pesan
+.github/workflows/daily.yml   # Scheduler harian (cron 0 0 * * * = 07:00 WIB)
 .env                          # Kredensial (TIDAK di-commit)
 ```
 
 ### Tech Stack
 - **Python 3.12** (virtual environment di `venv/`)
-- **requests** untuk semua HTTP (Binance, CoinGecko, DefiLlama, Telegram)
+- **requests** untuk semua HTTP (CoinGecko, Telegram)
 - **python-dotenv** untuk memuat `.env`
-- **GitHub Actions** (cron `0 * * * *`) sebagai scheduler gratis — tidak butuh server 24/7
-- **Sumber data publik gratis**: CoinGecko API, DefiLlama API, Telegram Bot API
+- **GitHub Actions** (cron `0 0 * * *`) sebagai scheduler gratis — tidak butuh server 24/7
+- **Sumber data publik gratis**: CoinGecko API, Telegram Bot API
 
 ## 2. Aturan Skoring Sinyal
 
-Skor positif = bullish (**BUY**), negatif = bearish (**SELL**). Skor dihitung di `signals/engine.py`; ambang konfigurasi ada di `config.py` (`BUY_THRESHOLD = 3.0`, `SELL_THRESHOLD = -3.0`).
+Semua indikator dihitung dari **satu panggilan** `GET /coins/markets` (CoinGecko) yang berisi harga terkini, perubahan harga 1j/24j/7d, dan sparkline harga 7 hari. Skor positif = bullish (**BUY/LONG**), negatif = bearish (**SELL/SHORT**). Skor dihitung di `signals/engine.py`; ambang konfigurasi ada di `config.py` (`BUY_THRESHOLD = 3.0`, `SELL_THRESHOLD = -3.0`).
 
 | Komponen | Kondisi | Poin |
 |---|---|---|
-| Tren — harga vs SMA 12 jam | harga > SMA | **+1.5** |
-| Tren — harga vs SMA 12 jam | harga < SMA | **-1.5** |
-| Perubahan harga 24 jam | >= +2% | **+1.0** |
-| Perubahan harga 24 jam | <= -2% | **-1.0** |
 | RSI | < 30 (oversold) | **+2.0** |
 | RSI | 30–40 (mendekati oversold) | **+1.0** |
 | RSI | > 70 (overbought) | **-2.0** |
 | RSI | 60–70 (mendekati overbought) | **-1.0** |
-| Volume spike >= 1.4x | harga jam terakhir naik | **+1.5** |
-| Volume spike >= 1.4x | harga jam terakhir turun | **-1.5** |
-| TVL chain (on-chain) | >= +2% | **+1.0** |
-| TVL chain (on-chain) | <= -2% | **-1.0** |
+| Tren — harga vs SMA 24 jam | harga > SMA | **+1.5** |
+| Tren — harga vs SMA 24 jam | harga < SMA | **-1.5** |
+| Momentum 1 jam | >= +1.5% / <= -1.5% | **+1.0 / -1.0** |
+| Momentum 24 jam | >= +3% / <= -3% | **+1.5 / -1.5** |
+| Momentum 7 hari | >= +8% / <= -8% | **+1.0 / -1.0** |
+| Volume aktif (turnover top 10%) | harga 24j naik / turun | **+1.5 / -1.5** |
+| Volume aktif (turnover top 25%) | harga 24j naik / turun | **+1.0 / -1.0** |
 
 - **BUY** jika skor >= 3.0, **SELL** jika skor <= -3.0, selain itu **NEUTRAL**.
-- Confidence: `max(40, min(95, 55 + round(|skor| * 7)))`.
-- Detail indikator di `signals/indicators.py`: RSI dengan smoothing Wilder (14 periode), SMA (12 bar terakhir), rasio volume spike (volume jam terakhir vs rata-rata 12 jam sebelumnya).
+- Confidence: `max(45, min(95, 55 + round(|skor| * 5)))`.
+- **Pemilihan sinyal**: semua koin diskor, lalu diurutkan berdasarkan kekuatan (`|skor|`) dan diambil **TOP `TOP_SIGNALS`** (default 5).
+- Detail indikator di `signals/indicators.py`: RSI smoothing Wilder (14 periode), SMA (24 bar). "Volume aktif" = rasio `total_volume / market_cap` dibandingkan terhadap seluruh koin yang dipindai (percentile).
 
-### Alur per koin
-1. Ambil daftar top-N koin dari CoinGecko (stablecoin disaring).
-2. Ambil harga + volume 48 titik per jam dari CoinGecko.
-3. Ambil perubahan TVL harian chain terkait dari DefiLlama (opsional; dapat bernilai `None`).
-4. Hitung skor & sinyal, lalu kumpulkan alasan untuk ditampilkan di pesan.
+### Alur Daily Briefing
+1. Satu panggilan `GET /coins/markets` (`per_page=250`, `sparkline=true`, `price_change_percentage=1h,24h,7d`) → daftar top koin + data indikator.
+2. Filter stablecoin (USDT, USDC, DAI, FDUSD, dll) — lihat `STABLECOINS` di `data/market.py`.
+3. Hitung skor tiap koin (`build_signal`) dan pilih TOP-5 paling solid (`rank_signals`).
+4. Kirim Daily Briefing ke Telegram lewat `format_message`.
 
 ## 3. Panduan Pengembangan
 

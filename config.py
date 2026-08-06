@@ -16,7 +16,8 @@ def _env_float(name: str, default: float) -> float:
 TELEGRAM_BOT_TOKEN: str = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID: str = os.getenv("TELEGRAM_CHAT_ID", "")
 
-TOP_COINS: int = int(os.getenv("TOP_COINS", "10"))
+TOP_COINS: int = int(os.getenv("TOP_COINS", "250"))
+TOP_SIGNALS: int = int(os.getenv("TOP_SIGNALS", "5"))
 
 # Opsional: free API key dari CoinGecko (https://www.coingecko.com/en/api)
 # Tanpa key pakai kuota publik kecil, dengan key 30 req/menit.

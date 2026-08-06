@@ -1,13 +1,13 @@
 """Entry point bot sinyal trading.
 
-Jalankan sekali: setiap panggilan men-scan data lalu kirim hasil ke Telegram.
-Jadwal per-jam diatur oleh GitHub Actions (lihat .github/workflows/hourly.yml).
+Menjalankan Daily Briefing: scan top koin (satu panggilan CoinGecko),
+pilih TOP-5 sinyal terbaik, lalu kirim ke Telegram.
+Jadwal harian (07:00 WIB) diatur oleh GitHub Actions (lihat .github/workflows/daily.yml).
 Untuk uji lokal:  python bot.py
 """
 
 import logging
 import sys
-import time
 from datetime import datetime
 
 if sys.stdout and hasattr(sys.stdout, "reconfigure"):
@@ -16,10 +16,9 @@ if sys.stdout and hasattr(sys.stdout, "reconfigure"):
     except (ValueError, OSError):
         pass
 
-from config import TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
-from data.market import MarketDataError, get_ohlc, get_top_coins
-from data.onchain import get_tvl_change
-from signals.engine import build_signal, format_message
+from config import TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, TOP_COINS
+from data.market import get_top_coins
+from signals.engine import format_message, rank_signals
 from telegram_sender import TelegramSendError, send_telegram
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -27,31 +26,17 @@ log = logging.getLogger("signal-bot")
 
 
 def run_scan() -> str:
-    log.info("Mengambil daftar top koin dari CoinGecko...")
+    log.info("Mengambil top %d koin dari CoinGecko...", TOP_COINS)
     coins = get_top_coins()
-    log.info("Ditemukan %d koin.", len(coins))
+    log.info("Ditemukan %d koin (setelah filter stablecoin).", len(coins))
 
-    signals = []
-    for i, coin in enumerate(coins):
-        try:
-            prices, volumes = get_ohlc(coin["id"], days=2)
-        except MarketDataError as exc:
-            log.warning("Lewati %s: %s", coin["id"], exc)
-            continue
+    signals = rank_signals(coins)
+    log.info("Terpilih %d sinyal terbaik.", len(signals))
+    for sig in signals:
+        log.info("Sinyal %s -> %s (skor %+.1f)", sig.symbol, sig.action, sig.score)
 
-        tvl_change = get_tvl_change(coin["id"])
-
-        signals.append(build_signal(coin, prices, volumes, tvl_change))
-        log.info(
-            "Sinyal %s -> %s (skor %.1f)",
-            coin["symbol"].upper(), signals[-1].action, signals[-1].score,
-        )
-
-        if i < len(coins) - 1:
-            time.sleep(2.0)
-
-    timestamp = datetime.now().strftime("%d %b %Y, %H:%M WIB")
-    return format_message(signals, timestamp)
+    timestamp = datetime.now().strftime("%A, %d %b %Y, %H:%M WIB")
+    return format_message(signals, timestamp, len(coins))
 
 
 def main() -> int:

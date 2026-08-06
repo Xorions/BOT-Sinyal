@@ -1,10 +1,9 @@
-"""Indikator teknis sederhana: RSI, SMA, dan deteksi volume spike."""
+"""Indikator teknis sederhana: RSI dan SMA."""
 
 from typing import List, Optional
 
 RSI_PERIOD = 14
-SMA_PERIOD = 12
-VOLUME_WINDOW = 12
+SMA_PERIOD = 24
 
 
 def sma(values: List[float], period: int = SMA_PERIOD) -> Optional[float]:
@@ -36,17 +35,3 @@ def rsi(prices: List[float], period: int = RSI_PERIOD) -> Optional[float]:
         return 100.0
     rs = avg_gain / avg_loss
     return 100.0 - (100.0 / (1.0 + rs))
-
-
-def volume_spike_ratio(volumes: List[float], window: int = VOLUME_WINDOW) -> Optional[float]:
-    """Perbandingan volume jam terakhir vs rata-rata `window` jam sebelumnya.
-
-    Nilai > 1.5 mengindikasikan lonjakan volume yang signifikan.
-    """
-    if len(volumes) < window + 1:
-        return None
-    last = volumes[-1]
-    baseline = sum(volumes[-(window + 1):-1]) / window
-    if baseline <= 0:
-        return None
-    return last / baseline

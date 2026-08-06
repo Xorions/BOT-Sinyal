@@ -1,12 +1,13 @@
-name: Crypto Signal Bot
+name: Crypto Daily Briefing
 
+# 00:00 UTC = 07:00 WIB (satu kali sehari)
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
-  run-signal-bot:
+  run-daily-briefing:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -21,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Jalankan bot sinyal
+      - name: Jalankan Daily Briefing
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
