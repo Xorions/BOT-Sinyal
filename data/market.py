@@ -60,6 +60,41 @@ def _get(url: str, params: Optional[Dict[str, Any]] = None, headers: Optional[Di
     raise MarketDataError(f"Gagal mengambil data {url}: {last_error}")
 
 
+def coin_price_map(coins: List[Dict[str, Any]]) -> Dict[str, Dict[str, float]]:
+    """Peta coin_id -> {harga terkini, high 24j, low 24j} untuk evaluasi sinyal."""
+    price_map: Dict[str, Dict[str, float]] = {}
+    for coin in coins:
+        try:
+            price_map[coin["id"]] = {
+                "current_price": float(coin.get("current_price") or 0),
+                "high_24h": float(coin.get("high_24h") or 0),
+                "low_24h": float(coin.get("low_24h") or 0),
+            }
+        except (TypeError, ValueError):
+            continue
+    return price_map
+
+
+def get_prices_for_ids(ids: List[str]) -> Dict[str, Dict[str, float]]:
+    """Harga terkini + high/low 24j untuk daftar id koin (satu panggilan batch).
+
+    Dipakai untuk mengevaluasi sinyal kemarin yang koornya tidak lagi berada
+    di Top-250 pada scan hari ini.
+    """
+    ids = [cid for cid in ids if cid]
+    if not ids:
+        return {}
+    url = f"{COINGECKO_BASE_URL}/coins/markets"
+    params = {
+        "vs_currency": "usd",
+        "ids": ",".join(ids),
+        "order": "market_cap_desc",
+        "per_page": 250,
+    }
+    data = _get(url, params, headers=_coingecko_headers())
+    return coin_price_map(data)
+
+
 def get_top_coins() -> List[Dict[str, Any]]:
     """Daftar top-N koin berdasarkan market cap, tanpa stablecoin.
 

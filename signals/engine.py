@@ -207,7 +207,7 @@ def _format_price(value: float) -> str:
     return f"${value:.6f}"
 
 
-def _levels(sig: Signal) -> tuple:
+def signal_levels(sig: Signal) -> tuple:
     """Entry/SL/TP berdasarkan arah sinyal.
 
     BUY/LONG:  SL 8% di bawah entry, TP1 +5%, TP2 +10%.
@@ -219,7 +219,7 @@ def _levels(sig: Signal) -> tuple:
 
 
 def _signal_lines(sig: Signal, number: int) -> List[str]:
-    sl, tp1, tp2 = _levels(sig)
+    sl, tp1, tp2 = signal_levels(sig)
     lines = [
         f"{number}. <b>#{sig.symbol}</b> — {sig.action} ({sig.confidence}%)",
         f"🔑 Entry: <b>{_format_price(sig.price)}</b>",

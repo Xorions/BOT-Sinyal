@@ -6,6 +6,11 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+# Butuh akses tulis untuk meng-commit data/history.json (history sinyal)
+# supaya bisa dievaluasi pada eksekusi berikutnya.
+permissions:
+  contents: write
+
 jobs:
   run-daily-briefing:
     runs-on: ubuntu-latest
@@ -27,3 +32,17 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python bot.py
+
+      - name: Commit & push history sinyal
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history.json
+          if git diff --cached --quiet; then
+            echo "Tidak ada perubahan history."
+          else
+            git commit -m "Update history sinyal harian [skip ci]"
+            git push
+          fi

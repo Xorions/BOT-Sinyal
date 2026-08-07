@@ -5,18 +5,28 @@ Panduan untuk AI agent dan developer yang bekerja di project **BOT-Sinyal-Tradin
 ## 1. Overview Arsitektur & Tech Stack
 
 ### Arsitektur
-Bot sinyal trading Telegram yang dijalankan **sekali setiap hari (07:00 WIB)** melalui GitHub Actions (cron). Alur per eksekusi: scan top koin dalam satu panggilan CoinGecko → hitung skor sinyal → pilih TOP-5 sinyal terbaik → kirim Daily Briefing ke Telegram.
+Bot sinyal trading Telegram yang dijalankan **sekali setiap hari (07:00 WIB)** melalui GitHub Actions (cron). Alur per eksekusi: scan top koin dalam satu panggilan CoinGecko → hitung skor sinyal → pilih TOP-5 sinyal terbaik → evaluasi sinyal kemarin dari `data/history.json` → kirim Daily Briefing ke Telegram → simpan sinyal hari ini ke history.
 
 ```
-bot.py                        # Entry point: scan + kirim Daily Briefing
+bot.py                        # Entry point: scan + evaluasi kemarin + kirim Daily Briefing
 config.py                     # Memuat konfigurasi & kredensial dari .env
 telegram_sender.py            # Kirim pesan ke Telegram (HTTP Bot API)
 data/market.py                # CoinGecko: top koin + sparkline 7d (1 panggilan API)
+data/history.py               # Simpan & evaluasi performa sinyal kemarin (HIT TP1/TP2/SL, FLOATING)
+data/history.json             # History sinyal yang dikirim (auto di-commit tiap hari)
 signals/indicators.py         # RSI (Wilder), SMA
 signals/engine.py             # Skoring → BUY/SELL/NEUTRAL, pilih TOP-5, format pesan
 .github/workflows/daily.yml   # Scheduler harian (cron 0 0 * * * = 07:00 WIB)
 .env                          # Kredensial (TIDAK di-commit)
 ```
+
+## 2b. Performance Tracking (Evaluasi Sinyal Kemarin)
+
+- Setelah pesan berhasil dikirim ke Telegram, `bot.py` memanggil `data.history.append_signals(signals)` untuk menyimpan sinyal **BUY/SELL** (NEUTRAL tidak disimpan) ke `data/history.json` — satu entri per hari (`{"entries": [{"date": "YYYY-MM-DD", "signals": [...]}]}`).
+- Sebelum mengirim briefing hari berikutnya, `bot.py` memanggil `data.history.load_last_entry()` (entri terakhir yang bukan hari ini) lalu `format_evaluation()` untuk menampilkan ringkasan di **bagian paling atas** pesan.
+- Evaluasi membandingkan Entry/SL/TP dengan **harga terkini atau high/low 24j** dari scan hari ini (`data.market.coin_price_map`). Koin yang sudah tidak di Top-250 di-backfill dengan `data.market.get_prices_for_ids` (satu panggilan batch).
+- Hasil: **HIT TP2** > **HIT TP1** > **HIT SL** > **FLOATING** (prioritas ini karena urutan pencapaian level tak bisa diketahui dari high/low saja).
+- Agar history terseusur antar hari di GitHub Actions, workflow `daily.yml` meng-commit dan push `data/history.json` setelah bot selesai (membutuhkan `permissions: contents: write`).
 
 ### Tech Stack
 - **Python 3.12** (virtual environment di `venv/`)
