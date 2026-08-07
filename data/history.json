@@ -1,3 +1,65 @@
 {
-  "entries": []
+  "entries": [
+    {
+      "date": "2026-08-07",
+      "saved_at": "2026-08-07T10:06:41",
+      "signals": [
+        {
+          "coin_id": "cardano",
+          "symbol": "ADA",
+          "name": "Cardano",
+          "action": "BUY",
+          "entry": 0.201731,
+          "sl": 0.18559252,
+          "tp1": 0.21181755,
+          "tp2": 0.22190410000000002,
+          "confidence": 82
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "BUY",
+          "entry": 0.095889,
+          "sl": 0.08821788000000001,
+          "tp1": 0.10068345000000001,
+          "tp2": 0.10547790000000001,
+          "confidence": 77
+        },
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "SELL",
+          "entry": 0.00604454,
+          "sl": 0.0065281032000000004,
+          "tp1": 0.005742313,
+          "tp2": 0.005440086,
+          "confidence": 77
+        },
+        {
+          "coin_id": "plasma",
+          "symbol": "XPL",
+          "name": "Plasma",
+          "action": "BUY",
+          "entry": 0.077121,
+          "sl": 0.07095132,
+          "tp1": 0.08097705,
+          "tp2": 0.0848331,
+          "confidence": 77
+        },
+        {
+          "coin_id": "eigenlayer",
+          "symbol": "EIGEN",
+          "name": "EigenCloud (prev. EigenLayer)",
+          "action": "SELL",
+          "entry": 0.177904,
+          "sl": 0.19213632000000003,
+          "tp1": 0.1690088,
+          "tp2": 0.16011360000000002,
+          "confidence": 77
+        }
+      ]
+    }
+  ]
 }
