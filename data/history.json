@@ -100,6 +100,24 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-08",
+      "session": "MALAM",
+      "saved_at": "2026-08-08T19:56:21+07:00",
+      "signals": [
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "BUY",
+          "entry": 0.00622146,
+          "sl": 0.006181440173654316,
+          "tp1": 0.006274819768460912,
+          "tp2": 0.006301499652691368,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
