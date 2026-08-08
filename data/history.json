@@ -63,62 +63,19 @@
     },
     {
       "date": "2026-08-08",
-      "saved_at": "2026-08-08T01:15:30",
+      "session": "PAGI",
+      "saved_at": "2026-08-08T08:35:22+07:00",
       "signals": [
-        {
-          "coin_id": "talus",
-          "symbol": "US",
-          "name": "Talus",
-          "action": "SELL",
-          "entry": 0.050957,
-          "sl": 0.05503356000000001,
-          "tp1": 0.04840915,
-          "tp2": 0.0458613,
-          "confidence": 85
-        },
-        {
-          "coin_id": "skyai",
-          "symbol": "SKYAI",
-          "name": "SkyAI",
-          "action": "BUY",
-          "entry": 0.115388,
-          "sl": 0.10615696000000001,
-          "tp1": 0.12115740000000001,
-          "tp2": 0.1269268,
-          "confidence": 82
-        },
-        {
-          "coin_id": "bonk",
-          "symbol": "BONK",
-          "name": "Bonk",
-          "action": "SELL",
-          "entry": 2.49e-06,
-          "sl": 2.6892e-06,
-          "tp1": 2.3654999999999996e-06,
-          "tp2": 2.241e-06,
-          "confidence": 77
-        },
         {
           "coin_id": "kaito",
           "symbol": "KAITO",
           "name": "KAITO",
           "action": "SELL",
-          "entry": 0.819235,
-          "sl": 0.8847738,
-          "tp1": 0.77827325,
-          "tp2": 0.7373115,
-          "confidence": 77
-        },
-        {
-          "coin_id": "cysic",
-          "symbol": "CYS",
-          "name": "Cysic",
-          "action": "BUY",
-          "entry": 0.964108,
-          "sl": 0.88697936,
-          "tp1": 1.0123134,
-          "tp2": 1.0605188,
-          "confidence": 77
+          "entry": 0.819772,
+          "sl": 0.8353091419954237,
+          "tp1": 0.7990558106727682,
+          "tp2": 0.7886977160091524,
+          "confidence": 76
         }
       ]
     }
