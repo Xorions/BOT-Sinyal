@@ -1,9 +1,9 @@
-name: Crypto Daily Briefing
+name: Crypto Day Trading Signals
 
-# 00:00 UTC = 07:00 WIB (satu kali sehari)
+# 2x sehari: 00:00 UTC = 07:00 WIB (Sesi Pagi) & 12:00 UTC = 19:00 WIB (Sesi Malam)
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0,12 * * *"
   workflow_dispatch:
 
 # Butuh akses tulis untuk meng-commit data/history.json (history sinyal)
@@ -27,10 +27,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Jalankan Daily Briefing
+      - name: Jalankan Day Trading Signals
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MTF_SCAN_LIMIT: ${{ vars.MTF_SCAN_LIMIT }}
+          CONFLUENCE_MIN: ${{ vars.CONFLUENCE_MIN }}
         run: python bot.py
 
       - name: Commit & push history sinyal

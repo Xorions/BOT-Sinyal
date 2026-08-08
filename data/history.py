@@ -1,24 +1,32 @@
-"""Penyimpanan & evaluasi performa sinyal kemarin (performance tracking).
+"""Penyimpanan & evaluasi performa sinyal antar sesi (performance tracking).
 
-Sinyal yang dikirim hari ini disimpan di `data/history.json`. Sebelum mengirim
-Daily Briefing, bot membaca entri kemarin, membandingkan Entry/SL/TP dengan
-harga terkini (atau high/low 24j) untuk menentukan hasil evaluasi:
-HIT TP1, HIT TP2, HIT SL, atau FLOATING.
+Bot berjalan 2x sehari (Sesi Pagi 07:00 WIB dan Sesi Malam 19:00 WIB). Sinyal
+yang dikirim disimpan di `data/history.json` dengan kunci (tanggal, sesi).
+Setiap sesi HARUS dievaluasi pada sesi berikutnya: sesi Malam mengevaluasi
+sinyal sesi Pagi (hari yang sama), sesi Pagi mengevaluasi sinyal sesi Malam
+(hari sebelumnya).
 
-Prioritas hasil: HIT TP2 > HIT TP1 > HIT SL > FLOATING. Jika dalam satu hari
-dua level terpenuhi (mis. TP2 dan SL), bot melaporkan level terbaik karena
-urutan pencapaiannya tidak bisa diketahui dari high/low saja.
+Evaluasi membandingkan Entry/SL/TP dengan harga terkini (atau high/low 24j):
+HIT TP1, HIT TP2, HIT SL, atau FLOATING. Prioritas hasil: HIT TP2 > HIT TP1 >
+HIT SL > FLOATING karena urutan pencapaian level tak bisa diketahui dari
+high/low saja.
 """
 
 import json
 import os
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from typing import Any, Dict, List, Optional
 
 from signals.engine import ACTION_BUY, ACTION_SELL, Signal, signal_levels
 
 HISTORY_FILE = "data/history.json"
+
+SESSION_PAGI = "PAGI"
+SESSION_MALAM = "MALAM"
+SESSION_ORDER = {SESSION_PAGI: 0, SESSION_MALAM: 1}
+DEFAULT_SESSION = SESSION_PAGI
+WIB_OFFSET = timedelta(hours=7)
 
 RESULT_TP2 = "HIT TP2"
 RESULT_TP1 = "HIT TP1"
@@ -32,6 +40,24 @@ _RESULT_BADGE = {
     RESULT_TP1: "✅",
     RESULT_SL: "❌",
 }
+
+_SESSION_LABEL = {
+    SESSION_PAGI: "Pagi (07:00 WIB)",
+    SESSION_MALAM: "Malam (19:00 WIB)",
+}
+
+
+def _now_wib() -> datetime:
+    return datetime.now(timezone(WIB_OFFSET))
+
+
+def current_session() -> str:
+    """Sesi saat ini berdasarkan jam lokal WIB (07:00 = PAGI, 19:00 = MALAM)."""
+    return SESSION_PAGI if _now_wib().hour < 12 else SESSION_MALAM
+
+
+def session_label(session: str) -> str:
+    return _SESSION_LABEL.get(session, session or DEFAULT_SESSION)
 
 
 @dataclass
@@ -69,12 +95,13 @@ def _save_entries(entries: List[Dict[str, Any]]) -> None:
     os.replace(tmp, HISTORY_FILE)
 
 
-def append_signals(signals: List[Signal]) -> None:
-    """Simpan sinyal BUY/SELL yang dikirim hari ini ke history.
+def append_signals(signals: List[Signal], session: Optional[str] = None) -> None:
+    """Simpan sinyal BUY/SELL yang dikirim sesi ini ke history.
 
-    Jika bot dijalankan lebih dari sekali di hari yang sama, entri hari itu
-    ditimpa sehingga satu hari selalu menghasilkan satu evaluasi.
+    Satu kunci (tanggal, sesi) selalu menghasilkan satu evaluasi — entri dengan
+    kunci yang sama ditimpa bila bot dijalankan ulang di sesi yang sama.
     """
+    session = session or current_session()
     records: List[Dict[str, Any]] = []
     for sig in signals:
         if sig.action not in (ACTION_BUY, ACTION_SELL):
@@ -95,25 +122,43 @@ def append_signals(signals: List[Signal]) -> None:
         )
     if not records:
         return
-    today = datetime.now().strftime("%Y-%m-%d")
-    entries = [e for e in load_entries() if e.get("date") != today]
+    now = _now_wib()
+    date = now.strftime("%Y-%m-%d")
+    entries = [
+        e
+        for e in load_entries()
+        if not (e.get("date") == date and e.get("session", DEFAULT_SESSION) == session)
+    ]
     entries.append(
         {
-            "date": today,
-            "saved_at": datetime.now().isoformat(timespec="seconds"),
+            "date": date,
+            "session": session,
+            "saved_at": now.isoformat(timespec="seconds"),
             "signals": records,
         }
     )
     _save_entries(entries)
 
 
-def load_last_entry() -> Optional[Dict[str, Any]]:
-    """Entri sinyal terakhir yang BUKAN milik hari ini (untuk dievaluasi)."""
-    today = datetime.now().strftime("%Y-%m-%d")
-    candidates = [e for e in load_entries() if e.get("date") != today]
+def _entry_key(entry: Dict[str, Any]) -> tuple:
+    return (
+        str(entry.get("date", "")),
+        SESSION_ORDER.get(entry.get("session", DEFAULT_SESSION), -1),
+    )
+
+
+def load_last_entry(session: Optional[str] = None) -> Optional[Dict[str, Any]]:
+    """Entri sesi terakhir yang BUKAN sesi berjalan (untuk dievaluasi)."""
+    session = session or current_session()
+    today = _now_wib().strftime("%Y-%m-%d")
+    candidates = [
+        e
+        for e in load_entries()
+        if not (e.get("date") == today and e.get("session", DEFAULT_SESSION) == session)
+    ]
     if not candidates:
         return None
-    candidates.sort(key=lambda e: str(e.get("date", "")), reverse=True)
+    candidates.sort(key=_entry_key, reverse=True)
     return candidates[0]
 
 
@@ -184,9 +229,9 @@ def _result_label(ev: Eval) -> str:
 def format_evaluation(
     entry: Optional[Dict[str, Any]], price_map: Dict[str, Dict[str, float]]
 ) -> str:
-    """Ringkasan evaluasi sinyal kemarin, diletakkan di atas Daily Briefing."""
+    """Ringkasan evaluasi sinyal sesi sebelumnya, diletakkan di atas pesan."""
     if not entry:
-        return "<b>📊 EVALUASI SINYAL KEMARIN</b>\n🗓️ Belum ada data sinyal kemarin."
+        return "<b>📊 EVALUASI SINYAL SESI SEBELUMNYA</b>\n🗓️ Belum ada data sesi sebelumnya."
 
     date_display = str(entry.get("date", ""))
     try:
@@ -194,14 +239,15 @@ def format_evaluation(
     except ValueError:
         pass
 
+    prev_session = str(entry.get("session", DEFAULT_SESSION))
     evals = evaluate_entry(entry, price_map)
     counts = {result: 0 for result in RESULTS_ORDER}
     for ev in evals:
         counts[ev.result] = counts.get(ev.result, 0) + 1
 
     lines = [
-        "<b>📊 EVALUASI SINYAL KEMARIN</b>",
-        f"🗓️ {date_display}",
+        "<b>📊 EVALUASI SINYAL SESI SEBELUMNYA</b>",
+        f"🗓️ {date_display} · Sesi {session_label(prev_session)}",
         (
             f"🎯 HIT TP2: {counts[RESULT_TP2]} · ✅ HIT TP1: {counts[RESULT_TP1]} · "
             f"❌ HIT SL: {counts[RESULT_SL]} · ⏳ FLOATING: {counts[RESULT_FLOATING]}"

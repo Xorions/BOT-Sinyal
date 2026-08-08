@@ -1,10 +1,15 @@
 """Data pasar dari CoinGecko (gratis, tanpa API key).
 
-Satu panggilan endpoint `markets` sudah mencakup daftar top koin, perubahan
-harga (1j/24j/7d), dan sparkline harga 7 hari untuk semua koin — hemat kuota API.
+- `markets`: satu panggilan untuk daftar top koin + perubahan harga (1j/24j/7d)
+  + sparkline 7 hari.
+- `market_chart`: data harga & volume per koin untuk analisis Multi-Timeframe
+  (MTF). `days=2` → granularitas 5 menit (dipakai untuk 15M/1H), `days=30` →
+  granularitas 1 jam (dipakai untuk 1H/4H/1D). Candle di-bucket oleh
+  `build_candles`.
 """
 
 import time
+from dataclasses import dataclass
 from typing import Any, Dict, List, Optional
 
 import requests
@@ -25,6 +30,18 @@ STABLECOINS = {
 
 class MarketDataError(Exception):
     """Gagal mengambil data pasar."""
+
+
+@dataclass
+class Candle:
+    """Satu candle OHLCV hasil bucket dari seri harga/volume CoinGecko."""
+
+    time: int
+    open: float
+    high: float
+    low: float
+    close: float
+    volume: float
 
 
 def _sleep_seconds(attempt: int) -> float:
@@ -114,3 +131,63 @@ def get_top_coins() -> List[Dict[str, Any]]:
     data = _get(url, params, headers=_coingecko_headers())
     filtered = [c for c in data if c["symbol"].lower() not in STABLECOINS]
     return filtered[:TOP_COINS]
+
+
+def get_market_chart(coin_id: str, days: int) -> Dict[str, Any]:
+    """Data harga/volume historis satu koin (endpoint `/coins/{id}/market_chart`).
+
+    Granularitas mengikuti `days`: 1-2 → 5 menit, 30 → 1 jam, 365 → harian.
+    Dipakai untuk analisis Multi-Timeframe (15M/1H/4H/1D).
+    """
+    url = f"{COINGECKO_BASE_URL}/coins/{coin_id}/market_chart"
+    params = {"vs_currency": "usd", "days": days}
+    return _get(url, params, headers=_coingecko_headers())
+
+
+def _bucket_candles(
+    price_series: List[List[Any]], volume_series: List[List[Any]], interval_minutes: int
+) -> List[Candle]:
+    """Bucket seri `[ts_ms, value]` menjadi candle `interval_minutes` menit."""
+    span = interval_minutes * 60 * 1000
+    price_buckets: Dict[int, List[float]] = {}
+    for item in price_series or []:
+        try:
+            ts, price = int(item[0]), float(item[1])
+        except (TypeError, ValueError, IndexError):
+            continue
+        bucket = ts // span
+        price_buckets.setdefault(bucket, []).append(price)
+
+    volume_buckets: Dict[int, float] = {}
+    for item in volume_series or []:
+        try:
+            ts, volume = int(item[0]), float(item[1])
+        except (TypeError, ValueError, IndexError):
+            continue
+        bucket = ts // span
+        volume_buckets[bucket] = volume_buckets.get(bucket, 0.0) + volume
+
+    candles: List[Candle] = []
+    for bucket in sorted(price_buckets):
+        prices = price_buckets[bucket]
+        candles.append(
+            Candle(
+                time=bucket * span,
+                open=prices[0],
+                high=max(prices),
+                low=min(prices),
+                close=prices[-1],
+                volume=volume_buckets.get(bucket, 0.0),
+            )
+        )
+    return candles
+
+
+def build_candles(raw: Dict[str, Any], interval_minutes: int) -> List[Candle]:
+    """Bangun candle dari respons `market_chart` untuk interval menit tertentu.
+
+    Contoh: `interval_minutes=15` → candle 15 menit, `=240` → 4 jam, `=1440` → harian.
+    """
+    return _bucket_candles(
+        raw.get("prices", []), raw.get("total_volumes", []), interval_minutes
+    )

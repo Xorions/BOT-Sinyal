@@ -5,89 +5,128 @@ Panduan untuk AI agent dan developer yang bekerja di project **BOT-Sinyal-Tradin
 ## 1. Overview Arsitektur & Tech Stack
 
 ### Arsitektur
-Bot sinyal trading Telegram yang dijalankan **sekali setiap hari (07:00 WIB)** melalui GitHub Actions (cron). Alur per eksekusi: scan top koin dalam satu panggilan CoinGecko → hitung skor sinyal → pilih TOP-5 sinyal terbaik → evaluasi sinyal kemarin dari `data/history.json` → kirim Daily Briefing ke Telegram → simpan sinyal hari ini ke history.
+Bot sinyal **Day Trading Lanjutan** Telegram yang dijalankan **2x sehari** (07:00 WIB Sesi Pagi & 19:00 WIB Sesi Malam) melalui GitHub Actions (cron). Setiap sesi **diawali evaluasi sinyal dari sesi sebelumnya** (Sesi Malam mengevaluasi Sesi Pagi hari yang sama; Sesi Pagi mengevaluasi Sesi Malam hari sebelumnya).
+
+Alur per eksekusi: quick scan top koin (satu panggilan CoinGecko) → shortlist kandidat momentum → **deep scan Multi-Timeframe (MTF)** per kandidat (chart 30 hari → LTF 1H/15M, HTF 4H/1D) → gabung skor + konfluensi (SMC/OB, S&D/S&R, MACD/RSI, Whale/Volume) → pilih TOP-5 sinyal → evaluasi sesi sebelumnya dari `data/history.json` → kirim pesan ke Telegram → simpan sinyal sesi ini ke history.
 
 ```
-bot.py                        # Entry point: scan + evaluasi kemarin + kirim Daily Briefing
+bot.py                        # Entry point: quick scan → deep MTF scan → evaluasi → kirim
 config.py                     # Memuat konfigurasi & kredensial dari .env
 telegram_sender.py            # Kirim pesan ke Telegram (HTTP Bot API)
-data/market.py                # CoinGecko: top koin + sparkline 7d (1 panggilan API)
-data/history.py               # Simpan & evaluasi performa sinyal kemarin (HIT TP1/TP2/SL, FLOATING)
-data/history.json             # History sinyal yang dikirim (auto di-commit tiap hari)
-signals/indicators.py         # RSI (Wilder), SMA
-signals/engine.py             # Skoring → BUY/SELL/NEUTRAL, pilih TOP-5, format pesan
-.github/workflows/daily.yml   # Scheduler harian (cron 0 0 * * * = 07:00 WIB)
+data/market.py                # CoinGecko: top koin + sparkline 7d + market_chart (OHLC MTF)
+data/history.py               # Simpan & evaluasi performa sinyal per sesi (HIT TP1/TP2/SL, FLOATING)
+data/history.json             # History sinyal yang dikirim (auto di-commit tiap sesi)
+signals/indicators.py         # RSI, SMA, EMA, MACD, ATR, swing, BOS/CHoCH, OB, S/R, S&D, RSI div, Whale
+signals/engine.py             # Skoring quick + analisis MTF + Confluence Checklist → format pesan
+tests/                        # Tes unit (unittest, tanpa network)
+.github/workflows/daily.yml   # Scheduler 2x sehari (cron 0 0,12 * * * = 07:00 & 19:00 WIB)
 .env                          # Kredensial (TIDAK di-commit)
 ```
-
-## 2b. Performance Tracking (Evaluasi Sinyal Kemarin)
-
-- Setelah pesan berhasil dikirim ke Telegram, `bot.py` memanggil `data.history.append_signals(signals)` untuk menyimpan sinyal **BUY/SELL** (NEUTRAL tidak disimpan) ke `data/history.json` — satu entri per hari (`{"entries": [{"date": "YYYY-MM-DD", "signals": [...]}]}`).
-- Sebelum mengirim briefing hari berikutnya, `bot.py` memanggil `data.history.load_last_entry()` (entri terakhir yang bukan hari ini) lalu `format_evaluation()` untuk menampilkan ringkasan di **bagian paling atas** pesan.
-- Evaluasi membandingkan Entry/SL/TP dengan **harga terkini atau high/low 24j** dari scan hari ini (`data.market.coin_price_map`). Koin yang sudah tidak di Top-250 di-backfill dengan `data.market.get_prices_for_ids` (satu panggilan batch).
-- Hasil: **HIT TP2** > **HIT TP1** > **HIT SL** > **FLOATING** (prioritas ini karena urutan pencapaian level tak bisa diketahui dari high/low saja).
-- Agar history terseusur antar hari di GitHub Actions, workflow `daily.yml` meng-commit dan push `data/history.json` setelah bot selesai (membutuhkan `permissions: contents: write`).
 
 ### Tech Stack
 - **Python 3.12** (virtual environment di `venv/`)
 - **requests** untuk semua HTTP (CoinGecko, Telegram)
 - **python-dotenv** untuk memuat `.env`
-- **GitHub Actions** (cron `0 0 * * *`) sebagai scheduler gratis — tidak butuh server 24/7
+- **GitHub Actions** (cron `0 0,12 * * *`) sebagai scheduler gratis
 - **Sumber data publik gratis**: CoinGecko API, Telegram Bot API
 
-## 2. Aturan Skoring Sinyal
+## 2. Day Trading Lanjutan — Analisis Multi-Timeframe (MTF)
 
-Semua indikator dihitung dari **satu panggilan** `GET /coins/markets` (CoinGecko) yang berisi harga terkini, perubahan harga 1j/24j/7d, dan sparkline harga 7 hari. Skor positif = bullish (**BUY/LONG**), negatif = bearish (**SELL/SHORT**). Skor dihitung di `signals/engine.py`; ambang konfigurasi ada di `config.py` (`BUY_THRESHOLD = 3.0`, `SELL_THRESHOLD = -3.0`).
+### 2a. Logika analisis (signals/engine.py)
+
+Dua tahap skoring:
+
+1. **Quick scan** (semua koin, satu panggilan `markets`): skor dari sparkline 7d (RSI, harga vs SMA 24j, momentum 1j/24j/7d) + turnover volume. Dipakai untuk **shortlist** `MTF_SCAN_LIMIT` kandidat (default 6).
+2. **Deep scan MTF** (`analyze_mtf`) per kandidat:
+   - **HTF (4H/1D)** → `_htf_bias`: EMA 20/50 (4H), struktur break (window 3), EMA 10/20 (1D). Hasil: BULLISH / BEARISH / NEUTRAL. Menentukan **Trend Bias**.
+   - **LTF (1H/15M)** → menentukan **Entry, SL, TP**:
+     - `structure_break` → BOS/CHoCH (SMC)
+     - `order_block` → bullish/bearish Order Block (SMC)
+     - `nearest_levels` → Support/Resistance terdekat (window 3)
+     - `demand_supply_zones` → zona Demand/Supply dari candle ber-body kuat
+     - `macd` (12/26/9) → `_macd_cross` deteksi bullish/bearish crossover
+     - `rsi_divergence` + RSI oversold/overbought (RSI 14)
+     - `volume_spike` → deteksi **Whale Spike** (volume 1H vs rata-rata 20 bar, ambang `WHALE_VOLUME_MULT`)
+- **SL/TP berbasis ATR** (`_atr_levels`): SL = entry ∓ `ATR_SL_MULT`×ATR(1H), TP1 = entry ± `ATR_TP1_MULT`×ATR, TP2 = entry ± `ATR_TP2_MULT`×ATR. Fallback persentase bila ATR kosong.
+
+### 2b. Confluence Checklist (kualitas sinyal)
+
+Setiap sinyal final memuat checklist 4 kategori (selaras dengan arah BUY/SELL):
+
+| Kategori | Total cek | Isi |
+|---|---|---|
+| SMC/OB | 2 | BOS/CHoCH selaras + Order Block bertahan |
+| S&D/S&R | 2 | Zona Demand/Supply + dekat Support/Resistance |
+| MACD/RSI | 2 | Crossover MACD + RSI divergensi/oversold-overbought |
+| Whale/Vol | 1 | Whale Spike volume searah |
+
+- Skor akhir = skor quick + (poin bull − poin bear) dari konfluensi MTF.
+- **BUY** jika skor ≥ `BUY_THRESHOLD`, **SELL** jika ≤ `SELL_THRESHOLD`.
+- Sinyal BUY/SELL **dipromosikan hanya jika ≥ `CONFLUENCE_MIN` kategori selaras**; selain itu diturunkan ke NEUTRAL (watchlist).
+- Confidence: dari rasio cek selaras per kategori (50–95).
+
+### 2c. Data MTF (data/market.py)
+
+- `get_market_chart(coin_id, days)` → endpoint `/coins/{id}/market_chart`.
+  - `days=30` → granularitas 1 jam → dibangun candle **1H/4H/1D**.
+  - `days=2` → granularitas 5 menit → dibangun candle **15M** (opsional; bila gagal, LTF jatuh ke 1H saja).
+- `build_candles(raw, interval_minutes)` → bucket `[ts_ms, value]` menjadi list `Candle` OHLCV.
+- Free API CoinGecko ~10–30 req/menit; `MTF_SCAN_LIMIT` mengontrol jumlah kandidat deep scan untuk menjaga kuota.
+
+### 2d. Performance Tracking per Sesi (data/history.py)
+
+- Setelah pesan terkirim, `bot.py` memanggil `data.history.append_signals(signals, session)` — satu entri per kunci **(tanggal, sesi)** di `data/history.json` (`{"entries": [{"date": ..., "session": "PAGI"|"MALAM", "signals": [...]}]}`).
+- Sebelum mengirim, `bot.py` memanggil `data.history.load_last_entry()` (entri terakhir yang bukan sesi berjalan) lalu `format_evaluation()` → ditampilkan di **bagian paling atas** pesan.
+- Evaluasi membandingkan Entry/SL/TP dengan harga terkini / high-low 24j (via `data.market.coin_price_map`; koin yang hilang di-backfill `get_prices_for_ids`).
+- Hasil: **HIT TP2** > **HIT TP1** > **HIT SL** > **FLOATING**.
+- Agar history terseusur antar sesi di GitHub Actions, workflow meng-commit & push `data/history.json` (butuh `permissions: contents: write`).
+- Entri lama tanpa field `session` diperlakukan sebagai `PAGI` (migrasi otomatis via `.get`).
+
+## 3. Aturan Skoring Quick Scan (shortlist)
+
+Skor quick (dari sparkline + turnover, satu panggilan `markets`):
 
 | Komponen | Kondisi | Poin |
 |---|---|---|
 | RSI | < 30 (oversold) | **+2.0** |
-| RSI | 30–40 (mendekati oversold) | **+1.0** |
+| RSI | 30–40 | **+1.0** |
 | RSI | > 70 (overbought) | **-2.0** |
-| RSI | 60–70 (mendekati overbought) | **-1.0** |
-| Tren — harga vs SMA 24 jam | harga > SMA | **+1.5** |
-| Tren — harga vs SMA 24 jam | harga < SMA | **-1.5** |
-| Momentum 1 jam | >= +1.5% / <= -1.5% | **+1.0 / -1.0** |
-| Momentum 24 jam | >= +3% / <= -3% | **+1.5 / -1.5** |
-| Momentum 7 hari | >= +8% / <= -8% | **+1.0 / -1.0** |
-| Volume aktif (turnover top 10%) | harga 24j naik / turun | **+1.5 / -1.5** |
-| Volume aktif (turnover top 25%) | harga 24j naik / turun | **+1.0 / -1.0** |
+| RSI | 60–70 | **-1.0** |
+| Tren — harga vs SMA 24 jam | di atas / di bawah | **+1.5 / -1.5** |
+| Momentum 1 jam | ≥ +1.5% / ≤ -1.5% | **+1.0 / -1.0** |
+| Momentum 24 jam | ≥ +3% / ≤ -3% | **+1.5 / -1.5** |
+| Momentum 7 hari | ≥ +8% / ≤ -8% | **+1.0 / -1.0** |
+| Volume aktif (turnover top 10%) | harga naik / turun | **+1.5 / -1.5** |
+| Volume aktif (turnover top 25%) | harga naik / turun | **+1.0 / -1.0** |
 
-- **BUY** jika skor >= 3.0, **SELL** jika skor <= -3.0, selain itu **NEUTRAL**.
-- Confidence: `max(45, min(95, 55 + round(|skor| * 5)))`.
-- **Pemilihan sinyal**: semua koin diskor, lalu diurutkan berdasarkan kekuatan (`|skor|`) dan diambil **TOP `TOP_SIGNALS`** (default 5).
-- Detail indikator di `signals/indicators.py`: RSI smoothing Wilder (14 periode), SMA (24 bar). "Volume aktif" = rasio `total_volume / market_cap` dibandingkan terhadap seluruh koin yang dipindai (percentile).
+### Alur Day Trading Signals
+1. `GET /coins/markets` (`per_page=250`, `sparkline=true`, `price_change_percentage=1h,24h,7d`) → top koin + filter stablecoin (`STABLECOINS` di `data/market.py`).
+2. Quick score semua koin (`build_signal`) → shortlist `MTF_SCAN_LIMIT` terkuat.
+3. Per kandidat: `analyze_mtf` (chart 30d + 2d) → konfluensi MTF → `build_final_signal`.
+4. Ranking `|skor|` → TOP-`TOP_SIGNALS` (default 5). Jika deep scan gagal total (kuota API), fallback ke hasil quick scan.
+5. Kirim pesan via `format_message` (termasuk **Confluence Checklist**), simpan history.
 
-### Alur Daily Briefing
-1. Satu panggilan `GET /coins/markets` (`per_page=250`, `sparkline=true`, `price_change_percentage=1h,24h,7d`) → daftar top koin + data indikator.
-2. Filter stablecoin (USDT, USDC, DAI, FDUSD, dll) — lihat `STABLECOINS` di `data/market.py`.
-3. Hitung skor tiap koin (`build_signal`) dan pilih TOP-5 paling solid (`rank_signals`).
-4. Kirim Daily Briefing ke Telegram lewat `format_message`.
+## 4. Panduan Pengembangan
 
-## 3. Panduan Pengembangan
-
-### Menambah indikator baru
-1. Tambahkan fungsi di `signals/indicators.py` — murni, tanpa I/O, menerima list angka → mengembalikan angka atau `None`.
-2. Di `signals/engine.py`, buat fungsi `_score_<nama>` (menerima data + list `reasons`), panggil di `build_signal`, lalu jumlahkan ke `score`.
-3. Ikuti konvensi: poin positif untuk bullish, negatif untuk bearish, dan tiap threshold seragam (mis. ±1.0 hingga ±2.0).
-4. Jika indikator butuh data baru (mis. funding rate), tambahkan fetcher di `data/` lalu teruskan datanya ke `build_signal`.
+### Menambah indikator / konfirmasi baru
+1. Tambahkan fungsi murni (list angka → angka/None) di `signals/indicators.py`.
+2. Di `signals/engine.py`, panggil di `analyze_mtf`, tambahkan poin ke `bull_points`/`bear_points` + reason, dan daftarkan cek di `build_checklist` bila termasuk kategori konfluensi.
+3. Ambang baru ditaruh di `config.py` (default) + `.env.example`.
 
 ### Mengubah cara pengiriman pesan
-- Format pesan di `signals/engine.py` → `format_message()`. Saat ini memakai **HTML parse mode** (default di `telegram_sender.py`).
-- Ganti format ke Markdown, kirim foto/chart, atau tambahkan inline buttons dengan mengubah payload di `telegram_sender.py::send_telegram` (Bot API `sendMessage`, `sendPhoto`, dll).
-- Tambahkan handler perintah (mis. `/start`, `/help`) bila ingin bot interaktif — gunakan long polling.
+- Format pesan di `signals/engine.py` → `format_message()`. Saat ini memakai **HTML parse mode**.
+- `signal_levels()` mengembalikan (SL, TP1, TP2) dari atribut `Signal` — dipakai evaluasi history.
 
 ### Menjalankan & menguji
 ```powershell
 # Dari root project
-venv\Scripts\python.exe bot.py     # scan sekali + kirim ke Telegram
+venv\Scripts\python.exe bot.py                 # scan + evaluasi + kirim ke Telegram
+venv\Scripts\python.exe -m unittest discover -s tests -v   # tes unit (tanpa network)
 ```
-Untuk uji indikator tanpa network, jalankan script dengan `PYTHONPATH` menunjuk ke root project agar `config.py` & paket `data/`/`signals/` terbaca.
 
-## 4. Keamanan Kredensial
-- `TELEGRAM_BOT_TOKEN` dan `TELEGRAM_CHAT_ID` disimpan di `.env` — file ini **sudah masuk `.gitignore` dan tidak boleh di-commit**.
-- Jangan pernah hardcode token, chat ID, atau API key di dalam kode.
-- `.env.example` adalah template publik dan **harus tetap berisi placeholder/kosong**.
-- Di GitHub Actions, kredensial disuntikkan lewat repository secrets (`${{ secrets.TELEGRAM_BOT_TOKEN }}`), bukan lewat file.
+## 5. Keamanan Kredensial
+- `TELEGRAM_BOT_TOKEN` dan `TELEGRAM_CHAT_ID` disimpan di `.env` — sudah masuk `.gitignore`, tidak boleh di-commit.
+- Jangan pernah hardcode token/chat ID/API key di kode.
+- `.env.example` adalah template publik dan harus tetap berisi placeholder.
+- Di GitHub Actions, kredensial disuntikkan lewat secrets; `MTF_SCAN_LIMIT`/`CONFLUENCE_MIN` opsional lewat `vars`.
 - Saat debugging, jangan pernah mencetak isi token/secret ke log atau output.
-- (Opsional) `COINGECKO_API_KEY` juga disimpan di `.env`/secret, bukan di kode.
