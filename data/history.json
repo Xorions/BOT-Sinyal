@@ -147,6 +147,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-09",
+      "session": "MALAM",
+      "saved_at": "2026-08-09T20:00:06+07:00",
+      "signals": [
+        {
+          "coin_id": "curve-dao-token",
+          "symbol": "CRV",
+          "name": "Curve DAO",
+          "action": "BUY",
+          "entry": 0.238456,
+          "sl": 0.23619058004799856,
+          "tp1": 0.24147655993600192,
+          "tp2": 0.24298683990400288,
+          "confidence": 69
+        },
+        {
+          "coin_id": "bittensor",
+          "symbol": "TAO",
+          "name": "Bittensor",
+          "action": "BUY",
+          "entry": 206.1,
+          "sl": 204.306193158094,
+          "tp1": 208.49174245587466,
+          "tp2": 209.687613683812,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pump-fun",
+          "symbol": "PUMP",
+          "name": "Pump.fun",
+          "action": "BUY",
+          "entry": 0.00259446,
+          "sl": 0.002559836393011485,
+          "tp1": 0.0026406248093180196,
+          "tp2": 0.002663707213977029,
+          "confidence": 76
+        }
+      ]
     }
   ]
 }
