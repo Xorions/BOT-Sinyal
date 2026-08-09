@@ -118,6 +118,35 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-08-09",
+      "session": "PAGI",
+      "saved_at": "2026-08-09T08:59:07+07:00",
+      "signals": [
+        {
+          "coin_id": "cash-cat",
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "action": "BUY",
+          "entry": 0.123277,
+          "sl": 0.11807228571359138,
+          "tp1": 0.1302166190485448,
+          "tp2": 0.13368642857281723,
+          "confidence": 69
+        },
+        {
+          "coin_id": "cysic",
+          "symbol": "CYS",
+          "name": "Cysic",
+          "action": "BUY",
+          "entry": 0.845794,
+          "sl": 0.789394530872857,
+          "tp1": 0.9209932921695241,
+          "tp2": 0.9585929382542862,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
