@@ -187,6 +187,46 @@
           "confidence": 76
         }
       ]
+    },
+    {
+      "date": "2026-08-10",
+      "session": "PAGI",
+      "saved_at": "2026-08-10T09:01:50+07:00",
+      "signals": [
+        {
+          "coin_id": "cash-cat",
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "action": "BUY",
+          "entry": 0.139247,
+          "sl": 0.13300268894611517,
+          "tp1": 0.14757274807184648,
+          "tp2": 0.1517356221077697,
+          "confidence": 63
+        },
+        {
+          "coin_id": "talus",
+          "symbol": "US",
+          "name": "Talus",
+          "action": "SELL",
+          "entry": 0.04435965,
+          "sl": 0.046002169253712234,
+          "tp1": 0.042169624328383684,
+          "tp2": 0.04107461149257553,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "BUY",
+          "entry": 0.00659635,
+          "sl": 0.006494550310361538,
+          "tp1": 0.00673208291951795,
+          "tp2": 0.0067999493792769245,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
