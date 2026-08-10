@@ -227,6 +227,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-10",
+      "session": "MALAM",
+      "saved_at": "2026-08-10T20:18:10+07:00",
+      "signals": [
+        {
+          "coin_id": "cash-cat",
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "action": "BUY",
+          "entry": 0.153209,
+          "sl": 0.14666878604604922,
+          "tp1": 0.16192928527193443,
+          "tp2": 0.16628942790790163,
+          "confidence": 63
+        },
+        {
+          "coin_id": "cysic",
+          "symbol": "CYS",
+          "name": "Cysic",
+          "action": "BUY",
+          "entry": 1.31,
+          "sl": 1.2351605810504842,
+          "tp1": 1.4097858919326878,
+          "tp2": 1.4596788378990315,
+          "confidence": 63
+        },
+        {
+          "coin_id": "hash-2",
+          "symbol": "HASH",
+          "name": "Provenance Blockchain",
+          "action": "SELL",
+          "entry": 0.00635999,
+          "sl": 0.006708593315504474,
+          "tp1": 0.005895185579327368,
+          "tp2": 0.005662783368991052,
+          "confidence": 63
+        },
+        {
+          "coin_id": "audiera",
+          "symbol": "BEAT",
+          "name": "Audiera",
+          "action": "SELL",
+          "entry": 2.44,
+          "sl": 2.583452021054708,
+          "tp1": 2.2487306385937225,
+          "tp2": 2.1530959578905833,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
