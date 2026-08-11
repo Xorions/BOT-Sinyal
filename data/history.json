@@ -329,6 +329,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-11",
+      "session": "MALAM",
+      "saved_at": "2026-08-11T20:15:06+07:00",
+      "signals": [
+        {
+          "coin_id": "cysic",
+          "symbol": "CYS",
+          "name": "Cysic",
+          "action": "BUY",
+          "entry": 1.45,
+          "sl": 1.4003397333989867,
+          "tp1": 1.516213688801351,
+          "tp2": 1.5493205332020266,
+          "confidence": 63
+        },
+        {
+          "coin_id": "fetch-ai",
+          "symbol": "FET",
+          "name": "Artificial Superintelligence Alliance",
+          "action": "SELL",
+          "entry": 0.134442,
+          "sl": 0.1350171115600473,
+          "tp1": 0.1336751845866036,
+          "tp2": 0.1332917768799054,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
