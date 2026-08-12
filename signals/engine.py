@@ -638,17 +638,23 @@ def signal_levels(sig: Signal) -> tuple:
     return sig.sl, sig.tp1, sig.tp2
 
 
+def _pct_from_entry(level: float, entry: float) -> str:
+    if entry <= 0:
+        return "0.00%"
+    return f"{(abs(level - entry) / entry) * 100:.2f}%"
+
+
 def _signal_lines(sig: Signal, number: int) -> List[str]:
-    sl_tag = f"ATR {ATR_SL_MULT:.1f}x" if sig.atr_value > 0 else "8%"
+    sl_pct = _pct_from_entry(sig.sl, sig.price)
+    tp1_pct = _pct_from_entry(sig.tp1, sig.price)
+    tp2_pct = _pct_from_entry(sig.tp2, sig.price)
     lines = [
         f"{number}. <b>#{sig.symbol}</b> — {sig.action} ({sig.confidence}%)",
         f"🧭 HTF Bias: <b>{sig.ht_bias or '-'}</b> · LTF: {sig.ltf}",
         f"🔑 Entry: <b>{_format_price(sig.price)}</b>",
-        f"🪓 SL: <b>{_format_price(sig.sl)}</b> ({sl_tag})",
-        f"💰 TP1: <b>{_format_price(sig.tp1)}</b> (ATR {ATR_TP1_MULT:.1f}x)" if sig.atr_value > 0
-        else f"💰 TP1: <b>{_format_price(sig.tp1)}</b> (5%)",
-        f"💰 TP2: <b>{_format_price(sig.tp2)}</b> (ATR {ATR_TP2_MULT:.1f}x)" if sig.atr_value > 0
-        else f"💰 TP2: <b>{_format_price(sig.tp2)}</b> (10%)",
+        f"🪓 SL: <b>{_format_price(sig.sl)}</b> (-{sl_pct})",
+        f"💰 TP1: <b>{_format_price(sig.tp1)}</b> (+{tp1_pct})",
+        f"💰 TP2: <b>{_format_price(sig.tp2)}</b> (+{tp2_pct})",
         "",
         "🧩 <b>CONFLUENCE CHECKLIST</b>",
     ]
