@@ -420,6 +420,57 @@
           "confidence": 76
         }
       ]
+    },
+    {
+      "date": "2026-08-12",
+      "session": "MALAM",
+      "saved_at": "2026-08-12T20:16:45+07:00",
+      "signals": [
+        {
+          "coin_id": "cysic",
+          "symbol": "CYS",
+          "name": "Cysic",
+          "action": "BUY",
+          "entry": 1.54,
+          "sl": 1.4550090955736732,
+          "tp1": 1.653321205901769,
+          "tp2": 1.7099818088526537,
+          "confidence": 69
+        },
+        {
+          "coin_id": "uniswap",
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "action": "SELL",
+          "entry": 3.56,
+          "sl": 3.608361040988655,
+          "tp1": 3.4955186120151267,
+          "tp2": 3.46327791802269,
+          "confidence": 63
+        },
+        {
+          "coin_id": "bonk",
+          "symbol": "BONK",
+          "name": "Bonk",
+          "action": "SELL",
+          "entry": 2.25e-06,
+          "sl": 2.270653329216554e-06,
+          "tp1": 2.222462227711262e-06,
+          "tp2": 2.208693341566893e-06,
+          "confidence": 63
+        },
+        {
+          "coin_id": "virtual-protocol",
+          "symbol": "VIRTUAL",
+          "name": "Virtuals Protocol",
+          "action": "BUY",
+          "entry": 0.569448,
+          "sl": 0.562564114875175,
+          "tp1": 0.5786265134997666,
+          "tp2": 0.5832157702496499,
+          "confidence": 76
+        }
+      ]
     }
   ]
 }
