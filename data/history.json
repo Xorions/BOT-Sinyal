@@ -358,6 +358,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-12",
+      "session": "PAGI",
+      "saved_at": "2026-08-12T09:12:08+07:00",
+      "signals": [
+        {
+          "coin_id": "velvet",
+          "symbol": "VELVET",
+          "name": "Velvet",
+          "action": "BUY",
+          "entry": 0.621335,
+          "sl": 0.5787906780945757,
+          "tp1": 0.6780607625405656,
+          "tp2": 0.7064236438108484,
+          "confidence": 69
+        },
+        {
+          "coin_id": "holoworld",
+          "symbol": "HOLO",
+          "name": "Holoworld",
+          "action": "BUY",
+          "entry": 0.094784,
+          "sl": 0.09113440657379077,
+          "tp1": 0.09965012456827897,
+          "tp2": 0.10208318685241845,
+          "confidence": 69
+        },
+        {
+          "coin_id": "kaito",
+          "symbol": "KAITO",
+          "name": "KAITO",
+          "action": "SELL",
+          "entry": 0.628828,
+          "sl": 0.6369015291413191,
+          "tp1": 0.6180632944782413,
+          "tp2": 0.6126809417173619,
+          "confidence": 63
+        },
+        {
+          "coin_id": "curve-dao-token",
+          "symbol": "CRV",
+          "name": "Curve DAO",
+          "action": "BUY",
+          "entry": 0.276301,
+          "sl": 0.27285353220478265,
+          "tp1": 0.2808976237269565,
+          "tp2": 0.2831959355904347,
+          "confidence": 69
+        },
+        {
+          "coin_id": "worldcoin-wld",
+          "symbol": "WLD",
+          "name": "Worldcoin",
+          "action": "BUY",
+          "entry": 0.343217,
+          "sl": 0.3394771410882353,
+          "tp1": 0.3482034785490196,
+          "tp2": 0.35069671782352946,
+          "confidence": 76
+        }
+      ]
     }
   ]
 }
