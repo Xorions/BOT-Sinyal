@@ -511,6 +511,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-13",
+      "session": "MALAM",
+      "saved_at": "2026-08-13T20:21:06+07:00",
+      "signals": [
+        {
+          "coin_id": "audiera",
+          "symbol": "BEAT",
+          "name": "Audiera",
+          "action": "SELL",
+          "entry": 0.893188,
+          "sl": 0.9522254786853213,
+          "tp1": 0.8144713617529049,
+          "tp2": 0.7751130426293573,
+          "confidence": 63
+        },
+        {
+          "coin_id": "doublezero",
+          "symbol": "2Z",
+          "name": "DoubleZero",
+          "action": "SELL",
+          "entry": 0.04764538,
+          "sl": 0.04840214021220949,
+          "tp1": 0.046636366383720686,
+          "tp2": 0.046131859575581025,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
