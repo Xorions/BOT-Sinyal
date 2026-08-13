@@ -471,6 +471,46 @@
           "confidence": 76
         }
       ]
+    },
+    {
+      "date": "2026-08-13",
+      "session": "PAGI",
+      "saved_at": "2026-08-13T09:11:59+07:00",
+      "signals": [
+        {
+          "coin_id": "apriori",
+          "symbol": "APR",
+          "name": "aPriori",
+          "action": "BUY",
+          "entry": 0.573047,
+          "sl": 0.5175884088581575,
+          "tp1": 0.6469917881891233,
+          "tp2": 0.6839641822836849,
+          "confidence": 69
+        },
+        {
+          "coin_id": "audiera",
+          "symbol": "BEAT",
+          "name": "Audiera",
+          "action": "SELL",
+          "entry": 0.92506,
+          "sl": 1.0214453221076703,
+          "tp1": 0.7965462371897729,
+          "tp2": 0.7322893557846595,
+          "confidence": 63
+        },
+        {
+          "coin_id": "uniswap",
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "action": "SELL",
+          "entry": 3.54,
+          "sl": 3.577126003463123,
+          "tp1": 3.4904986620491694,
+          "tp2": 3.465747993073754,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
