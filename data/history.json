@@ -602,6 +602,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-14",
+      "session": "MALAM",
+      "saved_at": "2026-08-14T20:14:18+07:00",
+      "signals": [
+        {
+          "coin_id": "velvet",
+          "symbol": "VELVET",
+          "name": "Velvet",
+          "action": "BUY",
+          "entry": 1.084,
+          "sl": 1.032374875223333,
+          "tp1": 1.152833499702223,
+          "tp2": 1.1872502495533344,
+          "confidence": 69
+        },
+        {
+          "coin_id": "akedo",
+          "symbol": "AKE",
+          "name": "Akedo",
+          "action": "BUY",
+          "entry": 0.01158749,
+          "sl": 0.01087217474399334,
+          "tp1": 0.012541243674675549,
+          "tp2": 0.013018120512013322,
+          "confidence": 69
+        },
+        {
+          "coin_id": "beldex",
+          "symbol": "BDX",
+          "name": "Beldex",
+          "action": "SELL",
+          "entry": 0.085487,
+          "sl": 0.08659324825284258,
+          "tp1": 0.08401200232954323,
+          "tp2": 0.08327450349431484,
+          "confidence": 76
+        }
+      ]
     }
   ]
 }
