@@ -540,6 +540,68 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-08-14",
+      "session": "PAGI",
+      "saved_at": "2026-08-14T09:09:46+07:00",
+      "signals": [
+        {
+          "coin_id": "pump-fun",
+          "symbol": "PUMP",
+          "name": "Pump.fun",
+          "action": "BUY",
+          "entry": 0.00295791,
+          "sl": 0.002910839050060286,
+          "tp1": 0.003020671266586285,
+          "tp2": 0.003052051899879428,
+          "confidence": 63
+        },
+        {
+          "coin_id": "akedo",
+          "symbol": "AKE",
+          "name": "Akedo",
+          "action": "BUY",
+          "entry": 0.00720587,
+          "sl": 0.006680771247851323,
+          "tp1": 0.007906001669531568,
+          "tp2": 0.008256067504297353,
+          "confidence": 63
+        },
+        {
+          "coin_id": "audiera",
+          "symbol": "BEAT",
+          "name": "Audiera",
+          "action": "SELL",
+          "entry": 0.858051,
+          "sl": 0.9003831054936203,
+          "tp1": 0.8016081926751729,
+          "tp2": 0.7733867890127593,
+          "confidence": 63
+        },
+        {
+          "coin_id": "bitcoin-cash-sv",
+          "symbol": "BSV",
+          "name": "Bitcoin SV",
+          "action": "BUY",
+          "entry": 15.18,
+          "sl": 15.055968358900099,
+          "tp1": 15.345375521466535,
+          "tp2": 15.428063282199801,
+          "confidence": 63
+        },
+        {
+          "coin_id": "grass",
+          "symbol": "GRASS",
+          "name": "Grass",
+          "action": "BUY",
+          "entry": 0.327644,
+          "sl": 0.32400566735942166,
+          "tp1": 0.33249511018743777,
+          "tp2": 0.33492066528115666,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
