@@ -693,6 +693,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-15",
+      "session": "MALAM",
+      "saved_at": "2026-08-15T19:45:10+07:00",
+      "signals": [
+        {
+          "coin_id": "tagger",
+          "symbol": "TAG",
+          "name": "TAGGER",
+          "action": "SELL",
+          "entry": 0.00103555,
+          "sl": 0.0010879149724328464,
+          "tp1": 0.0009657300367562049,
+          "tp2": 0.0009308200551343073,
+          "confidence": 76
+        },
+        {
+          "coin_id": "audiera",
+          "symbol": "BEAT",
+          "name": "Audiera",
+          "action": "SELL",
+          "entry": 0.469143,
+          "sl": 0.5090300151545171,
+          "tp1": 0.4159603131273105,
+          "tp2": 0.3893689696909658,
+          "confidence": 63
+        },
+        {
+          "coin_id": "ether-fi",
+          "symbol": "ETHFI",
+          "name": "Ether.fi",
+          "action": "BUY",
+          "entry": 0.477794,
+          "sl": 0.4698866272967029,
+          "tp1": 0.48833716360439616,
+          "tp2": 0.4936087454065942,
+          "confidence": 63
+        },
+        {
+          "coin_id": "jito-governance-token",
+          "symbol": "JTO",
+          "name": "Jito",
+          "action": "BUY",
+          "entry": 0.580371,
+          "sl": 0.5709311314646769,
+          "tp1": 0.5929574913804309,
+          "tp2": 0.5992507370706462,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
