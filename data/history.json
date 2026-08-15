@@ -642,6 +642,57 @@
           "confidence": 76
         }
       ]
+    },
+    {
+      "date": "2026-08-15",
+      "session": "PAGI",
+      "saved_at": "2026-08-15T08:24:27+07:00",
+      "signals": [
+        {
+          "coin_id": "cap-4",
+          "symbol": "CAP",
+          "name": "Cap",
+          "action": "BUY",
+          "entry": 0.068623,
+          "sl": 0.06562723380996068,
+          "tp1": 0.07261735492005245,
+          "tp2": 0.07461453238007866,
+          "confidence": 69
+        },
+        {
+          "coin_id": "cysic",
+          "symbol": "CYS",
+          "name": "Cysic",
+          "action": "BUY",
+          "entry": 1.37,
+          "sl": 1.2917567298635768,
+          "tp1": 1.4743243601818978,
+          "tp2": 1.5264865402728467,
+          "confidence": 63
+        },
+        {
+          "coin_id": "ether-fi",
+          "symbol": "ETHFI",
+          "name": "Ether.fi",
+          "action": "BUY",
+          "entry": 0.454488,
+          "sl": 0.4475581230559365,
+          "tp1": 0.463727835925418,
+          "tp2": 0.468347753888127,
+          "confidence": 63
+        },
+        {
+          "coin_id": "akedo",
+          "symbol": "AKE",
+          "name": "Akedo",
+          "action": "BUY",
+          "entry": 0.00990041,
+          "sl": 0.008917166640411742,
+          "tp1": 0.011211401146117676,
+          "tp2": 0.011866896719176515,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
