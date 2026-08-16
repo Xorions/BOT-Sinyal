@@ -766,29 +766,51 @@
     {
       "date": "2026-08-16",
       "session": "MALAM",
-      "saved_at": "2026-08-16T19:46:12+07:00",
+      "saved_at": "2026-08-16T22:48:26+07:00",
       "signals": [
         {
-          "coin_id": "cysic",
-          "symbol": "CYS",
-          "name": "Cysic",
-          "action": "SELL",
-          "entry": 0.701374,
-          "sl": 0.7838426134742253,
-          "tp1": 0.591415848701033,
-          "tp2": 0.5364367730515496,
-          "confidence": 69
+          "coin_id": "ether-fi",
+          "symbol": "ETHFI",
+          "name": "Ether.fi",
+          "action": "BUY",
+          "entry": 0.506346,
+          "sl": 0.5000930941122226,
+          "tp1": 0.5146832078503698,
+          "tp2": 0.5188518117755548,
+          "confidence": 63
         },
         {
-          "coin_id": "derive",
-          "symbol": "DRV",
-          "name": "Derive",
+          "coin_id": "cap-4",
+          "symbol": "CAP",
+          "name": "Cap",
           "action": "BUY",
-          "entry": 0.112687,
-          "sl": 0.10923146414219038,
-          "tp1": 0.11729438114374613,
-          "tp2": 0.1195980717156192,
-          "confidence": 69
+          "entry": 0.068566,
+          "sl": 0.06703221127834777,
+          "tp1": 0.07061105162886964,
+          "tp2": 0.07163357744330447,
+          "confidence": 63
+        },
+        {
+          "coin_id": "quack-ai",
+          "symbol": "Q",
+          "name": "Quack AI",
+          "action": "BUY",
+          "entry": 0.0275781,
+          "sl": 0.026932685621116465,
+          "tp1": 0.028438652505178047,
+          "tp2": 0.02886892875776707,
+          "confidence": 63
+        },
+        {
+          "coin_id": "syrup",
+          "symbol": "SYRUP",
+          "name": "Maple Finance",
+          "action": "BUY",
+          "entry": 0.162413,
+          "sl": 0.1601513543603403,
+          "tp1": 0.1654285275195463,
+          "tp2": 0.16693629127931942,
+          "confidence": 63
         }
       ]
     }
