@@ -762,6 +762,35 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-08-16",
+      "session": "MALAM",
+      "saved_at": "2026-08-16T19:46:12+07:00",
+      "signals": [
+        {
+          "coin_id": "cysic",
+          "symbol": "CYS",
+          "name": "Cysic",
+          "action": "SELL",
+          "entry": 0.701374,
+          "sl": 0.7838426134742253,
+          "tp1": 0.591415848701033,
+          "tp2": 0.5364367730515496,
+          "confidence": 69
+        },
+        {
+          "coin_id": "derive",
+          "symbol": "DRV",
+          "name": "Derive",
+          "action": "BUY",
+          "entry": 0.112687,
+          "sl": 0.10923146414219038,
+          "tp1": 0.11729438114374613,
+          "tp2": 0.1195980717156192,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
