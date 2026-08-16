@@ -744,6 +744,24 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-16",
+      "session": "PAGI",
+      "saved_at": "2026-08-16T08:28:49+07:00",
+      "signals": [
+        {
+          "coin_id": "cysic",
+          "symbol": "CYS",
+          "name": "Cysic",
+          "action": "SELL",
+          "entry": 0.757114,
+          "sl": 0.8682511042482636,
+          "tp1": 0.6089311943356484,
+          "tp2": 0.5348397915034726,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
