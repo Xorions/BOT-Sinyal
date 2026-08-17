@@ -813,6 +813,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-17",
+      "session": "PAGI",
+      "saved_at": "2026-08-17T08:25:40+07:00",
+      "signals": [
+        {
+          "coin_id": "cap-4",
+          "symbol": "CAP",
+          "name": "Cap",
+          "action": "BUY",
+          "entry": 0.069439,
+          "sl": 0.06796850250409792,
+          "tp1": 0.07139966332786946,
+          "tp2": 0.07237999499180418,
+          "confidence": 69
+        },
+        {
+          "coin_id": "cash-cat",
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "action": "SELL",
+          "entry": 0.09917,
+          "sl": 0.10301677604713577,
+          "tp1": 0.09404096527048562,
+          "tp2": 0.09147644790572844,
+          "confidence": 69
+        },
+        {
+          "coin_id": "curve-dao-token",
+          "symbol": "CRV",
+          "name": "Curve DAO",
+          "action": "BUY",
+          "entry": 0.248794,
+          "sl": 0.2465904471684903,
+          "tp1": 0.2517320704420129,
+          "tp2": 0.2532011056630194,
+          "confidence": 69
+        },
+        {
+          "coin_id": "velvet",
+          "symbol": "VELVET",
+          "name": "Velvet",
+          "action": "BUY",
+          "entry": 1.036,
+          "sl": 1.0044355790951274,
+          "tp1": 1.0780858945398302,
+          "tp2": 1.0991288418097453,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
