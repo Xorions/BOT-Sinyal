@@ -864,6 +864,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-17",
+      "session": "MALAM",
+      "saved_at": "2026-08-17T19:50:44+07:00",
+      "signals": [
+        {
+          "coin_id": "the-black-bull",
+          "symbol": "ANSEM",
+          "name": "The Black Bull",
+          "action": "BUY",
+          "entry": 0.246328,
+          "sl": 0.23658729232667997,
+          "tp1": 0.2593156102310934,
+          "tp2": 0.26580941534664004,
+          "confidence": 63
+        },
+        {
+          "coin_id": "world-liberty-financial",
+          "symbol": "WLFI",
+          "name": "World Liberty Financial",
+          "action": "BUY",
+          "entry": 0.060953,
+          "sl": 0.06043994294645024,
+          "tp1": 0.06163707607139968,
+          "tp2": 0.06197911410709951,
+          "confidence": 63
+        },
+        {
+          "coin_id": "monad",
+          "symbol": "MON",
+          "name": "Monad",
+          "action": "SELL",
+          "entry": 0.0201704,
+          "sl": 0.020334116717603254,
+          "tp1": 0.019952111043195664,
+          "tp2": 0.019842966564793497,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pump-fun",
+          "symbol": "PUMP",
+          "name": "Pump.fun",
+          "action": "BUY",
+          "entry": 0.00288774,
+          "sl": 0.002844529440883932,
+          "tp1": 0.0029453540788214245,
+          "tp2": 0.0029741611182321362,
+          "confidence": 63
+        },
+        {
+          "coin_id": "akedo",
+          "symbol": "AKE",
+          "name": "Akedo",
+          "action": "BUY",
+          "entry": 0.00999684,
+          "sl": 0.009700209016654011,
+          "tp1": 0.01039234797779465,
+          "tp2": 0.010590101966691978,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
