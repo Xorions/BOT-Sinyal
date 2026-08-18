@@ -977,6 +977,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-18",
+      "session": "MALAM",
+      "saved_at": "2026-08-18T19:52:57+07:00",
+      "signals": [
+        {
+          "coin_id": "bitway",
+          "symbol": "BTW",
+          "name": "Bitway",
+          "action": "BUY",
+          "entry": 0.380353,
+          "sl": 0.3717709240268727,
+          "tp1": 0.39179576796416976,
+          "tp2": 0.3975171519462547,
+          "confidence": 69
+        },
+        {
+          "coin_id": "goplus-security",
+          "symbol": "GPS",
+          "name": "GoPlus Security",
+          "action": "BUY",
+          "entry": 0.01829214,
+          "sl": 0.017703916227083824,
+          "tp1": 0.019076438363888233,
+          "tp2": 0.01946858754583235,
+          "confidence": 63
+        },
+        {
+          "coin_id": "virtual-protocol",
+          "symbol": "VIRTUAL",
+          "name": "Virtuals Protocol",
+          "action": "BUY",
+          "entry": 0.579875,
+          "sl": 0.5750858742061378,
+          "tp1": 0.586260501058483,
+          "tp2": 0.5894532515877245,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
