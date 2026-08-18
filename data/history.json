@@ -926,6 +926,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-18",
+      "session": "PAGI",
+      "saved_at": "2026-08-18T08:22:47+07:00",
+      "signals": [
+        {
+          "coin_id": "cap-4",
+          "symbol": "CAP",
+          "name": "Cap",
+          "action": "BUY",
+          "entry": 0.071199,
+          "sl": 0.06971447601332617,
+          "tp1": 0.0731783653155651,
+          "tp2": 0.07416804797334765,
+          "confidence": 69
+        },
+        {
+          "coin_id": "unibase",
+          "symbol": "UB",
+          "name": "Unibase",
+          "action": "SELL",
+          "entry": 0.112648,
+          "sl": 0.11429168098011161,
+          "tp1": 0.11045642535985117,
+          "tp2": 0.10936063803977678,
+          "confidence": 69
+        },
+        {
+          "coin_id": "goplus-security",
+          "symbol": "GPS",
+          "name": "GoPlus Security",
+          "action": "BUY",
+          "entry": 0.01670864,
+          "sl": 0.016119064568484522,
+          "tp1": 0.017494740575353974,
+          "tp2": 0.01788779086303096,
+          "confidence": 63
+        },
+        {
+          "coin_id": "fartcoin",
+          "symbol": "FARTCOIN",
+          "name": "Fartcoin",
+          "action": "BUY",
+          "entry": 0.145063,
+          "sl": 0.14383474849871208,
+          "tp1": 0.14670066866838388,
+          "tp2": 0.1475195030025758,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
