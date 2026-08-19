@@ -1017,6 +1017,46 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-08-19",
+      "session": "PAGI",
+      "saved_at": "2026-08-19T08:24:40+07:00",
+      "signals": [
+        {
+          "coin_id": "goplus-security",
+          "symbol": "GPS",
+          "name": "GoPlus Security",
+          "action": "BUY",
+          "entry": 0.01844449,
+          "sl": 0.01802534691717684,
+          "tp1": 0.019003347443764217,
+          "tp2": 0.019282776165646325,
+          "confidence": 63
+        },
+        {
+          "coin_id": "ribbita-by-virtuals",
+          "symbol": "TIBBIR",
+          "name": "Ribbita by Virtuals",
+          "action": "BUY",
+          "entry": 0.212538,
+          "sl": 0.2071005620022219,
+          "tp1": 0.2197879173303708,
+          "tp2": 0.2234128759955562,
+          "confidence": 63
+        },
+        {
+          "coin_id": "venice-token",
+          "symbol": "VVV",
+          "name": "Venice Token",
+          "action": "BUY",
+          "entry": 14.03,
+          "sl": 13.806071091556111,
+          "tp1": 14.328571877925183,
+          "tp2": 14.477857816887775,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
