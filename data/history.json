@@ -1057,6 +1057,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-19",
+      "session": "MALAM",
+      "saved_at": "2026-08-19T19:53:54+07:00",
+      "signals": [
+        {
+          "coin_id": "cap-4",
+          "symbol": "CAP",
+          "name": "Cap",
+          "action": "BUY",
+          "entry": 0.071822,
+          "sl": 0.0706545975788831,
+          "tp1": 0.0733785365614892,
+          "tp2": 0.07415680484223379,
+          "confidence": 63
+        },
+        {
+          "coin_id": "decred",
+          "symbol": "DCR",
+          "name": "Decred",
+          "action": "SELL",
+          "entry": 10.85,
+          "sl": 11.105142258553853,
+          "tp1": 10.509810321928196,
+          "tp2": 10.339715482892293,
+          "confidence": 69
+        },
+        {
+          "coin_id": "velvet",
+          "symbol": "VELVET",
+          "name": "Velvet",
+          "action": "BUY",
+          "entry": 0.678201,
+          "sl": 0.6517628698131318,
+          "tp1": 0.7134518402491576,
+          "tp2": 0.7310772603737364,
+          "confidence": 69
+        },
+        {
+          "coin_id": "uniswap",
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "action": "BUY",
+          "entry": 3.38,
+          "sl": 3.3569698312800305,
+          "tp1": 3.4107068916266257,
+          "tp2": 3.4260603374399383,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
