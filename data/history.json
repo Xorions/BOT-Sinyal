@@ -1170,6 +1170,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-20",
+      "session": "MALAM",
+      "saved_at": "2026-08-20T19:55:38+07:00",
+      "signals": [
+        {
+          "coin_id": "pump-fun",
+          "symbol": "PUMP",
+          "name": "Pump.fun",
+          "action": "BUY",
+          "entry": 0.00337203,
+          "sl": 0.0033002501530113703,
+          "tp1": 0.003467736462651506,
+          "tp2": 0.003515589693977259,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "BUY",
+          "entry": 0.00707742,
+          "sl": 0.006948076909816573,
+          "tp1": 0.007249877453577903,
+          "tp2": 0.0073361061803668545,
+          "confidence": 69
+        },
+        {
+          "coin_id": "monad",
+          "symbol": "MON",
+          "name": "Monad",
+          "action": "BUY",
+          "entry": 0.02601209,
+          "sl": 0.025534451239227682,
+          "tp1": 0.02664894168102976,
+          "tp2": 0.02696736752154464,
+          "confidence": 69
+        },
+        {
+          "coin_id": "official-trump",
+          "symbol": "TRUMP",
+          "name": "Official Trump",
+          "action": "BUY",
+          "entry": 1.67,
+          "sl": 1.6369045449061412,
+          "tp1": 1.7141272734584783,
+          "tp2": 1.7361909101877173,
+          "confidence": 63
+        },
+        {
+          "coin_id": "arbitrum",
+          "symbol": "ARB",
+          "name": "Arbitrum",
+          "action": "BUY",
+          "entry": 0.087671,
+          "sl": 0.08660575049982039,
+          "tp1": 0.08909133266690614,
+          "tp2": 0.0898014990003592,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
