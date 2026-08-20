@@ -1108,6 +1108,68 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-08-20",
+      "session": "PAGI",
+      "saved_at": "2026-08-20T08:24:25+07:00",
+      "signals": [
+        {
+          "coin_id": "lido-dao",
+          "symbol": "LDO",
+          "name": "Lido DAO",
+          "action": "BUY",
+          "entry": 0.33622,
+          "sl": 0.33045203694133035,
+          "tp1": 0.34391061741155954,
+          "tp2": 0.34775592611733935,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pieverse",
+          "symbol": "PIEVERSE",
+          "name": "Pieverse",
+          "action": "BUY",
+          "entry": 0.933999,
+          "sl": 0.9145378866277567,
+          "tp1": 0.9599471511629911,
+          "tp2": 0.9729212267444866,
+          "confidence": 63
+        },
+        {
+          "coin_id": "compound-governance-token",
+          "symbol": "COMP",
+          "name": "Compound",
+          "action": "BUY",
+          "entry": 18.41,
+          "sl": 18.210612552626365,
+          "tp1": 18.67584992983151,
+          "tp2": 18.808774894747266,
+          "confidence": 63
+        },
+        {
+          "coin_id": "venice-token",
+          "symbol": "VVV",
+          "name": "Venice Token",
+          "action": "BUY",
+          "entry": 14.55,
+          "sl": 14.29444071934253,
+          "tp1": 14.890745707543294,
+          "tp2": 15.061118561314942,
+          "confidence": 63
+        },
+        {
+          "coin_id": "curve-dao-token",
+          "symbol": "CRV",
+          "name": "Curve DAO",
+          "action": "BUY",
+          "entry": 0.259887,
+          "sl": 0.25620449528021394,
+          "tp1": 0.26479700629304803,
+          "tp2": 0.26725200943957206,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
