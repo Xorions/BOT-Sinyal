@@ -1283,6 +1283,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-21",
+      "session": "MALAM",
+      "saved_at": "2026-08-21T19:54:48+07:00",
+      "signals": [
+        {
+          "coin_id": "morpho",
+          "symbol": "MORPHO",
+          "name": "Morpho",
+          "action": "BUY",
+          "entry": 2.38,
+          "sl": 2.344317766610537,
+          "tp1": 2.42757631118595,
+          "tp2": 2.451364466778925,
+          "confidence": 82
+        },
+        {
+          "coin_id": "cash-cat",
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "action": "BUY",
+          "entry": 0.142807,
+          "sl": 0.13706607407599508,
+          "tp1": 0.1504615678986732,
+          "tp2": 0.15428885184800983,
+          "confidence": 76
+        },
+        {
+          "coin_id": "official-trump",
+          "symbol": "TRUMP",
+          "name": "Official Trump",
+          "action": "BUY",
+          "entry": 1.84,
+          "sl": 1.803711179889042,
+          "tp1": 1.8883850934812774,
+          "tp2": 1.9125776402219161,
+          "confidence": 69
+        },
+        {
+          "coin_id": "the-open-network",
+          "symbol": "GRAM",
+          "name": "Gram (prev. Toncoin)",
+          "action": "BUY",
+          "entry": 1.46,
+          "sl": 1.4394872595424029,
+          "tp1": 1.4873503206101295,
+          "tp2": 1.5010254809151942,
+          "confidence": 69
+        },
+        {
+          "coin_id": "monad",
+          "symbol": "MON",
+          "name": "Monad",
+          "action": "BUY",
+          "entry": 0.02791179,
+          "sl": 0.027052132263806386,
+          "tp1": 0.029058000314924816,
+          "tp2": 0.029631105472387228,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
