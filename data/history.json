@@ -1232,6 +1232,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-21",
+      "session": "PAGI",
+      "saved_at": "2026-08-21T08:27:41+07:00",
+      "signals": [
+        {
+          "coin_id": "the-black-bull",
+          "symbol": "ANSEM",
+          "name": "The Black Bull",
+          "action": "BUY",
+          "entry": 0.251809,
+          "sl": 0.24441681151641778,
+          "tp1": 0.26166525131144297,
+          "tp2": 0.26659337696716445,
+          "confidence": 63
+        },
+        {
+          "coin_id": "bitget-token",
+          "symbol": "BGB",
+          "name": "Bitget Token",
+          "action": "BUY",
+          "entry": 1.83,
+          "sl": 1.814688514340188,
+          "tp1": 1.8504153142130828,
+          "tp2": 1.860622971319624,
+          "confidence": 63
+        },
+        {
+          "coin_id": "bitway",
+          "symbol": "BTW",
+          "name": "Bitway",
+          "action": "BUY",
+          "entry": 0.424302,
+          "sl": 0.40419735260052936,
+          "tp1": 0.45110819653262757,
+          "tp2": 0.4645112947989413,
+          "confidence": 63
+        },
+        {
+          "coin_id": "meta-2-2",
+          "symbol": "META",
+          "name": "MetaDAO",
+          "action": "BUY",
+          "entry": 5.35,
+          "sl": 5.211874285990755,
+          "tp1": 5.534167618678992,
+          "tp2": 5.626251428018488,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
