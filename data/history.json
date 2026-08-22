@@ -1396,6 +1396,46 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-08-22",
+      "session": "MALAM",
+      "saved_at": "2026-08-22T19:46:14+07:00",
+      "signals": [
+        {
+          "coin_id": "lighter",
+          "symbol": "LIT",
+          "name": "Lighter",
+          "action": "BUY",
+          "entry": 3.23,
+          "sl": 3.1553646148886254,
+          "tp1": 3.329513846815166,
+          "tp2": 3.379270770222749,
+          "confidence": 69
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "BUY",
+          "entry": 0.157741,
+          "sl": 0.15268071831665886,
+          "tp1": 0.16448804224445482,
+          "tp2": 0.16786156336668223,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pump-fun",
+          "symbol": "PUMP",
+          "name": "Pump.fun",
+          "action": "BUY",
+          "entry": 0.00467065,
+          "sl": 0.004523250626817984,
+          "tp1": 0.004867182497576021,
+          "tp2": 0.004965448746364031,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
