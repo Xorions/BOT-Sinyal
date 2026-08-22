@@ -1345,6 +1345,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-22",
+      "session": "PAGI",
+      "saved_at": "2026-08-22T08:25:10+07:00",
+      "signals": [
+        {
+          "coin_id": "pyth-network",
+          "symbol": "PYTH",
+          "name": "Pyth Network",
+          "action": "BUY",
+          "entry": 0.051062,
+          "sl": 0.05010031473432329,
+          "tp1": 0.05234424702090229,
+          "tp2": 0.05298537053135344,
+          "confidence": 82
+        },
+        {
+          "coin_id": "official-trump",
+          "symbol": "TRUMP",
+          "name": "Official Trump",
+          "action": "BUY",
+          "entry": 1.92,
+          "sl": 1.8760600643991636,
+          "tp1": 1.978586580801115,
+          "tp2": 2.0078798712016726,
+          "confidence": 69
+        },
+        {
+          "coin_id": "bonk",
+          "symbol": "BONK",
+          "name": "Bonk",
+          "action": "BUY",
+          "entry": 3.19e-06,
+          "sl": 3.10788704222148e-06,
+          "tp1": 3.2994839437046927e-06,
+          "tp2": 3.354225915557039e-06,
+          "confidence": 69
+        },
+        {
+          "coin_id": "worldcoin-wld",
+          "symbol": "WLD",
+          "name": "Worldcoin",
+          "action": "BUY",
+          "entry": 0.418429,
+          "sl": 0.4108917872370203,
+          "tp1": 0.4284786170173063,
+          "tp2": 0.43350342552595944,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
