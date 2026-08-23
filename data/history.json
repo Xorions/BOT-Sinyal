@@ -1476,6 +1476,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-23",
+      "session": "MALAM",
+      "saved_at": "2026-08-23T19:46:30+07:00",
+      "signals": [
+        {
+          "coin_id": "uniswap",
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "action": "BUY",
+          "entry": 4.36,
+          "sl": 4.281657257930985,
+          "tp1": 4.464456989425354,
+          "tp2": 4.516685484138032,
+          "confidence": 76
+        },
+        {
+          "coin_id": "aave",
+          "symbol": "AAVE",
+          "name": "Aave",
+          "action": "BUY",
+          "entry": 132.53,
+          "sl": 130.06641159017224,
+          "tp1": 135.81478454643704,
+          "tp2": 137.45717681965556,
+          "confidence": 76
+        },
+        {
+          "coin_id": "pendle",
+          "symbol": "PENDLE",
+          "name": "Pendle",
+          "action": "BUY",
+          "entry": 1.78,
+          "sl": 1.7447553902063129,
+          "tp1": 1.8269928130582496,
+          "tp2": 1.8504892195873743,
+          "confidence": 69
+        },
+        {
+          "coin_id": "plasma",
+          "symbol": "XPL",
+          "name": "Plasma",
+          "action": "BUY",
+          "entry": 0.10468,
+          "sl": 0.10223949006579092,
+          "tp1": 0.1079340132456121,
+          "tp2": 0.10956101986841815,
+          "confidence": 63
+        },
+        {
+          "coin_id": "lido-dao",
+          "symbol": "LDO",
+          "name": "Lido DAO",
+          "action": "BUY",
+          "entry": 0.380894,
+          "sl": 0.3742398748242388,
+          "tp1": 0.38976616690101495,
+          "tp2": 0.39420225035152245,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
