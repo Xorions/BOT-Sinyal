@@ -1436,6 +1436,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-23",
+      "session": "PAGI",
+      "saved_at": "2026-08-23T08:31:43+07:00",
+      "signals": [
+        {
+          "coin_id": "pyth-network",
+          "symbol": "PYTH",
+          "name": "Pyth Network",
+          "action": "BUY",
+          "entry": 0.052834,
+          "sl": 0.05170128801328106,
+          "tp1": 0.05434428264895858,
+          "tp2": 0.055099423973437874,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pump-fun",
+          "symbol": "PUMP",
+          "name": "Pump.fun",
+          "action": "BUY",
+          "entry": 0.00499431,
+          "sl": 0.004875607922710153,
+          "tp1": 0.0051525794363864634,
+          "tp2": 0.005231714154579695,
+          "confidence": 69
+        },
+        {
+          "coin_id": "uniswap",
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "action": "BUY",
+          "entry": 4.3,
+          "sl": 4.231564804983016,
+          "tp1": 4.391246926689312,
+          "tp2": 4.436870390033968,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
