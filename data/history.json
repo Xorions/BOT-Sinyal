@@ -1538,6 +1538,35 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-08-24",
+      "session": "PAGI",
+      "saved_at": "2026-08-24T08:28:00+07:00",
+      "signals": [
+        {
+          "coin_id": "origintrail",
+          "symbol": "TRAC",
+          "name": "OriginTrail",
+          "action": "BUY",
+          "entry": 0.402245,
+          "sl": 0.38904328749898925,
+          "tp1": 0.419847283334681,
+          "tp2": 0.4286484250020215,
+          "confidence": 76
+        },
+        {
+          "coin_id": "uniswap",
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "action": "BUY",
+          "entry": 4.42,
+          "sl": 4.330210788818256,
+          "tp1": 4.539718948242325,
+          "tp2": 4.599578422363488,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
