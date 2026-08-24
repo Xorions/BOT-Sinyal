@@ -1567,6 +1567,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-24",
+      "session": "MALAM",
+      "saved_at": "2026-08-24T19:56:41+07:00",
+      "signals": [
+        {
+          "coin_id": "cash-cat",
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "action": "BUY",
+          "entry": 0.166303,
+          "sl": 0.1578470267577805,
+          "tp1": 0.177577630989626,
+          "tp2": 0.183214946484439,
+          "confidence": 82
+        },
+        {
+          "coin_id": "dogwifcoin",
+          "symbol": "WIF",
+          "name": "dogwifhat",
+          "action": "BUY",
+          "entry": 0.204255,
+          "sl": 0.20117379347919837,
+          "tp1": 0.20836327536106883,
+          "tp2": 0.21041741304160322,
+          "confidence": 76
+        },
+        {
+          "coin_id": "velvet",
+          "symbol": "VELVET",
+          "name": "Velvet",
+          "action": "SELL",
+          "entry": 0.413912,
+          "sl": 0.5065360289195209,
+          "tp1": 0.2904132947739722,
+          "tp2": 0.22866394216095834,
+          "confidence": 82
+        },
+        {
+          "coin_id": "injective-protocol",
+          "symbol": "INJ",
+          "name": "Injective",
+          "action": "BUY",
+          "entry": 5.47,
+          "sl": 5.406254728413738,
+          "tp1": 5.554993695448349,
+          "tp2": 5.5974905431725235,
+          "confidence": 63
+        },
+        {
+          "coin_id": "grass",
+          "symbol": "GRASS",
+          "name": "Grass",
+          "action": "BUY",
+          "entry": 0.355771,
+          "sl": 0.344800759022828,
+          "tp1": 0.3703979879695627,
+          "tp2": 0.377711481954344,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
