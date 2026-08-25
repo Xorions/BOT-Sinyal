@@ -1629,6 +1629,46 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-08-25",
+      "session": "PAGI",
+      "saved_at": "2026-08-25T08:25:41+07:00",
+      "signals": [
+        {
+          "coin_id": "dogwifcoin",
+          "symbol": "WIF",
+          "name": "dogwifhat",
+          "action": "BUY",
+          "entry": 0.208387,
+          "sl": 0.20524284287587075,
+          "tp1": 0.212579209498839,
+          "tp2": 0.21467531424825848,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "BUY",
+          "entry": 0.01025792,
+          "sl": 0.010046769448079952,
+          "tp1": 0.010539454069226732,
+          "tp2": 0.010680221103840098,
+          "confidence": 69
+        },
+        {
+          "coin_id": "cash-cat",
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "action": "BUY",
+          "entry": 0.213567,
+          "sl": 0.20201915022009298,
+          "tp1": 0.22896413303987603,
+          "tp2": 0.23666269955981403,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
