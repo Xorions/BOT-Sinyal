@@ -1669,6 +1669,35 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-08-25",
+      "session": "MALAM",
+      "saved_at": "2026-08-25T19:53:43+07:00",
+      "signals": [
+        {
+          "coin_id": "polygon-ecosystem-token",
+          "symbol": "POL",
+          "name": "POL (ex-MATIC)",
+          "action": "BUY",
+          "entry": 0.122806,
+          "sl": 0.12091395781630344,
+          "tp1": 0.1253287229115954,
+          "tp2": 0.1265900843673931,
+          "confidence": 63
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "SELL",
+          "entry": 0.148698,
+          "sl": 0.15136806607875242,
+          "tp1": 0.14513791189499675,
+          "tp2": 0.14335786784249516,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
