@@ -1698,6 +1698,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-26",
+      "session": "PAGI",
+      "saved_at": "2026-08-26T08:30:12+07:00",
+      "signals": [
+        {
+          "coin_id": "blockstack",
+          "symbol": "STX",
+          "name": "Stacks",
+          "action": "BUY",
+          "entry": 0.270748,
+          "sl": 0.26394017562824457,
+          "tp1": 0.27982509916234055,
+          "tp2": 0.28436364874351083,
+          "confidence": 63
+        },
+        {
+          "coin_id": "meta-2-2",
+          "symbol": "META",
+          "name": "MetaDAO",
+          "action": "BUY",
+          "entry": 7.85,
+          "sl": 7.622588492329743,
+          "tp1": 8.153215343560342,
+          "tp2": 8.304823015340514,
+          "confidence": 76
+        },
+        {
+          "coin_id": "layerzero",
+          "symbol": "ZRO",
+          "name": "LayerZero",
+          "action": "BUY",
+          "entry": 1.21,
+          "sl": 1.1714983898182647,
+          "tp1": 1.2613354802423136,
+          "tp2": 1.2870032203634705,
+          "confidence": 69
+        },
+        {
+          "coin_id": "spx6900",
+          "symbol": "SPX",
+          "name": "SPX6900",
+          "action": "BUY",
+          "entry": 0.527001,
+          "sl": 0.5141151057705273,
+          "tp1": 0.5441821923059637,
+          "tp2": 0.5527727884589454,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
