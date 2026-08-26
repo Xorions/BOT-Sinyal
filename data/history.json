@@ -1749,6 +1749,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-26",
+      "session": "MALAM",
+      "saved_at": "2026-08-26T19:58:54+07:00",
+      "signals": [
+        {
+          "coin_id": "the-black-bull",
+          "symbol": "ANSEM",
+          "name": "The Black Bull",
+          "action": "BUY",
+          "entry": 0.29598,
+          "sl": 0.2869718319933403,
+          "tp1": 0.3079908906755463,
+          "tp2": 0.31399633601331944,
+          "confidence": 76
+        },
+        {
+          "coin_id": "instadapp",
+          "symbol": "FLUID",
+          "name": "Fluid",
+          "action": "BUY",
+          "entry": 1.45,
+          "sl": 1.4104248057820974,
+          "tp1": 1.50276692562387,
+          "tp2": 1.529150388435805,
+          "confidence": 63
+        },
+        {
+          "coin_id": "fartcoin",
+          "symbol": "FARTCOIN",
+          "name": "Fartcoin",
+          "action": "BUY",
+          "entry": 0.212515,
+          "sl": 0.20769766566566114,
+          "tp1": 0.21893811244578515,
+          "tp2": 0.22214966866867772,
+          "confidence": 69
+        },
+        {
+          "coin_id": "falcon-finance-ff",
+          "symbol": "FF",
+          "name": "Falcon Finance",
+          "action": "BUY",
+          "entry": 0.10064,
+          "sl": 0.09716782096603753,
+          "tp1": 0.10526957204528327,
+          "tp2": 0.1075843580679249,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
