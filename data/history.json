@@ -1829,6 +1829,46 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-08-28",
+      "session": "PAGI",
+      "saved_at": "2026-08-28T04:59:46+07:00",
+      "signals": [
+        {
+          "coin_id": "akedo",
+          "symbol": "AKE",
+          "name": "Akedo",
+          "action": "SELL",
+          "entry": 0.00697773,
+          "sl": 0.0073532338682311535,
+          "tp1": 0.006477058175691794,
+          "tp2": 0.006226722263537692,
+          "confidence": 63
+        },
+        {
+          "coin_id": "unibase",
+          "symbol": "UB",
+          "name": "Unibase",
+          "action": "BUY",
+          "entry": 0.126306,
+          "sl": 0.1243038683344115,
+          "tp1": 0.12897550888745132,
+          "tp2": 0.130310263331177,
+          "confidence": 69
+        },
+        {
+          "coin_id": "bittensor",
+          "symbol": "TAO",
+          "name": "Bittensor",
+          "action": "BUY",
+          "entry": 250.43,
+          "sl": 247.790902582144,
+          "tp1": 253.94879655714132,
+          "tp2": 255.708194835712,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
