@@ -1800,6 +1800,35 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-08-27",
+      "session": "MALAM",
+      "saved_at": "2026-08-27T15:14:47+07:00",
+      "signals": [
+        {
+          "coin_id": "dogwifcoin",
+          "symbol": "WIF",
+          "name": "dogwifhat",
+          "action": "BUY",
+          "entry": 0.213688,
+          "sl": 0.2104536620876313,
+          "tp1": 0.2180004505498249,
+          "tp2": 0.22015667582473736,
+          "confidence": 63
+        },
+        {
+          "coin_id": "bittensor",
+          "symbol": "TAO",
+          "name": "Bittensor",
+          "action": "BUY",
+          "entry": 250.46,
+          "sl": 247.2015996441129,
+          "tp1": 254.80453380784948,
+          "tp2": 256.9768007117742,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
