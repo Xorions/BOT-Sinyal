@@ -1869,6 +1869,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-28",
+      "session": "MALAM",
+      "saved_at": "2026-08-28T17:17:44+07:00",
+      "signals": [
+        {
+          "coin_id": "plasma",
+          "symbol": "XPL",
+          "name": "Plasma",
+          "action": "SELL",
+          "entry": 0.085542,
+          "sl": 0.08712878799357408,
+          "tp1": 0.08342628267523457,
+          "tp2": 0.08236842401285184,
+          "confidence": 63
+        },
+        {
+          "coin_id": "thorchain",
+          "symbol": "RUNE",
+          "name": "THORChain",
+          "action": "SELL",
+          "entry": 0.498148,
+          "sl": 0.5092955031970265,
+          "tp1": 0.48328466240396456,
+          "tp2": 0.47585299360594685,
+          "confidence": 63
+        },
+        {
+          "coin_id": "akedo",
+          "symbol": "AKE",
+          "name": "Akedo",
+          "action": "BUY",
+          "entry": 0.00811978,
+          "sl": 0.007758148324147997,
+          "tp1": 0.008601955567802671,
+          "tp2": 0.008843043351704006,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
