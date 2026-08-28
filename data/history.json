@@ -1909,6 +1909,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-29",
+      "session": "PAGI",
+      "saved_at": "2026-08-29T04:53:59+07:00",
+      "signals": [
+        {
+          "coin_id": "non-playable-coin",
+          "symbol": "NPC",
+          "name": "Non-Playable Coin",
+          "action": "BUY",
+          "entry": 0.01753377,
+          "sl": 0.016939727463520203,
+          "tp1": 0.0183258267153064,
+          "tp2": 0.0187218550729596,
+          "confidence": 76
+        },
+        {
+          "coin_id": "filecoin",
+          "symbol": "FIL",
+          "name": "Filecoin",
+          "action": "SELL",
+          "entry": 0.676879,
+          "sl": 0.683423973950746,
+          "tp1": 0.6681523680656719,
+          "tp2": 0.6637890520985079,
+          "confidence": 69
+        },
+        {
+          "coin_id": "sonic-3",
+          "symbol": "S",
+          "name": "Sonic",
+          "action": "SELL",
+          "entry": 0.02944126,
+          "sl": 0.029911253360032884,
+          "tp1": 0.028814602186622823,
+          "tp2": 0.028501273279934233,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
