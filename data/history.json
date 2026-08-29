@@ -1949,6 +1949,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-29",
+      "session": "MALAM",
+      "saved_at": "2026-08-29T13:19:06+07:00",
+      "signals": [
+        {
+          "coin_id": "celestia",
+          "symbol": "TIA",
+          "name": "Celestia",
+          "action": "SELL",
+          "entry": 0.341431,
+          "sl": 0.344134434291248,
+          "tp1": 0.33782642094500265,
+          "tp2": 0.336024131417504,
+          "confidence": 63
+        },
+        {
+          "coin_id": "starknet",
+          "symbol": "STRK",
+          "name": "Starknet",
+          "action": "SELL",
+          "entry": 0.02456948,
+          "sl": 0.02482595551346649,
+          "tp1": 0.02422751264871135,
+          "tp2": 0.024056528973067027,
+          "confidence": 69
+        },
+        {
+          "coin_id": "sui",
+          "symbol": "SUI",
+          "name": "Sui",
+          "action": "SELL",
+          "entry": 0.740785,
+          "sl": 0.7467113305892918,
+          "tp1": 0.7328832258809443,
+          "tp2": 0.7289323388214165,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pepe",
+          "symbol": "PEPE",
+          "name": "Pepe",
+          "action": "SELL",
+          "entry": 3.64e-06,
+          "sl": 3.66928972122185e-06,
+          "tp1": 3.600947038370867e-06,
+          "tp2": 3.5814205575563e-06,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
