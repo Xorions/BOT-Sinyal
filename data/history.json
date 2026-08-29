@@ -1953,51 +1953,62 @@
     {
       "date": "2026-08-29",
       "session": "MALAM",
-      "saved_at": "2026-08-29T13:19:06+07:00",
+      "saved_at": "2026-08-29T23:27:28+07:00",
       "signals": [
         {
-          "coin_id": "celestia",
-          "symbol": "TIA",
-          "name": "Celestia",
-          "action": "SELL",
-          "entry": 0.341431,
-          "sl": 0.344134434291248,
-          "tp1": 0.33782642094500265,
-          "tp2": 0.336024131417504,
+          "coin_id": "cash-cat",
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "action": "BUY",
+          "entry": 0.210541,
+          "sl": 0.20271274390115204,
+          "tp1": 0.22097867479846395,
+          "tp2": 0.22619751219769593,
           "confidence": 63
         },
         {
-          "coin_id": "starknet",
-          "symbol": "STRK",
-          "name": "Starknet",
-          "action": "SELL",
-          "entry": 0.02456948,
-          "sl": 0.02482595551346649,
-          "tp1": 0.02422751264871135,
-          "tp2": 0.024056528973067027,
+          "coin_id": "prometeus",
+          "symbol": "PROM",
+          "name": "Prom",
+          "action": "BUY",
+          "entry": 6.17,
+          "sl": 5.916699105536373,
+          "tp1": 6.507734525951503,
+          "tp2": 6.676601788927255,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "BUY",
+          "entry": 0.212731,
+          "sl": 0.2016338155876201,
+          "tp1": 0.2275272458831732,
+          "tp2": 0.23492536882475978,
+          "confidence": 76
+        },
+        {
+          "coin_id": "lighter",
+          "symbol": "LIT",
+          "name": "Lighter",
+          "action": "BUY",
+          "entry": 3.5,
+          "sl": 3.457390044238514,
+          "tp1": 3.556813274348648,
+          "tp2": 3.5852199115229717,
+          "confidence": 63
+        },
+        {
+          "coin_id": "memecore",
+          "symbol": "M",
+          "name": "MemeCore",
+          "action": "BUY",
+          "entry": 1.042,
+          "sl": 1.029517050477758,
+          "tp1": 1.0586439326963228,
+          "tp2": 1.0669658990444844,
           "confidence": 69
-        },
-        {
-          "coin_id": "sui",
-          "symbol": "SUI",
-          "name": "Sui",
-          "action": "SELL",
-          "entry": 0.740785,
-          "sl": 0.7467113305892918,
-          "tp1": 0.7328832258809443,
-          "tp2": 0.7289323388214165,
-          "confidence": 63
-        },
-        {
-          "coin_id": "pepe",
-          "symbol": "PEPE",
-          "name": "Pepe",
-          "action": "SELL",
-          "entry": 3.64e-06,
-          "sl": 3.66928972122185e-06,
-          "tp1": 3.600947038370867e-06,
-          "tp2": 3.5814205575563e-06,
-          "confidence": 63
         }
       ]
     }
