@@ -2011,6 +2011,57 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-08-30",
+      "session": "PAGI",
+      "saved_at": "2026-08-30T11:25:44+07:00",
+      "signals": [
+        {
+          "coin_id": "decentraland",
+          "symbol": "MANA",
+          "name": "Decentraland",
+          "action": "BUY",
+          "entry": 0.076741,
+          "sl": 0.07604376455595056,
+          "tp1": 0.07767064725873259,
+          "tp2": 0.07813547088809887,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "BUY",
+          "entry": 0.292161,
+          "sl": 0.2766847863350728,
+          "tp1": 0.31279595155323625,
+          "tp2": 0.3231134273298544,
+          "confidence": 69
+        },
+        {
+          "coin_id": "cysic",
+          "symbol": "CYS",
+          "name": "Cysic",
+          "action": "BUY",
+          "entry": 0.763193,
+          "sl": 0.7471693304500634,
+          "tp1": 0.7845578927332488,
+          "tp2": 0.7952403390998732,
+          "confidence": 76
+        },
+        {
+          "coin_id": "official-trump",
+          "symbol": "TRUMP",
+          "name": "Official Trump",
+          "action": "SELL",
+          "entry": 2.59,
+          "sl": 2.6330134465533415,
+          "tp1": 2.532648737928878,
+          "tp2": 2.503973106893317,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
