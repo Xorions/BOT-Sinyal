@@ -2062,6 +2062,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-30",
+      "session": "MALAM",
+      "saved_at": "2026-08-30T23:19:50+07:00",
+      "signals": [
+        {
+          "coin_id": "seeker",
+          "symbol": "SKR",
+          "name": "Seeker",
+          "action": "BUY",
+          "entry": 0.01694861,
+          "sl": 0.016107438709666907,
+          "tp1": 0.01807017172044412,
+          "tp2": 0.018630952580666185,
+          "confidence": 76
+        },
+        {
+          "coin_id": "cash-cat",
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "action": "BUY",
+          "entry": 0.226417,
+          "sl": 0.22014200047204682,
+          "tp1": 0.2347836660372709,
+          "tp2": 0.23896699905590635,
+          "confidence": 63
+        },
+        {
+          "coin_id": "helium",
+          "symbol": "HNT",
+          "name": "Helium",
+          "action": "BUY",
+          "entry": 0.882793,
+          "sl": 0.8182722551499344,
+          "tp1": 0.9688206598000876,
+          "tp2": 1.0118344897001315,
+          "confidence": 69
+        },
+        {
+          "coin_id": "elrond-erd-2",
+          "symbol": "EGLD",
+          "name": "MultiversX",
+          "action": "BUY",
+          "entry": 3.88,
+          "sl": 3.8249972836304256,
+          "tp1": 3.9533369551594326,
+          "tp2": 3.990005432739149,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
