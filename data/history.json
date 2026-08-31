@@ -2164,6 +2164,35 @@
           "confidence": 76
         }
       ]
+    },
+    {
+      "date": "2026-09-01",
+      "session": "PAGI",
+      "saved_at": "2026-09-01T02:00:09+07:00",
+      "signals": [
+        {
+          "coin_id": "arbitrum",
+          "symbol": "ARB",
+          "name": "Arbitrum",
+          "action": "BUY",
+          "entry": 0.095775,
+          "sl": 0.09411759326856146,
+          "tp1": 0.09798487564191805,
+          "tp2": 0.09908981346287708,
+          "confidence": 76
+        },
+        {
+          "coin_id": "pepe",
+          "symbol": "PEPE",
+          "name": "Pepe",
+          "action": "SELL",
+          "entry": 3.58e-06,
+          "sl": 3.6238552332443778e-06,
+          "tp1": 3.5215263556741633e-06,
+          "tp2": 3.4922895335112446e-06,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
