@@ -2113,6 +2113,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-08-31",
+      "session": "PAGI",
+      "saved_at": "2026-08-31T11:30:38+07:00",
+      "signals": [
+        {
+          "coin_id": "seeker",
+          "symbol": "SKR",
+          "name": "Seeker",
+          "action": "BUY",
+          "entry": 0.03216823,
+          "sl": 0.029939867349967342,
+          "tp1": 0.03513938020004354,
+          "tp2": 0.03662495530006531,
+          "confidence": 69
+        },
+        {
+          "coin_id": "near",
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "action": "SELL",
+          "entry": 1.82,
+          "sl": 1.8479898806771862,
+          "tp1": 1.7826801590970853,
+          "tp2": 1.7640202386456278,
+          "confidence": 82
+        },
+        {
+          "coin_id": "eigenlayer",
+          "symbol": "EIGEN",
+          "name": "EigenCloud (prev. EigenLayer)",
+          "action": "SELL",
+          "entry": 0.188224,
+          "sl": 0.19079403073496287,
+          "tp1": 0.18479729235338285,
+          "tp2": 0.18308393853007426,
+          "confidence": 63
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "SELL",
+          "entry": 0.146315,
+          "sl": 0.14932111670639958,
+          "tp1": 0.14230684439146724,
+          "tp2": 0.14030276658720084,
+          "confidence": 76
+        }
+      ]
     }
   ]
 }
