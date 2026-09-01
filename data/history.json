@@ -2168,28 +2168,61 @@
     {
       "date": "2026-09-01",
       "session": "PAGI",
-      "saved_at": "2026-09-01T02:00:09+07:00",
+      "saved_at": "2026-09-01T11:13:54+07:00",
       "signals": [
         {
-          "coin_id": "arbitrum",
-          "symbol": "ARB",
-          "name": "Arbitrum",
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
           "action": "BUY",
-          "entry": 0.095775,
-          "sl": 0.09411759326856146,
-          "tp1": 0.09798487564191805,
-          "tp2": 0.09908981346287708,
-          "confidence": 76
+          "entry": 0.427033,
+          "sl": 0.4009737275188256,
+          "tp1": 0.4617786966415659,
+          "tp2": 0.4791515449623488,
+          "confidence": 63
         },
         {
-          "coin_id": "pepe",
-          "symbol": "PEPE",
-          "name": "Pepe",
-          "action": "SELL",
-          "entry": 3.58e-06,
-          "sl": 3.6238552332443778e-06,
-          "tp1": 3.5215263556741633e-06,
-          "tp2": 3.4922895335112446e-06,
+          "coin_id": "uniswap",
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "action": "BUY",
+          "entry": 5.39,
+          "sl": 5.325444118307001,
+          "tp1": 5.476074508923999,
+          "tp2": 5.5191117633859985,
+          "confidence": 63
+        },
+        {
+          "coin_id": "cash-cat",
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "action": "BUY",
+          "entry": 0.233633,
+          "sl": 0.2237872610566652,
+          "tp1": 0.2467606519244464,
+          "tp2": 0.2533244778866696,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pendle",
+          "symbol": "PENDLE",
+          "name": "Pendle",
+          "action": "BUY",
+          "entry": 1.8,
+          "sl": 1.7800210853086516,
+          "tp1": 1.826638552921798,
+          "tp2": 1.839957829382697,
+          "confidence": 69
+        },
+        {
+          "coin_id": "spx6900",
+          "symbol": "SPX",
+          "name": "SPX6900",
+          "action": "BUY",
+          "entry": 0.564721,
+          "sl": 0.5563443125205102,
+          "tp1": 0.5758899166393198,
+          "tp2": 0.5814743749589797,
           "confidence": 63
         }
       ]
