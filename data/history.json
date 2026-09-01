@@ -2226,6 +2226,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-01",
+      "session": "MALAM",
+      "saved_at": "2026-09-01T23:20:06+07:00",
+      "signals": [
+        {
+          "coin_id": "a7a5",
+          "symbol": "A7A5",
+          "name": "A7A5",
+          "action": "SELL",
+          "entry": 0.00959749,
+          "sl": 0.009817334620722333,
+          "tp1": 0.00930436383903689,
+          "tp2": 0.009157800758555334,
+          "confidence": 69
+        },
+        {
+          "coin_id": "havven",
+          "symbol": "SNX",
+          "name": "Synthetix",
+          "action": "BUY",
+          "entry": 0.21134,
+          "sl": 0.2089096698996739,
+          "tp1": 0.21458044013376812,
+          "tp2": 0.21620066020065218,
+          "confidence": 69
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "BUY",
+          "entry": 0.160829,
+          "sl": 0.1573980994575987,
+          "tp1": 0.1654035340565351,
+          "tp2": 0.16769080108480264,
+          "confidence": 63
+        },
+        {
+          "coin_id": "uniswap",
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "action": "BUY",
+          "entry": 5.69,
+          "sl": 5.58634549577864,
+          "tp1": 5.828206005628481,
+          "tp2": 5.89730900844272,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
