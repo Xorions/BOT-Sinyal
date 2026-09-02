@@ -2339,6 +2339,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-02",
+      "session": "MALAM",
+      "saved_at": "2026-09-02T23:16:04+07:00",
+      "signals": [
+        {
+          "coin_id": "useless-3",
+          "symbol": "USELESS",
+          "name": "Useless Coin",
+          "action": "BUY",
+          "entry": 0.125195,
+          "sl": 0.11928457519783182,
+          "tp1": 0.1330755664028909,
+          "tp2": 0.13701584960433635,
+          "confidence": 76
+        },
+        {
+          "coin_id": "seeker",
+          "symbol": "SKR",
+          "name": "Seeker",
+          "action": "BUY",
+          "entry": 0.02472401,
+          "sl": 0.023546211336915375,
+          "tp1": 0.026294408217446167,
+          "tp2": 0.02707960732616925,
+          "confidence": 69
+        },
+        {
+          "coin_id": "akedo",
+          "symbol": "AKE",
+          "name": "Akedo",
+          "action": "BUY",
+          "entry": 0.01093144,
+          "sl": 0.010265873624517016,
+          "tp1": 0.011818861833977313,
+          "tp2": 0.01226257275096597,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
