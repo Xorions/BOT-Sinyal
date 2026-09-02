@@ -2277,6 +2277,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-02",
+      "session": "PAGI",
+      "saved_at": "2026-09-02T10:38:10+07:00",
+      "signals": [
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "BUY",
+          "entry": 0.161121,
+          "sl": 0.15815150337850106,
+          "tp1": 0.16508032882866522,
+          "tp2": 0.16705999324299783,
+          "confidence": 76
+        },
+        {
+          "coin_id": "cash-cat",
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "action": "BUY",
+          "entry": 0.268504,
+          "sl": 0.25526894355976715,
+          "tp1": 0.2861507419203105,
+          "tp2": 0.29497411288046577,
+          "confidence": 69
+        },
+        {
+          "coin_id": "uniswap",
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "action": "BUY",
+          "entry": 5.99,
+          "sl": 5.896970066902116,
+          "tp1": 6.114039910797178,
+          "tp2": 6.176059866195767,
+          "confidence": 76
+        },
+        {
+          "coin_id": "curve-dao-token",
+          "symbol": "CRV",
+          "name": "Curve DAO",
+          "action": "BUY",
+          "entry": 0.386963,
+          "sl": 0.3799011384278144,
+          "tp1": 0.39637881542958076,
+          "tp2": 0.40108672314437116,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "SELL",
+          "entry": 0.00836389,
+          "sl": 0.008448331358369858,
+          "tp1": 0.008251301522173524,
+          "tp2": 0.008195007283260284,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
