@@ -2441,6 +2441,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-03",
+      "session": "MALAM",
+      "saved_at": "2026-09-03T23:04:24+07:00",
+      "signals": [
+        {
+          "coin_id": "dash",
+          "symbol": "DASH",
+          "name": "Dash",
+          "action": "BUY",
+          "entry": 47.03,
+          "sl": 46.12186696675676,
+          "tp1": 48.24084404432431,
+          "tp2": 48.84626606648647,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "BUY",
+          "entry": 0.591626,
+          "sl": 0.5655445922136391,
+          "tp1": 0.6264012103818145,
+          "tp2": 0.6437888155727217,
+          "confidence": 63
+        },
+        {
+          "coin_id": "dogwifcoin",
+          "symbol": "WIF",
+          "name": "dogwifhat",
+          "action": "BUY",
+          "entry": 0.210849,
+          "sl": 0.20816364913145283,
+          "tp1": 0.2144294678247296,
+          "tp2": 0.21621970173709437,
+          "confidence": 69
+        },
+        {
+          "coin_id": "useless-3",
+          "symbol": "USELESS",
+          "name": "Useless Coin",
+          "action": "BUY",
+          "entry": 0.183602,
+          "sl": 0.17575183975364303,
+          "tp1": 0.19406888032847594,
+          "tp2": 0.19930232049271393,
+          "confidence": 63
+        },
+        {
+          "coin_id": "cash-cat",
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "action": "BUY",
+          "entry": 0.289594,
+          "sl": 0.2754247236559218,
+          "tp1": 0.3084863684587709,
+          "tp2": 0.3179325526881564,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
