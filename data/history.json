@@ -2379,6 +2379,68 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-09-03",
+      "session": "PAGI",
+      "saved_at": "2026-09-03T10:35:57+07:00",
+      "signals": [
+        {
+          "coin_id": "artificial-inu-3",
+          "symbol": "AI",
+          "name": "Artificial Inu",
+          "action": "BUY",
+          "entry": 0.282778,
+          "sl": 0.2622948848761129,
+          "tp1": 0.31008882016518274,
+          "tp2": 0.3237442302477741,
+          "confidence": 69
+        },
+        {
+          "coin_id": "arbitrum",
+          "symbol": "ARB",
+          "name": "Arbitrum",
+          "action": "BUY",
+          "entry": 0.1312,
+          "sl": 0.12823700641042135,
+          "tp1": 0.13515065811943824,
+          "tp2": 0.13712598717915736,
+          "confidence": 63
+        },
+        {
+          "coin_id": "useless-3",
+          "symbol": "USELESS",
+          "name": "Useless Coin",
+          "action": "BUY",
+          "entry": 0.129607,
+          "sl": 0.12550843787888596,
+          "tp1": 0.13507174949481873,
+          "tp2": 0.13780412424222807,
+          "confidence": 63
+        },
+        {
+          "coin_id": "elrond-erd-2",
+          "symbol": "EGLD",
+          "name": "MultiversX",
+          "action": "BUY",
+          "entry": 5.11,
+          "sl": 4.941946494554994,
+          "tp1": 5.334071340593342,
+          "tp2": 5.446107010890013,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pyth-network",
+          "symbol": "PYTH",
+          "name": "Pyth Network",
+          "action": "BUY",
+          "entry": 0.059337,
+          "sl": 0.058287166074655276,
+          "tp1": 0.060736778567126296,
+          "tp2": 0.06143666785068944,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
