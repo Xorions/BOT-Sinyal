@@ -2503,6 +2503,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-04",
+      "session": "MALAM",
+      "saved_at": "2026-09-04T23:02:12+07:00",
+      "signals": [
+        {
+          "coin_id": "pepe",
+          "symbol": "PEPE",
+          "name": "Pepe",
+          "action": "SELL",
+          "entry": 3.53e-06,
+          "sl": 3.5801745403762393e-06,
+          "tp1": 3.463100612831681e-06,
+          "tp2": 3.4296509192475216e-06,
+          "confidence": 69
+        },
+        {
+          "coin_id": "fartcoin",
+          "symbol": "FARTCOIN",
+          "name": "Fartcoin",
+          "action": "SELL",
+          "entry": 0.164441,
+          "sl": 0.16836338480372046,
+          "tp1": 0.1592111535950394,
+          "tp2": 0.1565962303925591,
+          "confidence": 63
+        },
+        {
+          "coin_id": "dash",
+          "symbol": "DASH",
+          "name": "Dash",
+          "action": "BUY",
+          "entry": 52.59,
+          "sl": 51.02588899976612,
+          "tp1": 54.67548133364518,
+          "tp2": 55.718222000467776,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "SELL",
+          "entry": 0.00823079,
+          "sl": 0.00838863451426031,
+          "tp1": 0.008020330647652918,
+          "tp2": 0.007915100971479377,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
