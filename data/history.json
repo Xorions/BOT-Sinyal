@@ -2554,6 +2554,57 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-09-05",
+      "session": "PAGI",
+      "saved_at": "2026-09-05T10:37:33+07:00",
+      "signals": [
+        {
+          "coin_id": "arweave",
+          "symbol": "AR",
+          "name": "Arweave",
+          "action": "BUY",
+          "entry": 2.84,
+          "sl": 2.7772011063580715,
+          "tp1": 2.9237318581892375,
+          "tp2": 2.965597787283856,
+          "confidence": 69
+        },
+        {
+          "coin_id": "fetch-ai",
+          "symbol": "FET",
+          "name": "Artificial Superintelligence Alliance",
+          "action": "BUY",
+          "entry": 0.16081,
+          "sl": 0.15857214786695614,
+          "tp1": 0.1637938028440585,
+          "tp2": 0.16528570426608774,
+          "confidence": 69
+        },
+        {
+          "coin_id": "fartcoin",
+          "symbol": "FARTCOIN",
+          "name": "Fartcoin",
+          "action": "SELL",
+          "entry": 0.16236,
+          "sl": 0.16499043465427266,
+          "tp1": 0.15885275379430314,
+          "tp2": 0.1570991306914547,
+          "confidence": 63
+        },
+        {
+          "coin_id": "zcash",
+          "symbol": "ZEC",
+          "name": "Zcash",
+          "action": "BUY",
+          "entry": 1028.51,
+          "sl": 1010.6379957915942,
+          "tp1": 1052.339338944541,
+          "tp2": 1064.2540084168115,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
