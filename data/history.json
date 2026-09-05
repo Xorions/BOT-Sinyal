@@ -2605,6 +2605,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-05",
+      "session": "MALAM",
+      "saved_at": "2026-09-05T21:52:03+07:00",
+      "signals": [
+        {
+          "coin_id": "chip-2",
+          "symbol": "CHIP",
+          "name": "USD.AI",
+          "action": "BUY",
+          "entry": 0.05858,
+          "sl": 0.057082995393786466,
+          "tp1": 0.060576006141618045,
+          "tp2": 0.06157400921242707,
+          "confidence": 69
+        },
+        {
+          "coin_id": "cash-cat",
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "action": "BUY",
+          "entry": 0.266104,
+          "sl": 0.25572695302681475,
+          "tp1": 0.2799400626309137,
+          "tp2": 0.2868580939463705,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
