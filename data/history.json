@@ -2663,6 +2663,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-06",
+      "session": "MALAM",
+      "saved_at": "2026-09-06T22:11:14+07:00",
+      "signals": [
+        {
+          "coin_id": "official-trump",
+          "symbol": "TRUMP",
+          "name": "Official Trump",
+          "action": "SELL",
+          "entry": 2.31,
+          "sl": 2.332310866154183,
+          "tp1": 2.2802521784610894,
+          "tp2": 2.2653782676916343,
+          "confidence": 69
+        },
+        {
+          "coin_id": "aster-2",
+          "symbol": "ASTER",
+          "name": "Aster",
+          "action": "SELL",
+          "entry": 0.758538,
+          "sl": 0.7705653891759949,
+          "tp1": 0.7425014810986735,
+          "tp2": 0.7344832216480104,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "SELL",
+          "entry": 0.805208,
+          "sl": 0.8423481806819828,
+          "tp1": 0.7556877590906896,
+          "tp2": 0.7309276386360345,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
