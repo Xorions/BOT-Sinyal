@@ -2634,6 +2634,35 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-09-06",
+      "session": "PAGI",
+      "saved_at": "2026-09-06T10:38:34+07:00",
+      "signals": [
+        {
+          "coin_id": "aster-2",
+          "symbol": "ASTER",
+          "name": "Aster",
+          "action": "BUY",
+          "entry": 0.781897,
+          "sl": 0.7684749088697639,
+          "tp1": 0.7997931215069813,
+          "tp2": 0.8087411822604721,
+          "confidence": 63
+        },
+        {
+          "coin_id": "fetch-ai",
+          "symbol": "FET",
+          "name": "Artificial Superintelligence Alliance",
+          "action": "BUY",
+          "entry": 0.165662,
+          "sl": 0.16395499921240891,
+          "tp1": 0.16793800105012147,
+          "tp2": 0.1690760015751822,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
