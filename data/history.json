@@ -2703,6 +2703,57 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-09-07",
+      "session": "PAGI",
+      "saved_at": "2026-09-07T10:37:39+07:00",
+      "signals": [
+        {
+          "coin_id": "artificial-inu-3",
+          "symbol": "AI",
+          "name": "Artificial Inu",
+          "action": "BUY",
+          "entry": 0.234025,
+          "sl": 0.216940459450539,
+          "tp1": 0.25680438739928135,
+          "tp2": 0.26819408109892207,
+          "confidence": 69
+        },
+        {
+          "coin_id": "virtual-protocol",
+          "symbol": "VIRTUAL",
+          "name": "Virtuals Protocol",
+          "action": "BUY",
+          "entry": 0.718265,
+          "sl": 0.7073296610787367,
+          "tp1": 0.7328454518950178,
+          "tp2": 0.7401356778425268,
+          "confidence": 76
+        },
+        {
+          "coin_id": "fetch-ai",
+          "symbol": "FET",
+          "name": "Artificial Superintelligence Alliance",
+          "action": "BUY",
+          "entry": 0.171836,
+          "sl": 0.16932759441825496,
+          "tp1": 0.17518054077566003,
+          "tp2": 0.17685281116349005,
+          "confidence": 63
+        },
+        {
+          "coin_id": "bittensor",
+          "symbol": "TAO",
+          "name": "Bittensor",
+          "action": "BUY",
+          "entry": 268.15,
+          "sl": 263.14676216816633,
+          "tp1": 274.8209837757782,
+          "tp2": 278.1564756636673,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
