@@ -2805,6 +2805,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-08",
+      "session": "MALAM",
+      "saved_at": "2026-09-08T23:18:38+07:00",
+      "signals": [
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "BUY",
+          "entry": 0.828888,
+          "sl": 0.8009390295372408,
+          "tp1": 0.8661532939503455,
+          "tp2": 0.8847859409255182,
+          "confidence": 69
+        },
+        {
+          "coin_id": "sonic-3",
+          "symbol": "S",
+          "name": "Sonic",
+          "action": "BUY",
+          "entry": 0.03050549,
+          "sl": 0.030157488524324882,
+          "tp1": 0.030969491967566824,
+          "tp2": 0.031201492951350232,
+          "confidence": 69
+        },
+        {
+          "coin_id": "four",
+          "symbol": "FORM",
+          "name": "Four",
+          "action": "BUY",
+          "entry": 0.309128,
+          "sl": 0.2953297228979767,
+          "tp1": 0.32752570280269777,
+          "tp2": 0.3367245542040466,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
