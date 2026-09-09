@@ -2845,6 +2845,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-09",
+      "session": "PAGI",
+      "saved_at": "2026-09-09T10:48:35+07:00",
+      "signals": [
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "BUY",
+          "entry": 0.756876,
+          "sl": 0.7309609909036732,
+          "tp1": 0.791429345461769,
+          "tp2": 0.8087060181926535,
+          "confidence": 63
+        },
+        {
+          "coin_id": "basic-attention-token",
+          "symbol": "BAT",
+          "name": "Basic Attention",
+          "action": "BUY",
+          "entry": 0.077065,
+          "sl": 0.07629003326534955,
+          "tp1": 0.07809828897953393,
+          "tp2": 0.07861493346930089,
+          "confidence": 63
+        },
+        {
+          "coin_id": "venice-token",
+          "symbol": "VVV",
+          "name": "Venice Token",
+          "action": "BUY",
+          "entry": 25.1,
+          "sl": 23.903943587152167,
+          "tp1": 26.694741883797114,
+          "tp2": 27.49211282569567,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
