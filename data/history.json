@@ -2947,6 +2947,68 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-09-10",
+      "session": "PAGI",
+      "saved_at": "2026-09-10T10:46:38+07:00",
+      "signals": [
+        {
+          "coin_id": "mina-protocol",
+          "symbol": "MINA",
+          "name": "Mina Protocol",
+          "action": "BUY",
+          "entry": 0.093319,
+          "sl": 0.0910762256156193,
+          "tp1": 0.09630936584584093,
+          "tp2": 0.09780454876876139,
+          "confidence": 76
+        },
+        {
+          "coin_id": "bittorrent",
+          "symbol": "BTT",
+          "name": "BitTorrent",
+          "action": "BUY",
+          "entry": 3.25079e-07,
+          "sl": 3.227927153482939e-07,
+          "tp1": 3.281273795356082e-07,
+          "tp2": 3.2965156930341225e-07,
+          "confidence": 82
+        },
+        {
+          "coin_id": "ribbita-by-virtuals",
+          "symbol": "TIBBIR",
+          "name": "Ribbita by Virtuals",
+          "action": "SELL",
+          "entry": 0.188373,
+          "sl": 0.1919744661492695,
+          "tp1": 0.18357104513430736,
+          "tp2": 0.18117006770146105,
+          "confidence": 69
+        },
+        {
+          "coin_id": "zama",
+          "symbol": "ZAMA",
+          "name": "Zama",
+          "action": "SELL",
+          "entry": 0.0487032,
+          "sl": 0.04995005006747797,
+          "tp1": 0.04704073324336271,
+          "tp2": 0.04620949986504407,
+          "confidence": 63
+        },
+        {
+          "coin_id": "edgex",
+          "symbol": "EDGE",
+          "name": "edgeX",
+          "action": "BUY",
+          "entry": 0.595179,
+          "sl": 0.5848591759797548,
+          "tp1": 0.608938765360327,
+          "tp2": 0.6158186480404905,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
