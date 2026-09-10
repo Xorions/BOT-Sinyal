@@ -3009,6 +3009,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-10",
+      "session": "MALAM",
+      "saved_at": "2026-09-10T23:05:20+07:00",
+      "signals": [
+        {
+          "coin_id": "artificial-inu-3",
+          "symbol": "AI",
+          "name": "Artificial Inu",
+          "action": "SELL",
+          "entry": 0.186714,
+          "sl": 0.1962272785267082,
+          "tp1": 0.1740296286310557,
+          "tp2": 0.16768744294658355,
+          "confidence": 69
+        },
+        {
+          "coin_id": "fartcoin",
+          "symbol": "FARTCOIN",
+          "name": "Fartcoin",
+          "action": "SELL",
+          "entry": 0.139466,
+          "sl": 0.14181520668378328,
+          "tp1": 0.1363337244216223,
+          "tp2": 0.13476758663243346,
+          "confidence": 63
+        },
+        {
+          "coin_id": "ribbita-by-virtuals",
+          "symbol": "TIBBIR",
+          "name": "Ribbita by Virtuals",
+          "action": "SELL",
+          "entry": 0.182403,
+          "sl": 0.18644919949274125,
+          "tp1": 0.17700806734301167,
+          "tp2": 0.1743106010145175,
+          "confidence": 63
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "SELL",
+          "entry": 0.148346,
+          "sl": 0.15034738998126593,
+          "tp1": 0.14567748002497877,
+          "tp2": 0.14434322003746816,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pump-fun",
+          "symbol": "PUMP",
+          "name": "Pump.fun",
+          "action": "SELL",
+          "entry": 0.00384678,
+          "sl": 0.003921980258136144,
+          "tp1": 0.003746512989151809,
+          "tp2": 0.0036963794837277138,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
