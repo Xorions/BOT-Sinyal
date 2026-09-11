@@ -3071,6 +3071,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-11",
+      "session": "PAGI",
+      "saved_at": "2026-09-11T10:45:12+07:00",
+      "signals": [
+        {
+          "coin_id": "aptos",
+          "symbol": "APT",
+          "name": "Aptos",
+          "action": "BUY",
+          "entry": 0.647035,
+          "sl": 0.6361691468874223,
+          "tp1": 0.6615228041501036,
+          "tp2": 0.6687667062251554,
+          "confidence": 76
+        },
+        {
+          "coin_id": "raydium",
+          "symbol": "RAY",
+          "name": "Raydium",
+          "action": "BUY",
+          "entry": 1.6,
+          "sl": 1.5465030333718304,
+          "tp1": 1.67132928883756,
+          "tp2": 1.7069939332563397,
+          "confidence": 69
+        },
+        {
+          "coin_id": "stonk-3",
+          "symbol": "STONK",
+          "name": "STONK",
+          "action": "BUY",
+          "entry": 0.289203,
+          "sl": 0.2666028903314322,
+          "tp1": 0.31933647955809036,
+          "tp2": 0.33440321933713557,
+          "confidence": 69
+        },
+        {
+          "coin_id": "niu-lai",
+          "symbol": "牛来",
+          "name": "牛来 (Niu Lai)",
+          "action": "BUY",
+          "entry": 0.129453,
+          "sl": 0.12152015013861092,
+          "tp1": 0.1400301331485188,
+          "tp2": 0.1453186997227782,
+          "confidence": 76
+        },
+        {
+          "coin_id": "ether-fi",
+          "symbol": "ETHFI",
+          "name": "Ether.fi",
+          "action": "BUY",
+          "entry": 0.672,
+          "sl": 0.6579083207841414,
+          "tp1": 0.6907889056211449,
+          "tp2": 0.7001833584317174,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
