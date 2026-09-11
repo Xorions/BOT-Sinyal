@@ -3133,6 +3133,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-11",
+      "session": "MALAM",
+      "saved_at": "2026-09-11T23:08:07+07:00",
+      "signals": [
+        {
+          "coin_id": "eigenlayer",
+          "symbol": "EIGEN",
+          "name": "EigenCloud (prev. EigenLayer)",
+          "action": "BUY",
+          "entry": 0.222944,
+          "sl": 0.21859987681227652,
+          "tp1": 0.22873616425029797,
+          "tp2": 0.23163224637544697,
+          "confidence": 69
+        },
+        {
+          "coin_id": "chain-2",
+          "symbol": "XCN",
+          "name": "Onyxcoin",
+          "action": "BUY",
+          "entry": 0.00418639,
+          "sl": 0.004102285992342481,
+          "tp1": 0.004298528676876692,
+          "tp2": 0.004354598015315038,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
