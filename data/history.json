@@ -3224,6 +3224,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-12",
+      "session": "MALAM",
+      "saved_at": "2026-09-12T22:16:37+07:00",
+      "signals": [
+        {
+          "coin_id": "mina-protocol",
+          "symbol": "MINA",
+          "name": "Mina Protocol",
+          "action": "BUY",
+          "entry": 0.113594,
+          "sl": 0.11071350014842286,
+          "tp1": 0.11743466646876952,
+          "tp2": 0.11935499970315427,
+          "confidence": 63
+        },
+        {
+          "coin_id": "fartcoin",
+          "symbol": "FARTCOIN",
+          "name": "Fartcoin",
+          "action": "SELL",
+          "entry": 0.144594,
+          "sl": 0.14588201863382025,
+          "tp1": 0.142876641821573,
+          "tp2": 0.1420179627323595,
+          "confidence": 63
+        },
+        {
+          "coin_id": "plasma",
+          "symbol": "XPL",
+          "name": "Plasma",
+          "action": "SELL",
+          "entry": 0.082631,
+          "sl": 0.08342004444759991,
+          "tp1": 0.08157894073653343,
+          "tp2": 0.08105291110480016,
+          "confidence": 63
+        },
+        {
+          "coin_id": "dogwifcoin",
+          "symbol": "WIF",
+          "name": "dogwifhat",
+          "action": "SELL",
+          "entry": 0.192542,
+          "sl": 0.19408223351984985,
+          "tp1": 0.19048835530686684,
+          "tp2": 0.18946153296030027,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
