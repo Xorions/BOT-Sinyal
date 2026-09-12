@@ -3162,6 +3162,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-12",
+      "session": "PAGI",
+      "saved_at": "2026-09-12T10:46:58+07:00",
+      "signals": [
+        {
+          "coin_id": "ether-fi",
+          "symbol": "ETHFI",
+          "name": "Ether.fi",
+          "action": "BUY",
+          "entry": 0.71622,
+          "sl": 0.6964960557825431,
+          "tp1": 0.7425185922899424,
+          "tp2": 0.7556678884349136,
+          "confidence": 76
+        },
+        {
+          "coin_id": "marscoin-4",
+          "symbol": "MARSCOIN",
+          "name": "MarsCoin",
+          "action": "SELL",
+          "entry": 0.112535,
+          "sl": 0.11619088339235786,
+          "tp1": 0.10766048881018951,
+          "tp2": 0.10522323321528428,
+          "confidence": 76
+        },
+        {
+          "coin_id": "theta-token",
+          "symbol": "THETA",
+          "name": "Theta Network",
+          "action": "BUY",
+          "entry": 0.190994,
+          "sl": 0.1874868254941227,
+          "tp1": 0.19567023267450306,
+          "tp2": 0.1980083490117546,
+          "confidence": 63
+        },
+        {
+          "coin_id": "artificial-inu-3",
+          "symbol": "AI",
+          "name": "Artificial Inu",
+          "action": "BUY",
+          "entry": 0.277273,
+          "sl": 0.2615035354051663,
+          "tp1": 0.2982989527931116,
+          "tp2": 0.3088119291896674,
+          "confidence": 63
+        },
+        {
+          "coin_id": "kaspa",
+          "symbol": "KAS",
+          "name": "Kaspa",
+          "action": "BUY",
+          "entry": 0.03646941,
+          "sl": 0.03587809127812085,
+          "tp1": 0.037257834962505544,
+          "tp2": 0.037652047443758316,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
