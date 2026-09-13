@@ -3337,6 +3337,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-13",
+      "session": "MALAM",
+      "saved_at": "2026-09-13T22:53:13+07:00",
+      "signals": [
+        {
+          "coin_id": "basic-attention-token",
+          "symbol": "BAT",
+          "name": "Basic Attention",
+          "action": "BUY",
+          "entry": 0.081774,
+          "sl": 0.08043360497254944,
+          "tp1": 0.08356119336993409,
+          "tp2": 0.08445479005490114,
+          "confidence": 69
+        },
+        {
+          "coin_id": "virtual-protocol",
+          "symbol": "VIRTUAL",
+          "name": "Virtuals Protocol",
+          "action": "SELL",
+          "entry": 0.614771,
+          "sl": 0.6196167807703373,
+          "tp1": 0.6083099589728835,
+          "tp2": 0.6050794384593253,
+          "confidence": 76
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "SELL",
+          "entry": 0.138771,
+          "sl": 0.13983235899074792,
+          "tp1": 0.13735585467900277,
+          "tp2": 0.13664828201850415,
+          "confidence": 63
+        },
+        {
+          "coin_id": "uniswap",
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "action": "SELL",
+          "entry": 6.25,
+          "sl": 6.30112251946034,
+          "tp1": 6.181836640719546,
+          "tp2": 6.147754961079319,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
