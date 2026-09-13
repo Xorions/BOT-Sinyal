@@ -3275,6 +3275,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-13",
+      "session": "PAGI",
+      "saved_at": "2026-09-13T10:56:17+07:00",
+      "signals": [
+        {
+          "coin_id": "meteora",
+          "symbol": "MET",
+          "name": "Meteora",
+          "action": "BUY",
+          "entry": 0.245236,
+          "sl": 0.23805711450555772,
+          "tp1": 0.25480784732592304,
+          "tp2": 0.2595937709888846,
+          "confidence": 76
+        },
+        {
+          "coin_id": "theta-token",
+          "symbol": "THETA",
+          "name": "Theta Network",
+          "action": "BUY",
+          "entry": 0.200891,
+          "sl": 0.19763260023492576,
+          "tp1": 0.20523553302009892,
+          "tp2": 0.2074077995301484,
+          "confidence": 69
+        },
+        {
+          "coin_id": "dogwifcoin",
+          "symbol": "WIF",
+          "name": "dogwifhat",
+          "action": "SELL",
+          "entry": 0.189546,
+          "sl": 0.19068217274739305,
+          "tp1": 0.18803110300347592,
+          "tp2": 0.18727365450521385,
+          "confidence": 63
+        },
+        {
+          "coin_id": "akedo",
+          "symbol": "AKE",
+          "name": "Akedo",
+          "action": "BUY",
+          "entry": 0.01599976,
+          "sl": 0.015700974346471636,
+          "tp1": 0.016398140871371147,
+          "tp2": 0.01659733130705672,
+          "confidence": 63
+        },
+        {
+          "coin_id": "raydium",
+          "symbol": "RAY",
+          "name": "Raydium",
+          "action": "SELL",
+          "entry": 1.47,
+          "sl": 1.4984869051494454,
+          "tp1": 1.4320174598007394,
+          "tp2": 1.4130261897011092,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
