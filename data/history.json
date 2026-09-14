@@ -3388,6 +3388,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-14",
+      "session": "PAGI",
+      "saved_at": "2026-09-14T11:01:08+07:00",
+      "signals": [
+        {
+          "coin_id": "golem",
+          "symbol": "GLM",
+          "name": "Golem",
+          "action": "BUY",
+          "entry": 0.124706,
+          "sl": 0.1208463374444685,
+          "tp1": 0.12985221674070865,
+          "tp2": 0.132425325111063,
+          "confidence": 76
+        },
+        {
+          "coin_id": "injective-protocol",
+          "symbol": "INJ",
+          "name": "Injective",
+          "action": "BUY",
+          "entry": 6.18,
+          "sl": 6.0865058072153415,
+          "tp1": 6.304658923712878,
+          "tp2": 6.366988385569317,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pendle",
+          "symbol": "PENDLE",
+          "name": "Pendle",
+          "action": "BUY",
+          "entry": 2.25,
+          "sl": 2.21564072130311,
+          "tp1": 2.295812371595853,
+          "tp2": 2.318718557393779,
+          "confidence": 76
+        },
+        {
+          "coin_id": "bitway",
+          "symbol": "BTW",
+          "name": "Bitway",
+          "action": "BUY",
+          "entry": 0.720351,
+          "sl": 0.688533318392327,
+          "tp1": 0.7627745754768973,
+          "tp2": 0.7839863632153459,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
