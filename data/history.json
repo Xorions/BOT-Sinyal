@@ -3439,6 +3439,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-15",
+      "session": "PAGI",
+      "saved_at": "2026-09-15T00:55:57+07:00",
+      "signals": [
+        {
+          "coin_id": "artificial-inu-3",
+          "symbol": "AI",
+          "name": "Artificial Inu",
+          "action": "BUY",
+          "entry": 0.336162,
+          "sl": 0.3185197819854126,
+          "tp1": 0.3596849573527832,
+          "tp2": 0.3714464360291748,
+          "confidence": 76
+        },
+        {
+          "coin_id": "sentient",
+          "symbol": "SENT",
+          "name": "Sentient",
+          "action": "BUY",
+          "entry": 0.01640619,
+          "sl": 0.0160599430208332,
+          "tp1": 0.01686785263888907,
+          "tp2": 0.017098683958333603,
+          "confidence": 76
+        },
+        {
+          "coin_id": "near",
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "action": "BUY",
+          "entry": 2.58,
+          "sl": 2.539830037643183,
+          "tp1": 2.6335599498090896,
+          "tp2": 2.6603399247136346,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pendle",
+          "symbol": "PENDLE",
+          "name": "Pendle",
+          "action": "BUY",
+          "entry": 2.34,
+          "sl": 2.305178913633534,
+          "tp1": 2.386428115155288,
+          "tp2": 2.409642172732932,
+          "confidence": 76
+        },
+        {
+          "coin_id": "lobster-2",
+          "symbol": "龙虾",
+          "name": "龙虾 (Lobster)",
+          "action": "BUY",
+          "entry": 0.164144,
+          "sl": 0.15655655164038995,
+          "tp1": 0.17426059781281344,
+          "tp2": 0.17931889671922016,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
