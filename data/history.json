@@ -3501,6 +3501,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-15",
+      "session": "MALAM",
+      "saved_at": "2026-09-15T23:35:23+07:00",
+      "signals": [
+        {
+          "coin_id": "arbitrum",
+          "symbol": "ARB",
+          "name": "Arbitrum",
+          "action": "BUY",
+          "entry": 0.155058,
+          "sl": 0.15141860404706575,
+          "tp1": 0.15991052793724564,
+          "tp2": 0.16233679190586847,
+          "confidence": 82
+        },
+        {
+          "coin_id": "artificial-inu-3",
+          "symbol": "AI",
+          "name": "Artificial Inu",
+          "action": "BUY",
+          "entry": 0.302922,
+          "sl": 0.28966743056947736,
+          "tp1": 0.3205947592406969,
+          "tp2": 0.32943113886104536,
+          "confidence": 63
+        },
+        {
+          "coin_id": "lobster-2",
+          "symbol": "龙虾",
+          "name": "龙虾 (Lobster)",
+          "action": "BUY",
+          "entry": 0.179682,
+          "sl": 0.17432731933670598,
+          "tp1": 0.18682157421772538,
+          "tp2": 0.19039136132658804,
+          "confidence": 63
+        },
+        {
+          "coin_id": "worldcoin-wld",
+          "symbol": "WLD",
+          "name": "Worldcoin",
+          "action": "SELL",
+          "entry": 0.371533,
+          "sl": 0.37477108930012976,
+          "tp1": 0.36721554759982705,
+          "tp2": 0.36505682139974055,
+          "confidence": 69
+        },
+        {
+          "coin_id": "sui",
+          "symbol": "SUI",
+          "name": "Sui",
+          "action": "SELL",
+          "entry": 0.703459,
+          "sl": 0.7092883265239134,
+          "tp1": 0.695686564634782,
+          "tp2": 0.6918003469521731,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
