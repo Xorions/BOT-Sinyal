@@ -3563,6 +3563,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-16",
+      "session": "PAGI",
+      "saved_at": "2026-09-16T11:01:05+07:00",
+      "signals": [
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "SELL",
+          "entry": 0.585986,
+          "sl": 0.6087547280647487,
+          "tp1": 0.5556276959136683,
+          "tp2": 0.5404485438705025,
+          "confidence": 82
+        },
+        {
+          "coin_id": "akedo",
+          "symbol": "AKE",
+          "name": "Akedo",
+          "action": "BUY",
+          "entry": 0.02839086,
+          "sl": 0.02713141061344064,
+          "tp1": 0.030070125848745813,
+          "tp2": 0.03090975877311872,
+          "confidence": 63
+        },
+        {
+          "coin_id": "humanity",
+          "symbol": "H",
+          "name": "Humanity",
+          "action": "BUY",
+          "entry": 0.086416,
+          "sl": 0.08500095634213883,
+          "tp1": 0.08830272487714824,
+          "tp2": 0.08924608731572235,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
