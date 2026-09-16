@@ -3603,6 +3603,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-16",
+      "session": "MALAM",
+      "saved_at": "2026-09-16T23:26:48+07:00",
+      "signals": [
+        {
+          "coin_id": "lisk",
+          "symbol": "LSK",
+          "name": "Lisk",
+          "action": "BUY",
+          "entry": 0.724486,
+          "sl": 0.6684346246110239,
+          "tp1": 0.7992211671853015,
+          "tp2": 0.8365887507779521,
+          "confidence": 76
+        },
+        {
+          "coin_id": "raydium",
+          "symbol": "RAY",
+          "name": "Raydium",
+          "action": "BUY",
+          "entry": 1.39,
+          "sl": 1.3572487521861647,
+          "tp1": 1.433668330418447,
+          "tp2": 1.4555024956276705,
+          "confidence": 76
+        },
+        {
+          "coin_id": "worldcoin-wld",
+          "symbol": "WLD",
+          "name": "Worldcoin",
+          "action": "SELL",
+          "entry": 0.360303,
+          "sl": 0.3637459390200324,
+          "tp1": 0.3557124146399568,
+          "tp2": 0.3534171219599352,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "SELL",
+          "entry": 0.00676901,
+          "sl": 0.00682532549675493,
+          "tp1": 0.006693922670993426,
+          "tp2": 0.00665637900649014,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "SELL",
+          "entry": 0.584846,
+          "sl": 0.601755612215391,
+          "tp1": 0.5622998503794787,
+          "tp2": 0.5510267755692181,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
