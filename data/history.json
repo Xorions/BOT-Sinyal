@@ -3665,6 +3665,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-17",
+      "session": "PAGI",
+      "saved_at": "2026-09-17T11:04:53+07:00",
+      "signals": [
+        {
+          "coin_id": "arbitrum",
+          "symbol": "ARB",
+          "name": "Arbitrum",
+          "action": "BUY",
+          "entry": 0.16566,
+          "sl": 0.1620517785491294,
+          "tp1": 0.17047096193449415,
+          "tp2": 0.17287644290174123,
+          "confidence": 63
+        },
+        {
+          "coin_id": "useless-3",
+          "symbol": "USELESS",
+          "name": "Useless Coin",
+          "action": "BUY",
+          "entry": 0.258555,
+          "sl": 0.2506003817134498,
+          "tp1": 0.2691611577154003,
+          "tp2": 0.27446423657310043,
+          "confidence": 69
+        },
+        {
+          "coin_id": "near",
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "action": "BUY",
+          "entry": 2.7,
+          "sl": 2.6572620098975186,
+          "tp1": 2.7569839868033093,
+          "tp2": 2.7854759802049633,
+          "confidence": 63
+        },
+        {
+          "coin_id": "artificial-inu-3",
+          "symbol": "AI",
+          "name": "Artificial Inu",
+          "action": "BUY",
+          "entry": 0.282031,
+          "sl": 0.27202566208842877,
+          "tp1": 0.29537145054876157,
+          "tp2": 0.3020416758231424,
+          "confidence": 63
+        },
+        {
+          "coin_id": "derive",
+          "symbol": "DRV",
+          "name": "Derive",
+          "action": "BUY",
+          "entry": 0.244425,
+          "sl": 0.2299661730422644,
+          "tp1": 0.2637034359436475,
+          "tp2": 0.2733426539154712,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
