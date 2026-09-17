@@ -3727,6 +3727,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-17",
+      "session": "MALAM",
+      "saved_at": "2026-09-17T23:34:19+07:00",
+      "signals": [
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "BUY",
+          "entry": 0.658668,
+          "sl": 0.6415262840500533,
+          "tp1": 0.6815236212665956,
+          "tp2": 0.6929514318998934,
+          "confidence": 76
+        },
+        {
+          "coin_id": "dash",
+          "symbol": "DASH",
+          "name": "Dash",
+          "action": "BUY",
+          "entry": 61.6,
+          "sl": 60.1345962980293,
+          "tp1": 63.5538716026276,
+          "tp2": 64.53080740394141,
+          "confidence": 76
+        },
+        {
+          "coin_id": "near",
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "action": "BUY",
+          "entry": 2.94,
+          "sl": 2.887602822776932,
+          "tp1": 3.00986290296409,
+          "tp2": 3.0447943544461356,
+          "confidence": 76
+        },
+        {
+          "coin_id": "arbitrum",
+          "symbol": "ARB",
+          "name": "Arbitrum",
+          "action": "BUY",
+          "entry": 0.174366,
+          "sl": 0.17079961902071308,
+          "tp1": 0.17912117463904922,
+          "tp2": 0.18149876195857384,
+          "confidence": 63
+        },
+        {
+          "coin_id": "optimism",
+          "symbol": "OP",
+          "name": "Optimism",
+          "action": "BUY",
+          "entry": 0.100349,
+          "sl": 0.09916212195342616,
+          "tp1": 0.10193150406209843,
+          "tp2": 0.10272275609314765,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
