@@ -3851,6 +3851,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-18",
+      "session": "MALAM",
+      "saved_at": "2026-09-18T23:04:56+07:00",
+      "signals": [
+        {
+          "coin_id": "derive",
+          "symbol": "DRV",
+          "name": "Derive",
+          "action": "BUY",
+          "entry": 0.270434,
+          "sl": 0.26111134924270624,
+          "tp1": 0.2828642010097251,
+          "tp2": 0.2890793015145876,
+          "confidence": 69
+        },
+        {
+          "coin_id": "uniswap",
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "action": "BUY",
+          "entry": 8.75,
+          "sl": 8.564264144045612,
+          "tp1": 8.997647807939183,
+          "tp2": 9.121471711908775,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
