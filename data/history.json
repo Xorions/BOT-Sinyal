@@ -3789,6 +3789,68 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-09-18",
+      "session": "PAGI",
+      "saved_at": "2026-09-18T10:52:37+07:00",
+      "signals": [
+        {
+          "coin_id": "useless-3",
+          "symbol": "USELESS",
+          "name": "Useless Coin",
+          "action": "BUY",
+          "entry": 0.269926,
+          "sl": 0.2626194624632324,
+          "tp1": 0.2796680500490234,
+          "tp2": 0.28453907507353515,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pendle",
+          "symbol": "PENDLE",
+          "name": "Pendle",
+          "action": "BUY",
+          "entry": 2.48,
+          "sl": 2.4419730629231644,
+          "tp1": 2.530702582769114,
+          "tp2": 2.556053874153671,
+          "confidence": 69
+        },
+        {
+          "coin_id": "artificial-inu-3",
+          "symbol": "AI",
+          "name": "Artificial Inu",
+          "action": "BUY",
+          "entry": 0.349706,
+          "sl": 0.33166902919738656,
+          "tp1": 0.37375529440348465,
+          "tp2": 0.38577994160522694,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "BUY",
+          "entry": 0.766988,
+          "sl": 0.7406285771154905,
+          "tp1": 0.8021338971793461,
+          "tp2": 0.8197068457690191,
+          "confidence": 69
+        },
+        {
+          "coin_id": "marscoin-4",
+          "symbol": "MARSCOIN",
+          "name": "MarsCoin",
+          "action": "BUY",
+          "entry": 0.12081,
+          "sl": 0.11727582208197336,
+          "tp1": 0.12552223722403552,
+          "tp2": 0.12787835583605328,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
