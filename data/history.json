@@ -3931,6 +3931,24 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-19",
+      "session": "MALAM",
+      "saved_at": "2026-09-19T22:38:28+07:00",
+      "signals": [
+        {
+          "coin_id": "jupiter-exchange-solana",
+          "symbol": "JUP",
+          "name": "Jupiter",
+          "action": "BUY",
+          "entry": 0.282436,
+          "sl": 0.2776764849169667,
+          "tp1": 0.2887820201107111,
+          "tp2": 0.2919550301660666,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
