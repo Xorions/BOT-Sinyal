@@ -3880,6 +3880,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-19",
+      "session": "PAGI",
+      "saved_at": "2026-09-19T10:50:06+07:00",
+      "signals": [
+        {
+          "coin_id": "pendle",
+          "symbol": "PENDLE",
+          "name": "Pendle",
+          "action": "BUY",
+          "entry": 2.69,
+          "sl": 2.6470859981760393,
+          "tp1": 2.747218669098614,
+          "tp2": 2.7758280036479213,
+          "confidence": 63
+        },
+        {
+          "coin_id": "polygon-ecosystem-token",
+          "symbol": "POL",
+          "name": "POL (ex-MATIC)",
+          "action": "BUY",
+          "entry": 0.106898,
+          "sl": 0.10507871746766478,
+          "tp1": 0.10932371004311364,
+          "tp2": 0.11053656506467045,
+          "confidence": 63
+        },
+        {
+          "coin_id": "eigenlayer",
+          "symbol": "EIGEN",
+          "name": "EigenCloud (prev. EigenLayer)",
+          "action": "BUY",
+          "entry": 0.240254,
+          "sl": 0.23703041817996318,
+          "tp1": 0.24455210909338243,
+          "tp2": 0.24670116364007366,
+          "confidence": 69
+        },
+        {
+          "coin_id": "bedrock-token",
+          "symbol": "BR",
+          "name": "Bedrock",
+          "action": "BUY",
+          "entry": 0.878082,
+          "sl": 0.8341526815614633,
+          "tp1": 0.9366544245847157,
+          "tp2": 0.9659406368770735,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
