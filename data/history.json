@@ -3949,6 +3949,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-20",
+      "session": "PAGI",
+      "saved_at": "2026-09-20T11:06:10+07:00",
+      "signals": [
+        {
+          "coin_id": "celestia",
+          "symbol": "TIA",
+          "name": "Celestia",
+          "action": "BUY",
+          "entry": 0.427257,
+          "sl": 0.42148781545058817,
+          "tp1": 0.4349492460658825,
+          "tp2": 0.4387953690988237,
+          "confidence": 69
+        },
+        {
+          "coin_id": "jito-governance-token",
+          "symbol": "JTO",
+          "name": "Jito",
+          "action": "BUY",
+          "entry": 0.498877,
+          "sl": 0.488252343891266,
+          "tp1": 0.5130432081449787,
+          "tp2": 0.5201263122174681,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
