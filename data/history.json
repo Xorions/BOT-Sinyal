@@ -3978,6 +3978,57 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-09-20",
+      "session": "MALAM",
+      "saved_at": "2026-09-20T22:44:28+07:00",
+      "signals": [
+        {
+          "coin_id": "algorand",
+          "symbol": "ALGO",
+          "name": "Algorand",
+          "action": "BUY",
+          "entry": 0.111755,
+          "sl": 0.10948214380188633,
+          "tp1": 0.11478547493081821,
+          "tp2": 0.11630071239622733,
+          "confidence": 76
+        },
+        {
+          "coin_id": "venice-token",
+          "symbol": "VVV",
+          "name": "Venice Token",
+          "action": "BUY",
+          "entry": 29.15,
+          "sl": 28.38606410158565,
+          "tp1": 30.1685811978858,
+          "tp2": 30.677871796828697,
+          "confidence": 63
+        },
+        {
+          "coin_id": "avalanche-2",
+          "symbol": "AVAX",
+          "name": "Avalanche",
+          "action": "BUY",
+          "entry": 11.14,
+          "sl": 10.858724099123833,
+          "tp1": 11.515034534501558,
+          "tp2": 11.702551801752335,
+          "confidence": 76
+        },
+        {
+          "coin_id": "sonic-3",
+          "symbol": "S",
+          "name": "Sonic",
+          "action": "BUY",
+          "entry": 0.03497332,
+          "sl": 0.034121751659884535,
+          "tp1": 0.036108744453487295,
+          "tp2": 0.03667645668023094,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
