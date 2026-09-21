@@ -4080,6 +4080,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-22",
+      "session": "PAGI",
+      "saved_at": "2026-09-22T01:03:25+07:00",
+      "signals": [
+        {
+          "coin_id": "plasma",
+          "symbol": "XPL",
+          "name": "Plasma",
+          "action": "BUY",
+          "entry": 0.097968,
+          "sl": 0.09573112711749768,
+          "tp1": 0.10095049717666976,
+          "tp2": 0.10244174576500464,
+          "confidence": 69
+        },
+        {
+          "coin_id": "aave",
+          "symbol": "AAVE",
+          "name": "Aave",
+          "action": "BUY",
+          "entry": 142.36,
+          "sl": 140.42779941530793,
+          "tp1": 144.9362674462561,
+          "tp2": 146.22440116938415,
+          "confidence": 63
+        },
+        {
+          "coin_id": "layerzero",
+          "symbol": "ZRO",
+          "name": "LayerZero",
+          "action": "BUY",
+          "entry": 1.16,
+          "sl": 1.1384726934622718,
+          "tp1": 1.1887030753836376,
+          "tp2": 1.2030546130754562,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
