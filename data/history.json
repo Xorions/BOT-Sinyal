@@ -4029,6 +4029,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-21",
+      "session": "PAGI",
+      "saved_at": "2026-09-21T11:02:38+07:00",
+      "signals": [
+        {
+          "coin_id": "near",
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "action": "BUY",
+          "entry": 4.38,
+          "sl": 4.242408204592975,
+          "tp1": 4.563455727209367,
+          "tp2": 4.65518359081405,
+          "confidence": 76
+        },
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "BUY",
+          "entry": 0.00808294,
+          "sl": 0.007946978764477931,
+          "tp1": 0.00826422164736276,
+          "tp2": 0.008354862471044139,
+          "confidence": 82
+        },
+        {
+          "coin_id": "aptos",
+          "symbol": "APT",
+          "name": "Aptos",
+          "action": "BUY",
+          "entry": 0.747583,
+          "sl": 0.7339765474227024,
+          "tp1": 0.7657249367697301,
+          "tp2": 0.7747959051545952,
+          "confidence": 63
+        },
+        {
+          "coin_id": "render-token",
+          "symbol": "RENDER",
+          "name": "Render",
+          "action": "BUY",
+          "entry": 1.73,
+          "sl": 1.6926831801806363,
+          "tp1": 1.7797557597591516,
+          "tp2": 1.8046336396387275,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
