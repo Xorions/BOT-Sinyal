@@ -4109,6 +4109,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-22",
+      "session": "MALAM",
+      "saved_at": "2026-09-22T23:34:49+07:00",
+      "signals": [
+        {
+          "coin_id": "filecoin",
+          "symbol": "FIL",
+          "name": "Filecoin",
+          "action": "BUY",
+          "entry": 1.004,
+          "sl": 0.9906932585271915,
+          "tp1": 1.0217423219637447,
+          "tp2": 1.030613482945617,
+          "confidence": 63
+        },
+        {
+          "coin_id": "apecoin",
+          "symbol": "APE",
+          "name": "ApeCoin",
+          "action": "BUY",
+          "entry": 0.151569,
+          "sl": 0.14976190759077326,
+          "tp1": 0.1539784565456357,
+          "tp2": 0.15518318481845353,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
