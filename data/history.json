@@ -4138,6 +4138,57 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-09-23",
+      "session": "PAGI",
+      "saved_at": "2026-09-23T10:56:41+07:00",
+      "signals": [
+        {
+          "coin_id": "official-trump",
+          "symbol": "TRUMP",
+          "name": "Official Trump",
+          "action": "BUY",
+          "entry": 2.25,
+          "sl": 2.2212130085063864,
+          "tp1": 2.288382655324818,
+          "tp2": 2.3075739829872273,
+          "confidence": 69
+        },
+        {
+          "coin_id": "layerzero",
+          "symbol": "ZRO",
+          "name": "LayerZero",
+          "action": "BUY",
+          "entry": 1.45,
+          "sl": 1.4112978701896395,
+          "tp1": 1.501602839747147,
+          "tp2": 1.5274042596207207,
+          "confidence": 69
+        },
+        {
+          "coin_id": "floki",
+          "symbol": "FLOKI",
+          "name": "FLOKI",
+          "action": "BUY",
+          "entry": 3.056e-05,
+          "sl": 3.016387046837607e-05,
+          "tp1": 3.108817270883191e-05,
+          "tp2": 3.135225906324786e-05,
+          "confidence": 63
+        },
+        {
+          "coin_id": "optimism",
+          "symbol": "OP",
+          "name": "Optimism",
+          "action": "BUY",
+          "entry": 0.138151,
+          "sl": 0.13596372931082742,
+          "tp1": 0.14106736091889677,
+          "tp2": 0.14252554137834514,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
