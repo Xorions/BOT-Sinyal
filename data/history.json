@@ -4280,6 +4280,68 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-09-24",
+      "session": "MALAM",
+      "saved_at": "2026-09-24T23:46:55+07:00",
+      "signals": [
+        {
+          "coin_id": "bonk",
+          "symbol": "BONK",
+          "name": "Bonk",
+          "action": "BUY",
+          "entry": 3.74e-06,
+          "sl": 3.661348270843253e-06,
+          "tp1": 3.844868972208997e-06,
+          "tp2": 3.897303458313495e-06,
+          "confidence": 69
+        },
+        {
+          "coin_id": "fartcoin",
+          "symbol": "FARTCOIN",
+          "name": "Fartcoin",
+          "action": "BUY",
+          "entry": 0.19313,
+          "sl": 0.1900676872936805,
+          "tp1": 0.19721308360842596,
+          "tp2": 0.19925462541263897,
+          "confidence": 76
+        },
+        {
+          "coin_id": "near",
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "action": "BUY",
+          "entry": 4.69,
+          "sl": 4.57790948403946,
+          "tp1": 4.83945402128072,
+          "tp2": 4.914181031921081,
+          "confidence": 69
+        },
+        {
+          "coin_id": "injective-protocol",
+          "symbol": "INJ",
+          "name": "Injective",
+          "action": "BUY",
+          "entry": 8.59,
+          "sl": 8.416660789377076,
+          "tp1": 8.821118947497231,
+          "tp2": 8.936678421245846,
+          "confidence": 63
+        },
+        {
+          "coin_id": "plasma",
+          "symbol": "XPL",
+          "name": "Plasma",
+          "action": "BUY",
+          "entry": 0.101107,
+          "sl": 0.09875013137721717,
+          "tp1": 0.10424949149704378,
+          "tp2": 0.10582073724556568,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
