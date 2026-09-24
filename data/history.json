@@ -4240,6 +4240,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-24",
+      "session": "PAGI",
+      "saved_at": "2026-09-24T10:50:28+07:00",
+      "signals": [
+        {
+          "coin_id": "chain-2",
+          "symbol": "XCN",
+          "name": "Onyxcoin",
+          "action": "BUY",
+          "entry": 0.00483383,
+          "sl": 0.004664542594805455,
+          "tp1": 0.005059546540259394,
+          "tp2": 0.005172404810389091,
+          "confidence": 63
+        },
+        {
+          "coin_id": "stonk-3",
+          "symbol": "STONK",
+          "name": "STONK",
+          "action": "BUY",
+          "entry": 0.357026,
+          "sl": 0.34613098253455166,
+          "tp1": 0.37155268995393115,
+          "tp2": 0.3788160349308967,
+          "confidence": 69
+        },
+        {
+          "coin_id": "lobster-2",
+          "symbol": "龙虾",
+          "name": "龙虾 (Lobster)",
+          "action": "SELL",
+          "entry": 0.142905,
+          "sl": 0.1525474298206193,
+          "tp1": 0.13004842690584095,
+          "tp2": 0.12362014035876143,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
