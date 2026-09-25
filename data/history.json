@@ -4382,6 +4382,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-25",
+      "session": "MALAM",
+      "saved_at": "2026-09-25T23:51:52+07:00",
+      "signals": [
+        {
+          "coin_id": "layerzero",
+          "symbol": "ZRO",
+          "name": "LayerZero",
+          "action": "BUY",
+          "entry": 1.54,
+          "sl": 1.510846411188175,
+          "tp1": 1.5788714517491,
+          "tp2": 1.59830717762365,
+          "confidence": 63
+        },
+        {
+          "coin_id": "sei-network",
+          "symbol": "SEI",
+          "name": "Sei",
+          "action": "BUY",
+          "entry": 0.06904,
+          "sl": 0.0678118451211169,
+          "tp1": 0.07067753983851081,
+          "tp2": 0.07149630975776622,
+          "confidence": 76
+        },
+        {
+          "coin_id": "axie-infinity",
+          "symbol": "AXS",
+          "name": "Axie Infinity",
+          "action": "BUY",
+          "entry": 1.19,
+          "sl": 1.169613971880157,
+          "tp1": 1.2171813708264572,
+          "tp2": 1.2307720562396858,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
