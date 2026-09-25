@@ -4342,6 +4342,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-25",
+      "session": "PAGI",
+      "saved_at": "2026-09-25T11:07:10+07:00",
+      "signals": [
+        {
+          "coin_id": "bonk",
+          "symbol": "BONK",
+          "name": "Bonk",
+          "action": "BUY",
+          "entry": 3.68e-06,
+          "sl": 3.625678556588214e-06,
+          "tp1": 3.7524285912157146e-06,
+          "tp2": 3.788642886823572e-06,
+          "confidence": 63
+        },
+        {
+          "coin_id": "the-sandbox",
+          "symbol": "SAND",
+          "name": "The Sandbox",
+          "action": "BUY",
+          "entry": 0.04301633,
+          "sl": 0.04253114743991424,
+          "tp1": 0.04366324008011434,
+          "tp2": 0.043986695120171504,
+          "confidence": 63
+        },
+        {
+          "coin_id": "optimism",
+          "symbol": "OP",
+          "name": "Optimism",
+          "action": "BUY",
+          "entry": 0.130138,
+          "sl": 0.12862235594788074,
+          "tp1": 0.13215885873615904,
+          "tp2": 0.13316928810423856,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
