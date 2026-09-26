@@ -4451,6 +4451,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-26",
+      "session": "MALAM",
+      "saved_at": "2026-09-26T23:04:15+07:00",
+      "signals": [
+        {
+          "coin_id": "arbitrum",
+          "symbol": "ARB",
+          "name": "Arbitrum",
+          "action": "BUY",
+          "entry": 0.230381,
+          "sl": 0.2273142522573876,
+          "tp1": 0.23446999699014986,
+          "tp2": 0.2365144954852248,
+          "confidence": 76
+        },
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "BUY",
+          "entry": 0.01023966,
+          "sl": 0.010099503425271255,
+          "tp1": 0.010426535432971657,
+          "tp2": 0.010519973149457486,
+          "confidence": 63
+        },
+        {
+          "coin_id": "lido-dao",
+          "symbol": "LDO",
+          "name": "Lido DAO",
+          "action": "BUY",
+          "entry": 0.498898,
+          "sl": 0.4918253508924836,
+          "tp1": 0.5083281988100219,
+          "tp2": 0.5130432982150328,
+          "confidence": 63
+        },
+        {
+          "coin_id": "polygon-ecosystem-token",
+          "symbol": "POL",
+          "name": "POL (ex-MATIC)",
+          "action": "BUY",
+          "entry": 0.120315,
+          "sl": 0.11905805396640073,
+          "tp1": 0.12199092804479904,
+          "tp2": 0.12282889206719856,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
