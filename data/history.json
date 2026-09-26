@@ -4422,6 +4422,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-26",
+      "session": "PAGI",
+      "saved_at": "2026-09-26T11:09:34+07:00",
+      "signals": [
+        {
+          "coin_id": "jito-governance-token",
+          "symbol": "JTO",
+          "name": "Jito",
+          "action": "BUY",
+          "entry": 0.578687,
+          "sl": 0.5694003529415745,
+          "tp1": 0.5910691960779004,
+          "tp2": 0.5972602941168507,
+          "confidence": 63
+        },
+        {
+          "coin_id": "dogwifcoin",
+          "symbol": "WIF",
+          "name": "dogwifhat",
+          "action": "BUY",
+          "entry": 0.248255,
+          "sl": 0.24505448764821158,
+          "tp1": 0.2525223498023846,
+          "tp2": 0.25465602470357684,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
