@@ -4502,6 +4502,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-27",
+      "session": "PAGI",
+      "saved_at": "2026-09-27T11:25:35+07:00",
+      "signals": [
+        {
+          "coin_id": "jito-governance-token",
+          "symbol": "JTO",
+          "name": "Jito",
+          "action": "BUY",
+          "entry": 0.629867,
+          "sl": 0.6193731783333937,
+          "tp1": 0.6438587622221417,
+          "tp2": 0.6508546433332125,
+          "confidence": 69
+        },
+        {
+          "coin_id": "blockstack",
+          "symbol": "STX",
+          "name": "Stacks",
+          "action": "BUY",
+          "entry": 0.349111,
+          "sl": 0.3449218833928656,
+          "tp1": 0.35469648880951254,
+          "tp2": 0.3574892332142688,
+          "confidence": 63
+        },
+        {
+          "coin_id": "quack-ai",
+          "symbol": "Q",
+          "name": "Quack AI",
+          "action": "BUY",
+          "entry": 0.03417049,
+          "sl": 0.0308395055743838,
+          "tp1": 0.03861180256748826,
+          "tp2": 0.04083245885123239,
+          "confidence": 63
+        },
+        {
+          "coin_id": "dash",
+          "symbol": "DASH",
+          "name": "Dash",
+          "action": "BUY",
+          "entry": 71.1,
+          "sl": 70.07370126572754,
+          "tp1": 72.46839831236328,
+          "tp2": 73.15259746854491,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
