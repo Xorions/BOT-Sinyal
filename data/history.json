@@ -4553,6 +4553,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-27",
+      "session": "MALAM",
+      "saved_at": "2026-09-27T23:39:56+07:00",
+      "signals": [
+        {
+          "coin_id": "quant-network",
+          "symbol": "QNT",
+          "name": "Quant",
+          "action": "BUY",
+          "entry": 186.36,
+          "sl": 176.049270669266,
+          "tp1": 200.10763910764535,
+          "tp2": 206.98145866146803,
+          "confidence": 69
+        },
+        {
+          "coin_id": "the-open-network",
+          "symbol": "GRAM",
+          "name": "Gram (prev. Toncoin)",
+          "action": "BUY",
+          "entry": 1.68,
+          "sl": 1.6505612362520006,
+          "tp1": 1.7192516849973323,
+          "tp2": 1.7388775274959984,
+          "confidence": 82
+        },
+        {
+          "coin_id": "near",
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "action": "BUY",
+          "entry": 5.21,
+          "sl": 5.13205076521172,
+          "tp1": 5.31393231305104,
+          "tp2": 5.3658984695765595,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pyth-network",
+          "symbol": "PYTH",
+          "name": "Pyth Network",
+          "action": "BUY",
+          "entry": 0.08424,
+          "sl": 0.0826394186321849,
+          "tp1": 0.08637410849042013,
+          "tp2": 0.0874411627356302,
+          "confidence": 63
+        },
+        {
+          "coin_id": "superfarm",
+          "symbol": "SUPER",
+          "name": "SuperVerse",
+          "action": "BUY",
+          "entry": 0.208946,
+          "sl": 0.2043731911759265,
+          "tp1": 0.21504307843209797,
+          "tp2": 0.21809161764814694,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
