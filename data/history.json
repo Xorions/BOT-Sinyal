@@ -4615,6 +4615,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-28",
+      "session": "PAGI",
+      "saved_at": "2026-09-28T11:26:40+07:00",
+      "signals": [
+        {
+          "coin_id": "ondo-finance",
+          "symbol": "ONDO",
+          "name": "Ondo",
+          "action": "BUY",
+          "entry": 0.589399,
+          "sl": 0.5767250322024376,
+          "tp1": 0.6062976237300832,
+          "tp2": 0.6147469355951248,
+          "confidence": 63
+        },
+        {
+          "coin_id": "jasmycoin",
+          "symbol": "JASMY",
+          "name": "JasmyCoin",
+          "action": "BUY",
+          "entry": 0.00533093,
+          "sl": 0.005222755022248366,
+          "tp1": 0.005475163303668845,
+          "tp2": 0.005547279955503267,
+          "confidence": 69
+        },
+        {
+          "coin_id": "arbitrum",
+          "symbol": "ARB",
+          "name": "Arbitrum",
+          "action": "SELL",
+          "entry": 0.215022,
+          "sl": 0.21864444820279497,
+          "tp1": 0.21019206906294002,
+          "tp2": 0.20777710359441,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
