@@ -4655,6 +4655,57 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-09-29",
+      "session": "PAGI",
+      "saved_at": "2026-09-29T02:28:10+07:00",
+      "signals": [
+        {
+          "coin_id": "thorchain",
+          "symbol": "RUNE",
+          "name": "THORChain",
+          "action": "BUY",
+          "entry": 0.78892,
+          "sl": 0.775136111928914,
+          "tp1": 0.8072985174281146,
+          "tp2": 0.816487776142172,
+          "confidence": 76
+        },
+        {
+          "coin_id": "marscoin-4",
+          "symbol": "MARSCOIN",
+          "name": "MarsCoin",
+          "action": "BUY",
+          "entry": 0.159803,
+          "sl": 0.15279553996582415,
+          "tp1": 0.1691462800455678,
+          "tp2": 0.1738179200683517,
+          "confidence": 63
+        },
+        {
+          "coin_id": "official-trump",
+          "symbol": "TRUMP",
+          "name": "Official Trump",
+          "action": "SELL",
+          "entry": 2.0,
+          "sl": 2.0312572765268544,
+          "tp1": 1.9583236312975272,
+          "tp2": 1.9374854469462908,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pepe",
+          "symbol": "PEPE",
+          "name": "Pepe",
+          "action": "SELL",
+          "entry": 4.2e-06,
+          "sl": 4.2546608500888e-06,
+          "tp1": 4.127118866548266e-06,
+          "tp2": 4.0906782998223985e-06,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
