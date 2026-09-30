@@ -4706,6 +4706,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-09-30",
+      "session": "PAGI",
+      "saved_at": "2026-09-30T11:43:25+07:00",
+      "signals": [
+        {
+          "coin_id": "lido-dao",
+          "symbol": "LDO",
+          "name": "Lido DAO",
+          "action": "BUY",
+          "entry": 0.475831,
+          "sl": 0.46967273837958456,
+          "tp1": 0.48404201549388726,
+          "tp2": 0.4881475232408309,
+          "confidence": 69
+        },
+        {
+          "coin_id": "jasmycoin",
+          "symbol": "JASMY",
+          "name": "JasmyCoin",
+          "action": "BUY",
+          "entry": 0.00532849,
+          "sl": 0.00525389521508665,
+          "tp1": 0.0054279497132178,
+          "tp2": 0.005477679569826701,
+          "confidence": 63
+        },
+        {
+          "coin_id": "quant-network",
+          "symbol": "QNT",
+          "name": "Quant",
+          "action": "BUY",
+          "entry": 284.04,
+          "sl": 272.95778511708784,
+          "tp1": 298.81628651054956,
+          "tp2": 306.20442976582433,
+          "confidence": 63
+        },
+        {
+          "coin_id": "sui",
+          "symbol": "SUI",
+          "name": "Sui",
+          "action": "BUY",
+          "entry": 1.16,
+          "sl": 1.1468757481200613,
+          "tp1": 1.1774990025065848,
+          "tp2": 1.1862485037598773,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
