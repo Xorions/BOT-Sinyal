@@ -4757,6 +4757,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-01",
+      "session": "PAGI",
+      "saved_at": "2026-10-01T00:49:16+07:00",
+      "signals": [
+        {
+          "coin_id": "monad",
+          "symbol": "MON",
+          "name": "Monad",
+          "action": "BUY",
+          "entry": 0.02846702,
+          "sl": 0.02793072963806495,
+          "tp1": 0.029182073815913395,
+          "tp2": 0.029539600723870095,
+          "confidence": 63
+        },
+        {
+          "coin_id": "artificial-inu-3",
+          "symbol": "AI",
+          "name": "Artificial Inu",
+          "action": "SELL",
+          "entry": 0.163317,
+          "sl": 0.17092212518953687,
+          "tp1": 0.1531768330806175,
+          "tp2": 0.14810674962092624,
+          "confidence": 63
+        },
+        {
+          "coin_id": "near",
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "action": "BUY",
+          "entry": 5.37,
+          "sl": 5.274409119413177,
+          "tp1": 5.497454507449098,
+          "tp2": 5.561181761173647,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
