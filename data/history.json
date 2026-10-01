@@ -4808,6 +4808,57 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-10-02",
+      "session": "PAGI",
+      "saved_at": "2026-10-02T01:16:05+07:00",
+      "signals": [
+        {
+          "coin_id": "layerzero",
+          "symbol": "ZRO",
+          "name": "LayerZero",
+          "action": "BUY",
+          "entry": 1.8,
+          "sl": 1.7567672323993442,
+          "tp1": 1.8576436901342077,
+          "tp2": 1.8864655352013115,
+          "confidence": 69
+        },
+        {
+          "coin_id": "monad",
+          "symbol": "MON",
+          "name": "Monad",
+          "action": "BUY",
+          "entry": 0.03432607,
+          "sl": 0.03345109671059703,
+          "tp1": 0.03549270105253729,
+          "tp2": 0.036076016578805936,
+          "confidence": 69
+        },
+        {
+          "coin_id": "aave",
+          "symbol": "AAVE",
+          "name": "Aave",
+          "action": "BUY",
+          "entry": 169.4,
+          "sl": 167.3494014065032,
+          "tp1": 172.13413145799575,
+          "tp2": 173.5011971869936,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pearl-2",
+          "symbol": "PRL",
+          "name": "Pearl",
+          "action": "SELL",
+          "entry": 1.17,
+          "sl": 1.1953074403992276,
+          "tp1": 1.1362567461343631,
+          "tp2": 1.1193851192015447,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
