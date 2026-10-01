@@ -4761,40 +4761,51 @@
     {
       "date": "2026-10-01",
       "session": "PAGI",
-      "saved_at": "2026-10-01T00:49:16+07:00",
+      "saved_at": "2026-10-01T11:53:50+07:00",
       "signals": [
-        {
-          "coin_id": "monad",
-          "symbol": "MON",
-          "name": "Monad",
-          "action": "BUY",
-          "entry": 0.02846702,
-          "sl": 0.02793072963806495,
-          "tp1": 0.029182073815913395,
-          "tp2": 0.029539600723870095,
-          "confidence": 63
-        },
-        {
-          "coin_id": "artificial-inu-3",
-          "symbol": "AI",
-          "name": "Artificial Inu",
-          "action": "SELL",
-          "entry": 0.163317,
-          "sl": 0.17092212518953687,
-          "tp1": 0.1531768330806175,
-          "tp2": 0.14810674962092624,
-          "confidence": 63
-        },
         {
           "coin_id": "near",
           "symbol": "NEAR",
           "name": "NEAR Protocol",
           "action": "BUY",
-          "entry": 5.37,
-          "sl": 5.274409119413177,
-          "tp1": 5.497454507449098,
-          "tp2": 5.561181761173647,
+          "entry": 5.45,
+          "sl": 5.356455733024312,
+          "tp1": 5.5747256893009185,
+          "tp2": 5.637088533951378,
           "confidence": 63
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "BUY",
+          "entry": 0.274399,
+          "sl": 0.2685524270728257,
+          "tp1": 0.2821944305695657,
+          "tp2": 0.2860921458543486,
+          "confidence": 76
+        },
+        {
+          "coin_id": "aave",
+          "symbol": "AAVE",
+          "name": "Aave",
+          "action": "BUY",
+          "entry": 166.56,
+          "sl": 164.60834101103632,
+          "tp1": 169.16221198528493,
+          "tp2": 170.4633179779274,
+          "confidence": 69
+        },
+        {
+          "coin_id": "algorand",
+          "symbol": "ALGO",
+          "name": "Algorand",
+          "action": "BUY",
+          "entry": 0.128769,
+          "sl": 0.12672811750242707,
+          "tp1": 0.13149017666343057,
+          "tp2": 0.13285076499514584,
+          "confidence": 69
         }
       ]
     }
