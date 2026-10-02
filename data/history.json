@@ -4859,6 +4859,57 @@
           "confidence": 76
         }
       ]
+    },
+    {
+      "date": "2026-10-03",
+      "session": "PAGI",
+      "saved_at": "2026-10-03T00:39:40+07:00",
+      "signals": [
+        {
+          "coin_id": "decentraland",
+          "symbol": "MANA",
+          "name": "Decentraland",
+          "action": "BUY",
+          "entry": 0.102619,
+          "sl": 0.09979158242848364,
+          "tp1": 0.10638889009535515,
+          "tp2": 0.10827383514303272,
+          "confidence": 63
+        },
+        {
+          "coin_id": "lighter",
+          "symbol": "LIT",
+          "name": "Lighter",
+          "action": "SELL",
+          "entry": 3.65,
+          "sl": 3.71197305615641,
+          "tp1": 3.5673692584581196,
+          "tp2": 3.5260538876871794,
+          "confidence": 69
+        },
+        {
+          "coin_id": "the-sandbox",
+          "symbol": "SAND",
+          "name": "The Sandbox",
+          "action": "BUY",
+          "entry": 0.063854,
+          "sl": 0.06065367201550561,
+          "tp1": 0.06812110397932583,
+          "tp2": 0.07025465596898876,
+          "confidence": 63
+        },
+        {
+          "coin_id": "gala",
+          "symbol": "GALA",
+          "name": "GALA",
+          "action": "BUY",
+          "entry": 0.00262226,
+          "sl": 0.0025711366983204725,
+          "tp1": 0.0026904244022393697,
+          "tp2": 0.002724506603359055,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
