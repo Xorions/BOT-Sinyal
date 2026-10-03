@@ -4921,6 +4921,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-03",
+      "session": "MALAM",
+      "saved_at": "2026-10-03T22:58:18+07:00",
+      "signals": [
+        {
+          "coin_id": "filecoin",
+          "symbol": "FIL",
+          "name": "Filecoin",
+          "action": "BUY",
+          "entry": 1.076,
+          "sl": 1.063076912977174,
+          "tp1": 1.0932307826971013,
+          "tp2": 1.101846174045652,
+          "confidence": 69
+        },
+        {
+          "coin_id": "jito-governance-token",
+          "symbol": "JTO",
+          "name": "Jito",
+          "action": "BUY",
+          "entry": 0.565983,
+          "sl": 0.5558063017378251,
+          "tp1": 0.5795519310162333,
+          "tp2": 0.5863363965243499,
+          "confidence": 76
+        },
+        {
+          "coin_id": "celestia",
+          "symbol": "TIA",
+          "name": "Celestia",
+          "action": "BUY",
+          "entry": 0.479737,
+          "sl": 0.4713989736630584,
+          "tp1": 0.49085436844925556,
+          "tp2": 0.4964130526738833,
+          "confidence": 69
+        },
+        {
+          "coin_id": "cash-cat",
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "action": "SELL",
+          "entry": 0.157488,
+          "sl": 0.15959336680055417,
+          "tp1": 0.15468084426592776,
+          "tp2": 0.15327726639889167,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
