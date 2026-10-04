@@ -5001,6 +5001,35 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-10-04",
+      "session": "MALAM",
+      "saved_at": "2026-10-04T23:39:49+07:00",
+      "signals": [
+        {
+          "coin_id": "near",
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "action": "BUY",
+          "entry": 4.87,
+          "sl": 4.832524383517472,
+          "tp1": 4.91996748864337,
+          "tp2": 4.944951232965055,
+          "confidence": 69
+        },
+        {
+          "coin_id": "dogwifcoin",
+          "symbol": "WIF",
+          "name": "dogwifhat",
+          "action": "SELL",
+          "entry": 0.245898,
+          "sl": 0.24782417703956816,
+          "tp1": 0.24332976394724246,
+          "tp2": 0.2420456459208637,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
