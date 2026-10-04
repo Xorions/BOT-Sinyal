@@ -4972,6 +4972,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-04",
+      "session": "PAGI",
+      "saved_at": "2026-10-04T11:58:04+07:00",
+      "signals": [
+        {
+          "coin_id": "axie-infinity",
+          "symbol": "AXS",
+          "name": "Axie Infinity",
+          "action": "BUY",
+          "entry": 1.36,
+          "sl": 1.331061448430124,
+          "tp1": 1.3985847354265017,
+          "tp2": 1.4178771031397526,
+          "confidence": 76
+        },
+        {
+          "coin_id": "monad",
+          "symbol": "MON",
+          "name": "Monad",
+          "action": "BUY",
+          "entry": 0.03475485,
+          "sl": 0.03414472610302637,
+          "tp1": 0.03556834852929817,
+          "tp2": 0.03597509779394725,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
