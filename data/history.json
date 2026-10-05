@@ -5070,6 +5070,68 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-10-06",
+      "session": "PAGI",
+      "saved_at": "2026-10-06T03:28:55+07:00",
+      "signals": [
+        {
+          "coin_id": "layerzero",
+          "symbol": "ZRO",
+          "name": "LayerZero",
+          "action": "BUY",
+          "entry": 2.13,
+          "sl": 2.0920537849178498,
+          "tp1": 2.180594953442867,
+          "tp2": 2.2058924301643,
+          "confidence": 76
+        },
+        {
+          "coin_id": "orca",
+          "symbol": "ORCA",
+          "name": "Orca",
+          "action": "BUY",
+          "entry": 2.2,
+          "sl": 2.1457033412265654,
+          "tp1": 2.2723955450312467,
+          "tp2": 2.3085933175468702,
+          "confidence": 69
+        },
+        {
+          "coin_id": "midnight-3",
+          "symbol": "NIGHT",
+          "name": "Midnight",
+          "action": "BUY",
+          "entry": 0.050316,
+          "sl": 0.04916268628178547,
+          "tp1": 0.05185375162428604,
+          "tp2": 0.052622627436429065,
+          "confidence": 76
+        },
+        {
+          "coin_id": "sentient",
+          "symbol": "SENT",
+          "name": "Sentient",
+          "action": "BUY",
+          "entry": 0.02480922,
+          "sl": 0.02443654575756668,
+          "tp1": 0.025306118989911093,
+          "tp2": 0.025554568484866643,
+          "confidence": 69
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "BUY",
+          "entry": 0.249158,
+          "sl": 0.24508381464446158,
+          "tp1": 0.2545902471407179,
+          "tp2": 0.2573063707110768,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
