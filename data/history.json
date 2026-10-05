@@ -5030,6 +5030,46 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-10-05",
+      "session": "PAGI",
+      "saved_at": "2026-10-05T11:46:24+07:00",
+      "signals": [
+        {
+          "coin_id": "useless-3",
+          "symbol": "USELESS",
+          "name": "Useless Coin",
+          "action": "SELL",
+          "entry": 0.232551,
+          "sl": 0.23486909510956588,
+          "tp1": 0.22946020652057883,
+          "tp2": 0.22791480978086825,
+          "confidence": 76
+        },
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "SELL",
+          "entry": 0.381833,
+          "sl": 0.38981868378345946,
+          "tp1": 0.371185421622054,
+          "tp2": 0.36586163243308095,
+          "confidence": 69
+        },
+        {
+          "coin_id": "virtual-protocol",
+          "symbol": "VIRTUAL",
+          "name": "Virtuals Protocol",
+          "action": "BUY",
+          "entry": 0.857873,
+          "sl": 0.8485318740475204,
+          "tp1": 0.8703278346033062,
+          "tp2": 0.8765552519049593,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
