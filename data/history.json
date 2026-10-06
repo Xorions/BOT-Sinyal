@@ -5172,6 +5172,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-07",
+      "session": "PAGI",
+      "saved_at": "2026-10-07T01:06:50+07:00",
+      "signals": [
+        {
+          "coin_id": "orca",
+          "symbol": "ORCA",
+          "name": "Orca",
+          "action": "BUY",
+          "entry": 3.16,
+          "sl": 3.025590760470025,
+          "tp1": 3.3392123193733005,
+          "tp2": 3.4288184790599505,
+          "confidence": 63
+        },
+        {
+          "coin_id": "layerzero",
+          "symbol": "ZRO",
+          "name": "LayerZero",
+          "action": "BUY",
+          "entry": 2.22,
+          "sl": 2.183526252957835,
+          "tp1": 2.268631662722887,
+          "tp2": 2.29294749408433,
+          "confidence": 63
+        },
+        {
+          "coin_id": "hash-2",
+          "symbol": "HASH",
+          "name": "Provenance Blockchain",
+          "action": "SELL",
+          "entry": 0.00516895,
+          "sl": 0.0054781847821979614,
+          "tp1": 0.004756636957069385,
+          "tp2": 0.004550480435604078,
+          "confidence": 63
+        },
+        {
+          "coin_id": "cap-4",
+          "symbol": "CAP",
+          "name": "Cap",
+          "action": "BUY",
+          "entry": 0.08636,
+          "sl": 0.08059369974251286,
+          "tp1": 0.0940484003433162,
+          "tp2": 0.0978926005149743,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
