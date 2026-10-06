@@ -5132,6 +5132,46 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-10-06",
+      "session": "MALAM",
+      "saved_at": "2026-10-06T12:31:30+07:00",
+      "signals": [
+        {
+          "coin_id": "orca",
+          "symbol": "ORCA",
+          "name": "Orca",
+          "action": "BUY",
+          "entry": 2.45,
+          "sl": 2.3773630560477166,
+          "tp1": 2.5468492586030447,
+          "tp2": 2.595273887904567,
+          "confidence": 76
+        },
+        {
+          "coin_id": "shuffle-2",
+          "symbol": "SHFL",
+          "name": "Shuffle",
+          "action": "SELL",
+          "entry": 0.40896,
+          "sl": 0.4160720520603139,
+          "tp1": 0.39947726391958144,
+          "tp2": 0.3947358958793722,
+          "confidence": 69
+        },
+        {
+          "coin_id": "stonk-3",
+          "symbol": "STONK",
+          "name": "STONK",
+          "action": "SELL",
+          "entry": 0.187382,
+          "sl": 0.1932138819988711,
+          "tp1": 0.1796061573348385,
+          "tp2": 0.17571823600225778,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
