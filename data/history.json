@@ -5176,50 +5176,39 @@
     {
       "date": "2026-10-07",
       "session": "PAGI",
-      "saved_at": "2026-10-07T01:06:50+07:00",
+      "saved_at": "2026-10-07T12:01:15+07:00",
       "signals": [
         {
-          "coin_id": "orca",
-          "symbol": "ORCA",
-          "name": "Orca",
+          "coin_id": "numeraire",
+          "symbol": "NMR",
+          "name": "Numeraire",
           "action": "BUY",
-          "entry": 3.16,
-          "sl": 3.025590760470025,
-          "tp1": 3.3392123193733005,
-          "tp2": 3.4288184790599505,
-          "confidence": 63
+          "entry": 17.85,
+          "sl": 17.13947490960262,
+          "tp1": 18.79736678719651,
+          "tp2": 19.271050180794767,
+          "confidence": 82
         },
         {
-          "coin_id": "layerzero",
-          "symbol": "ZRO",
-          "name": "LayerZero",
-          "action": "BUY",
-          "entry": 2.22,
-          "sl": 2.183526252957835,
-          "tp1": 2.268631662722887,
-          "tp2": 2.29294749408433,
-          "confidence": 63
-        },
-        {
-          "coin_id": "hash-2",
-          "symbol": "HASH",
-          "name": "Provenance Blockchain",
+          "coin_id": "quant-network",
+          "symbol": "QNT",
+          "name": "Quant",
           "action": "SELL",
-          "entry": 0.00516895,
-          "sl": 0.0054781847821979614,
-          "tp1": 0.004756636957069385,
-          "tp2": 0.004550480435604078,
-          "confidence": 63
+          "entry": 251.48,
+          "sl": 255.08447634606134,
+          "tp1": 246.67403153858487,
+          "tp2": 244.2710473078773,
+          "confidence": 69
         },
         {
-          "coin_id": "cap-4",
-          "symbol": "CAP",
-          "name": "Cap",
+          "coin_id": "meteora",
+          "symbol": "MET",
+          "name": "Meteora",
           "action": "BUY",
-          "entry": 0.08636,
-          "sl": 0.08059369974251286,
-          "tp1": 0.0940484003433162,
-          "tp2": 0.0978926005149743,
+          "entry": 0.312374,
+          "sl": 0.3059095791136344,
+          "tp1": 0.3209932278484874,
+          "tp2": 0.3253028417727311,
           "confidence": 63
         }
       ]
