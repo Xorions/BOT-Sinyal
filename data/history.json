@@ -5212,6 +5212,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-08",
+      "session": "PAGI",
+      "saved_at": "2026-10-08T01:39:47+07:00",
+      "signals": [
+        {
+          "coin_id": "decentraland",
+          "symbol": "MANA",
+          "name": "Decentraland",
+          "action": "BUY",
+          "entry": 0.105821,
+          "sl": 0.10341451613868731,
+          "tp1": 0.10902964514841691,
+          "tp2": 0.11063396772262536,
+          "confidence": 69
+        },
+        {
+          "coin_id": "bedrock-token",
+          "symbol": "BR",
+          "name": "Bedrock",
+          "action": "SELL",
+          "entry": 0.532338,
+          "sl": 0.565717419202482,
+          "tp1": 0.48783210773002395,
+          "tp2": 0.46557916159503593,
+          "confidence": 63
+        },
+        {
+          "coin_id": "useless-3",
+          "symbol": "USELESS",
+          "name": "Useless Coin",
+          "action": "SELL",
+          "entry": 0.200463,
+          "sl": 0.20451737986019386,
+          "tp1": 0.1950571601864082,
+          "tp2": 0.1923542402796123,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pendle",
+          "symbol": "PENDLE",
+          "name": "Pendle",
+          "action": "SELL",
+          "entry": 2.21,
+          "sl": 2.23536780405666,
+          "tp1": 2.1761762612577864,
+          "tp2": 2.1592643918866794,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
