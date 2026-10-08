@@ -5263,6 +5263,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-08",
+      "session": "MALAM",
+      "saved_at": "2026-10-08T12:11:56+07:00",
+      "signals": [
+        {
+          "coin_id": "zcash",
+          "symbol": "ZEC",
+          "name": "Zcash",
+          "action": "SELL",
+          "entry": 1241.31,
+          "sl": 1259.6806537867922,
+          "tp1": 1216.8157949509437,
+          "tp2": 1204.5686924264155,
+          "confidence": 76
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "SELL",
+          "entry": 0.218685,
+          "sl": 0.2219696129554384,
+          "tp1": 0.21430551605941545,
+          "tp2": 0.21211577408912316,
+          "confidence": 69
+        },
+        {
+          "coin_id": "the-sandbox",
+          "symbol": "SAND",
+          "name": "The Sandbox",
+          "action": "BUY",
+          "entry": 0.074999,
+          "sl": 0.07300832864067218,
+          "tp1": 0.07765322847910375,
+          "tp2": 0.07898034271865563,
+          "confidence": 63
+        },
+        {
+          "coin_id": "bedrock-token",
+          "symbol": "BR",
+          "name": "Bedrock",
+          "action": "SELL",
+          "entry": 0.511507,
+          "sl": 0.5318252642570923,
+          "tp1": 0.4844159809905436,
+          "tp2": 0.4708704714858154,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pump-fun",
+          "symbol": "PUMP",
+          "name": "Pump.fun",
+          "action": "SELL",
+          "entry": 0.00601416,
+          "sl": 0.00615846984464267,
+          "tp1": 0.005821746873809774,
+          "tp2": 0.005725540310714661,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
