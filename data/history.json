@@ -5325,6 +5325,68 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "session": "PAGI",
+      "saved_at": "2026-10-09T01:38:31+07:00",
+      "signals": [
+        {
+          "coin_id": "falcon-finance-ff",
+          "symbol": "FF",
+          "name": "Falcon Finance",
+          "action": "SELL",
+          "entry": 0.105674,
+          "sl": 0.10669501461731101,
+          "tp1": 0.10431264717691865,
+          "tp2": 0.10363197076537797,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "SELL",
+          "entry": 0.344566,
+          "sl": 0.3596005298684298,
+          "tp1": 0.32451996017542695,
+          "tp2": 0.3144969402631404,
+          "confidence": 63
+        },
+        {
+          "coin_id": "plasma",
+          "symbol": "XPL",
+          "name": "Plasma",
+          "action": "SELL",
+          "entry": 0.083248,
+          "sl": 0.08445357123435292,
+          "tp1": 0.08164057168752945,
+          "tp2": 0.08083685753129417,
+          "confidence": 69
+        },
+        {
+          "coin_id": "useless-3",
+          "symbol": "USELESS",
+          "name": "Useless Coin",
+          "action": "SELL",
+          "entry": 0.186088,
+          "sl": 0.19096211640645336,
+          "tp1": 0.17958917812472888,
+          "tp2": 0.17633976718709332,
+          "confidence": 63
+        },
+        {
+          "coin_id": "fetch-ai",
+          "symbol": "FET",
+          "name": "Artificial Superintelligence Alliance",
+          "action": "SELL",
+          "entry": 0.213291,
+          "sl": 0.2178518774071113,
+          "tp1": 0.20720983012385166,
+          "tp2": 0.20416924518577748,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
