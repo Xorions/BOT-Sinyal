@@ -5387,6 +5387,24 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "session": "MALAM",
+      "saved_at": "2026-10-09T12:14:41+07:00",
+      "signals": [
+        {
+          "coin_id": "pyth-network",
+          "symbol": "PYTH",
+          "name": "Pyth Network",
+          "action": "BUY",
+          "entry": 0.082482,
+          "sl": 0.08045913001854997,
+          "tp1": 0.0851791599752667,
+          "tp2": 0.08652773996290006,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
