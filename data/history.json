@@ -5409,50 +5409,28 @@
     {
       "date": "2026-10-10",
       "session": "PAGI",
-      "saved_at": "2026-10-10T01:10:29+07:00",
+      "saved_at": "2026-10-10T12:00:02+07:00",
       "signals": [
         {
-          "coin_id": "basic-attention-token",
-          "symbol": "BAT",
-          "name": "Basic Attention",
+          "coin_id": "sonic-3",
+          "symbol": "S",
+          "name": "Sonic",
           "action": "BUY",
-          "entry": 0.133866,
-          "sl": 0.12994522847161705,
-          "tp1": 0.13909369537117733,
-          "tp2": 0.14170754305676597,
-          "confidence": 69
-        },
-        {
-          "coin_id": "kaia",
-          "symbol": "KAIA",
-          "name": "Kaia",
-          "action": "BUY",
-          "entry": 0.053405,
-          "sl": 0.05102450704913173,
-          "tp1": 0.056578990601157696,
-          "tp2": 0.05816598590173655,
+          "entry": 0.04429977,
+          "sl": 0.043773736763853224,
+          "tp1": 0.045001147648195704,
+          "tp2": 0.04535183647229355,
           "confidence": 63
         },
         {
-          "coin_id": "aptos",
-          "symbol": "APT",
-          "name": "Aptos",
+          "coin_id": "jupiter-exchange-solana",
+          "symbol": "JUP",
+          "name": "Jupiter",
           "action": "BUY",
-          "entry": 0.805995,
-          "sl": 0.7931958980036075,
-          "tp1": 0.8230604693285234,
-          "tp2": 0.831593203992785,
-          "confidence": 63
-        },
-        {
-          "coin_id": "lido-dao",
-          "symbol": "LDO",
-          "name": "Lido DAO",
-          "action": "BUY",
-          "entry": 0.419258,
-          "sl": 0.4125143581473203,
-          "tp1": 0.4282495224702397,
-          "tp2": 0.4327452837053595,
+          "entry": 0.37294,
+          "sl": 0.36675484785329315,
+          "tp1": 0.38118686952894243,
+          "tp2": 0.3853103042934136,
           "confidence": 63
         }
       ]
