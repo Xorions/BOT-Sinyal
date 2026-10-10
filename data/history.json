@@ -5434,6 +5434,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-11",
+      "session": "PAGI",
+      "saved_at": "2026-10-11T00:08:41+07:00",
+      "signals": [
+        {
+          "coin_id": "meteora",
+          "symbol": "MET",
+          "name": "Meteora",
+          "action": "BUY",
+          "entry": 0.423904,
+          "sl": 0.41495838645520244,
+          "tp1": 0.4358314847263967,
+          "tp2": 0.44179522708959507,
+          "confidence": 63
+        },
+        {
+          "coin_id": "aptos",
+          "symbol": "APT",
+          "name": "Aptos",
+          "action": "BUY",
+          "entry": 0.842426,
+          "sl": 0.8328582434026818,
+          "tp1": 0.8551830087964243,
+          "tp2": 0.8615615131946365,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
