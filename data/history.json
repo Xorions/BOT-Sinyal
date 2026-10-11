@@ -5438,28 +5438,61 @@
     {
       "date": "2026-10-11",
       "session": "PAGI",
-      "saved_at": "2026-10-11T00:08:41+07:00",
+      "saved_at": "2026-10-11T11:47:40+07:00",
       "signals": [
         {
-          "coin_id": "meteora",
-          "symbol": "MET",
-          "name": "Meteora",
+          "coin_id": "basic-attention-token",
+          "symbol": "BAT",
+          "name": "Basic Attention",
           "action": "BUY",
-          "entry": 0.423904,
-          "sl": 0.41495838645520244,
-          "tp1": 0.4358314847263967,
-          "tp2": 0.44179522708959507,
+          "entry": 0.139643,
+          "sl": 0.13547759302547063,
+          "tp1": 0.14519687596603914,
+          "tp2": 0.1479738139490587,
           "confidence": 63
         },
         {
-          "coin_id": "aptos",
-          "symbol": "APT",
-          "name": "Aptos",
-          "action": "BUY",
-          "entry": 0.842426,
-          "sl": 0.8328582434026818,
-          "tp1": 0.8551830087964243,
-          "tp2": 0.8615615131946365,
+          "coin_id": "iota",
+          "symbol": "IOTA",
+          "name": "IOTA",
+          "action": "SELL",
+          "entry": 0.050402,
+          "sl": 0.050758371824364705,
+          "tp1": 0.04992683756751373,
+          "tp2": 0.0496892563512706,
+          "confidence": 69
+        },
+        {
+          "coin_id": "filecoin",
+          "symbol": "FIL",
+          "name": "Filecoin",
+          "action": "SELL",
+          "entry": 1.088,
+          "sl": 1.1022819846071628,
+          "tp1": 1.0689573538571167,
+          "tp2": 1.0594360307856747,
+          "confidence": 69
+        },
+        {
+          "coin_id": "ethereum-name-service",
+          "symbol": "ENS",
+          "name": "Ethereum Name Service",
+          "action": "SELL",
+          "entry": 6.15,
+          "sl": 6.197837526135465,
+          "tp1": 6.086216631819382,
+          "tp2": 6.054324947729072,
+          "confidence": 63
+        },
+        {
+          "coin_id": "immutable-x",
+          "symbol": "IMX",
+          "name": "Immutable",
+          "action": "SELL",
+          "entry": 0.194179,
+          "sl": 0.19678517086924818,
+          "tp1": 0.19070410550766906,
+          "tp2": 0.1889666582615036,
           "confidence": 69
         }
       ]
