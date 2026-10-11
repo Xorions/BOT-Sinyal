@@ -5496,6 +5496,68 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "session": "PAGI",
+      "saved_at": "2026-10-12T00:31:53+07:00",
+      "signals": [
+        {
+          "coin_id": "plume",
+          "symbol": "PLUME",
+          "name": "Plume",
+          "action": "BUY",
+          "entry": 0.02069822,
+          "sl": 0.020359043659487496,
+          "tp1": 0.021150455120683337,
+          "tp2": 0.021376572681025004,
+          "confidence": 76
+        },
+        {
+          "coin_id": "optimism",
+          "symbol": "OP",
+          "name": "Optimism",
+          "action": "BUY",
+          "entry": 0.144305,
+          "sl": 0.14258822158612702,
+          "tp1": 0.14659403788516395,
+          "tp2": 0.14773855682774592,
+          "confidence": 69
+        },
+        {
+          "coin_id": "sonic-3",
+          "symbol": "S",
+          "name": "Sonic",
+          "action": "BUY",
+          "entry": 0.065161,
+          "sl": 0.06284930609078741,
+          "tp1": 0.06824325854561678,
+          "tp2": 0.06978438781842516,
+          "confidence": 69
+        },
+        {
+          "coin_id": "celestia",
+          "symbol": "TIA",
+          "name": "Celestia",
+          "action": "BUY",
+          "entry": 0.584836,
+          "sl": 0.5727802813221298,
+          "tp1": 0.6009102915704937,
+          "tp2": 0.6089474373557405,
+          "confidence": 63
+        },
+        {
+          "coin_id": "conflux-token",
+          "symbol": "CFX",
+          "name": "Conflux",
+          "action": "BUY",
+          "entry": 0.069955,
+          "sl": 0.0676406594642315,
+          "tp1": 0.07304078738102465,
+          "tp2": 0.07458368107153698,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
