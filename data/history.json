@@ -5558,6 +5558,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "session": "MALAM",
+      "saved_at": "2026-10-12T12:04:23+07:00",
+      "signals": [
+        {
+          "coin_id": "fetch-ai",
+          "symbol": "FET",
+          "name": "Artificial Superintelligence Alliance",
+          "action": "BUY",
+          "entry": 0.242324,
+          "sl": 0.23868483625143477,
+          "tp1": 0.24717621833142034,
+          "tp2": 0.24960232749713052,
+          "confidence": 76
+        },
+        {
+          "coin_id": "lido-dao",
+          "symbol": "LDO",
+          "name": "Lido DAO",
+          "action": "BUY",
+          "entry": 0.452885,
+          "sl": 0.4475702525922533,
+          "tp1": 0.45997132987699557,
+          "tp2": 0.4635144948154934,
+          "confidence": 69
+        },
+        {
+          "coin_id": "sui",
+          "symbol": "SUI",
+          "name": "Sui",
+          "action": "BUY",
+          "entry": 1.14,
+          "sl": 1.1296846932994677,
+          "tp1": 1.153753742267376,
+          "tp2": 1.160630613401064,
+          "confidence": 76
+        },
+        {
+          "coin_id": "fartcoin",
+          "symbol": "FARTCOIN",
+          "name": "Fartcoin",
+          "action": "BUY",
+          "entry": 0.172671,
+          "sl": 0.17087607850833475,
+          "tp1": 0.17506422865555366,
+          "tp2": 0.1762608429833305,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
