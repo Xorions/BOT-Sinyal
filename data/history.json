@@ -5649,6 +5649,46 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-10-13",
+      "session": "MALAM",
+      "saved_at": "2026-10-13T13:04:20+07:00",
+      "signals": [
+        {
+          "coin_id": "pyth-network",
+          "symbol": "PYTH",
+          "name": "Pyth Network",
+          "action": "BUY",
+          "entry": 0.086581,
+          "sl": 0.08415622075885654,
+          "tp1": 0.0898140389881913,
+          "tp2": 0.09143055848228696,
+          "confidence": 69
+        },
+        {
+          "coin_id": "bitway",
+          "symbol": "BTW",
+          "name": "Bitway",
+          "action": "BUY",
+          "entry": 1.81,
+          "sl": 1.7720367591663964,
+          "tp1": 1.860617654444805,
+          "tp2": 1.8859264816672077,
+          "confidence": 63
+        },
+        {
+          "coin_id": "aave",
+          "symbol": "AAVE",
+          "name": "Aave",
+          "action": "SELL",
+          "entry": 161.03,
+          "sl": 162.85639220903647,
+          "tp1": 158.59481038795138,
+          "tp2": 157.37721558192706,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
