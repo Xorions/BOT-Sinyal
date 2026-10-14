@@ -5729,6 +5729,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-14",
+      "session": "MALAM",
+      "saved_at": "2026-10-14T23:48:54+07:00",
+      "signals": [
+        {
+          "coin_id": "bedrock-token",
+          "symbol": "BR",
+          "name": "Bedrock",
+          "action": "SELL",
+          "entry": 0.406215,
+          "sl": 0.41208518762037527,
+          "tp1": 0.398388083172833,
+          "tp2": 0.39447462475924944,
+          "confidence": 69
+        },
+        {
+          "coin_id": "walrus-2",
+          "symbol": "WAL",
+          "name": "Walrus",
+          "action": "BUY",
+          "entry": 0.060023,
+          "sl": 0.05714903456267283,
+          "tp1": 0.06385495391643622,
+          "tp2": 0.06577093087465434,
+          "confidence": 69
+        },
+        {
+          "coin_id": "uniswap",
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "action": "SELL",
+          "entry": 7.25,
+          "sl": 7.335863109404901,
+          "tp1": 7.135515854126799,
+          "tp2": 7.078273781190199,
+          "confidence": 63
+        },
+        {
+          "coin_id": "fetch-ai",
+          "symbol": "FET",
+          "name": "Artificial Superintelligence Alliance",
+          "action": "SELL",
+          "entry": 0.20595,
+          "sl": 0.20857542144619576,
+          "tp1": 0.20244943807173899,
+          "tp2": 0.20069915710760847,
+          "confidence": 69
+        },
+        {
+          "coin_id": "origintrail",
+          "symbol": "TRAC",
+          "name": "OriginTrail",
+          "action": "BUY",
+          "entry": 0.428837,
+          "sl": 0.4190679142248158,
+          "tp1": 0.44186244770024563,
+          "tp2": 0.44837517155036843,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
