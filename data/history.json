@@ -5693,28 +5693,39 @@
     {
       "date": "2026-10-14",
       "session": "PAGI",
-      "saved_at": "2026-10-14T02:03:39+07:00",
+      "saved_at": "2026-10-14T11:07:36+07:00",
       "signals": [
         {
-          "coin_id": "optimism",
-          "symbol": "OP",
-          "name": "Optimism",
+          "coin_id": "injective-protocol",
+          "symbol": "INJ",
+          "name": "Injective",
           "action": "BUY",
-          "entry": 0.15002,
-          "sl": 0.14731975966916946,
-          "tp1": 0.15362032044110735,
-          "tp2": 0.15542048066166103,
+          "entry": 8.2,
+          "sl": 8.106203510555694,
+          "tp1": 8.32506198592574,
+          "tp2": 8.38759297888861,
           "confidence": 63
         },
         {
-          "coin_id": "zksync",
-          "symbol": "ZK",
-          "name": "ZKsync",
+          "coin_id": "the-sandbox",
+          "symbol": "SAND",
+          "name": "The Sandbox",
+          "action": "SELL",
+          "entry": 0.058999,
+          "sl": 0.05948792279053477,
+          "tp1": 0.05834710294595365,
+          "tp2": 0.05802115441893047,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pepe",
+          "symbol": "PEPE",
+          "name": "Pepe",
           "action": "BUY",
-          "entry": 0.01599222,
-          "sl": 0.015629214197527184,
-          "tp1": 0.016476227736630423,
-          "tp2": 0.016718231604945635,
+          "entry": 4.2e-06,
+          "sl": 4.160219405889269e-06,
+          "tp1": 4.253040792147641e-06,
+          "tp2": 4.279561188221461e-06,
           "confidence": 63
         }
       ]
