@@ -5853,6 +5853,68 @@
           "confidence": 76
         }
       ]
+    },
+    {
+      "date": "2026-10-15",
+      "session": "MALAM",
+      "saved_at": "2026-10-15T23:34:46+07:00",
+      "signals": [
+        {
+          "coin_id": "starknet",
+          "symbol": "STRK",
+          "name": "Starknet",
+          "action": "BUY",
+          "entry": 0.09004,
+          "sl": 0.08498089604501197,
+          "tp1": 0.09678547193998403,
+          "tp2": 0.10015820790997607,
+          "confidence": 76
+        },
+        {
+          "coin_id": "basic-attention-token",
+          "symbol": "BAT",
+          "name": "Basic Attention",
+          "action": "BUY",
+          "entry": 0.188467,
+          "sl": 0.18304443022414757,
+          "tp1": 0.1956970930344699,
+          "tp2": 0.19931213955170482,
+          "confidence": 69
+        },
+        {
+          "coin_id": "injective-protocol",
+          "symbol": "INJ",
+          "name": "Injective",
+          "action": "BUY",
+          "entry": 7.96,
+          "sl": 7.784748328125583,
+          "tp1": 8.193668895832555,
+          "tp2": 8.310503343748834,
+          "confidence": 69
+        },
+        {
+          "coin_id": "spacex-bstocks-tokenized-stock",
+          "symbol": "SPCXB",
+          "name": "SpaceX (bStocks Tokenized Stock)",
+          "action": "SELL",
+          "entry": 145.36,
+          "sl": 147.45026046015425,
+          "tp1": 142.57298605312772,
+          "tp2": 141.17947907969156,
+          "confidence": 76
+        },
+        {
+          "coin_id": "zksync",
+          "symbol": "ZK",
+          "name": "ZKsync",
+          "action": "BUY",
+          "entry": 0.01759458,
+          "sl": 0.016942351552828017,
+          "tp1": 0.01846421792956264,
+          "tp2": 0.01889903689434396,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
