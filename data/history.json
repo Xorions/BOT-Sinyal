@@ -5791,6 +5791,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-15",
+      "session": "PAGI",
+      "saved_at": "2026-10-15T10:48:48+07:00",
+      "signals": [
+        {
+          "coin_id": "reserve-rights-token",
+          "symbol": "RSR",
+          "name": "Reserve Rights",
+          "action": "BUY",
+          "entry": 0.00208538,
+          "sl": 0.00204008279160867,
+          "tp1": 0.0021457762778551064,
+          "tp2": 0.0021759744167826594,
+          "confidence": 76
+        },
+        {
+          "coin_id": "the-sandbox",
+          "symbol": "SAND",
+          "name": "The Sandbox",
+          "action": "SELL",
+          "entry": 0.053495,
+          "sl": 0.05426031868880089,
+          "tp1": 0.05247457508159881,
+          "tp2": 0.051964362622398216,
+          "confidence": 76
+        },
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "SELL",
+          "entry": 0.299567,
+          "sl": 0.3084126295213704,
+          "tp1": 0.2877728273048395,
+          "tp2": 0.28187574095725926,
+          "confidence": 76
+        },
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "SELL",
+          "entry": 0.0073563,
+          "sl": 0.007436723707147784,
+          "tp1": 0.00724906839046962,
+          "tp2": 0.00719545258570443,
+          "confidence": 63
+        },
+        {
+          "coin_id": "dogwifcoin",
+          "symbol": "WIF",
+          "name": "dogwifhat",
+          "action": "SELL",
+          "entry": 0.192405,
+          "sl": 0.19462848220446166,
+          "tp1": 0.18944035706071777,
+          "tp2": 0.18795803559107663,
+          "confidence": 76
+        }
+      ]
     }
   ]
 }
