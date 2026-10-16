@@ -5915,6 +5915,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-16",
+      "session": "PAGI",
+      "saved_at": "2026-10-16T10:44:48+07:00",
+      "signals": [
+        {
+          "coin_id": "celestia",
+          "symbol": "TIA",
+          "name": "Celestia",
+          "action": "BUY",
+          "entry": 0.597577,
+          "sl": 0.5861892354263774,
+          "tp1": 0.6127606860981636,
+          "tp2": 0.6203525291472454,
+          "confidence": 69
+        },
+        {
+          "coin_id": "sonic-3",
+          "symbol": "S",
+          "name": "Sonic",
+          "action": "BUY",
+          "entry": 0.055354,
+          "sl": 0.05399936121124294,
+          "tp1": 0.05716018505167608,
+          "tp2": 0.05806327757751412,
+          "confidence": 69
+        },
+        {
+          "coin_id": "dgrid-ai",
+          "symbol": "DGAI",
+          "name": "DGrid AI",
+          "action": "SELL",
+          "entry": 0.859079,
+          "sl": 0.866095427792505,
+          "tp1": 0.8497237629433267,
+          "tp2": 0.84504614441499,
+          "confidence": 69
+        },
+        {
+          "coin_id": "eigenlayer",
+          "symbol": "EIGEN",
+          "name": "EigenCloud (prev. EigenLayer)",
+          "action": "BUY",
+          "entry": 0.243926,
+          "sl": 0.24040021766560757,
+          "tp1": 0.24862704311252326,
+          "tp2": 0.2509775646687849,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
