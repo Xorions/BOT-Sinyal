@@ -5966,6 +5966,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-16",
+      "session": "MALAM",
+      "saved_at": "2026-10-16T23:19:10+07:00",
+      "signals": [
+        {
+          "coin_id": "fetch-ai",
+          "symbol": "FET",
+          "name": "Artificial Superintelligence Alliance",
+          "action": "SELL",
+          "entry": 0.20058,
+          "sl": 0.20261291632432987,
+          "tp1": 0.19786944490089353,
+          "tp2": 0.1965141673513403,
+          "confidence": 69
+        },
+        {
+          "coin_id": "basic-attention-token",
+          "symbol": "BAT",
+          "name": "Basic Attention",
+          "action": "BUY",
+          "entry": 0.20418,
+          "sl": 0.19842794165079908,
+          "tp1": 0.2118494111322679,
+          "tp2": 0.21568411669840185,
+          "confidence": 63
+        },
+        {
+          "coin_id": "uniswap",
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "action": "SELL",
+          "entry": 7.29,
+          "sl": 7.366685800155488,
+          "tp1": 7.18775226645935,
+          "tp2": 7.136628399689025,
+          "confidence": 63
+        },
+        {
+          "coin_id": "plume",
+          "symbol": "PLUME",
+          "name": "Plume",
+          "action": "SELL",
+          "entry": 0.01897161,
+          "sl": 0.019327661959372945,
+          "tp1": 0.018496874054169405,
+          "tp2": 0.01825950608125411,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
