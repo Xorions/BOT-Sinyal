@@ -6017,6 +6017,46 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-10-17",
+      "session": "PAGI",
+      "saved_at": "2026-10-17T10:35:33+07:00",
+      "signals": [
+        {
+          "coin_id": "celestia",
+          "symbol": "TIA",
+          "name": "Celestia",
+          "action": "BUY",
+          "entry": 0.741105,
+          "sl": 0.7236081255976659,
+          "tp1": 0.764434165869779,
+          "tp2": 0.7760987488046684,
+          "confidence": 76
+        },
+        {
+          "coin_id": "eigenlayer",
+          "symbol": "EIGEN",
+          "name": "EigenCloud (prev. EigenLayer)",
+          "action": "BUY",
+          "entry": 0.272747,
+          "sl": 0.2682386247791237,
+          "tp1": 0.27875816696116845,
+          "tp2": 0.28176375044175267,
+          "confidence": 82
+        },
+        {
+          "coin_id": "spacex-bstocks-tokenized-stock",
+          "symbol": "SPCXB",
+          "name": "SpaceX (bStocks Tokenized Stock)",
+          "action": "SELL",
+          "entry": 145.86,
+          "sl": 147.05124980631507,
+          "tp1": 144.27166692491326,
+          "tp2": 143.47750038736987,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
