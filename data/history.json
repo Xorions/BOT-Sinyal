@@ -6057,6 +6057,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-17",
+      "session": "MALAM",
+      "saved_at": "2026-10-17T22:15:27+07:00",
+      "signals": [
+        {
+          "coin_id": "polkadot",
+          "symbol": "DOT",
+          "name": "Polkadot",
+          "action": "SELL",
+          "entry": 1.13,
+          "sl": 1.1433238447409007,
+          "tp1": 1.1122348736787988,
+          "tp2": 1.1033523105181982,
+          "confidence": 69
+        },
+        {
+          "coin_id": "sui",
+          "symbol": "SUI",
+          "name": "Sui",
+          "action": "SELL",
+          "entry": 0.991075,
+          "sl": 0.9979889170039263,
+          "tp1": 0.9818564439947649,
+          "tp2": 0.9772471659921474,
+          "confidence": 63
+        },
+        {
+          "coin_id": "kamino",
+          "symbol": "KMNO",
+          "name": "Kamino",
+          "action": "BUY",
+          "entry": 0.04174083,
+          "sl": 0.041047917391815,
+          "tp1": 0.042664713477579996,
+          "tp2": 0.04312665521637,
+          "confidence": 63
+        },
+        {
+          "coin_id": "worldcoin-wld",
+          "symbol": "WLD",
+          "name": "Worldcoin",
+          "action": "SELL",
+          "entry": 0.497112,
+          "sl": 0.504480790503338,
+          "tp1": 0.4872869459955492,
+          "tp2": 0.4823744189933239,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
