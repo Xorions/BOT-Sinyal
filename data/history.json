@@ -6108,6 +6108,46 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-10-18",
+      "session": "PAGI",
+      "saved_at": "2026-10-18T10:42:23+07:00",
+      "signals": [
+        {
+          "coin_id": "the-sandbox",
+          "symbol": "SAND",
+          "name": "The Sandbox",
+          "action": "BUY",
+          "entry": 0.062355,
+          "sl": 0.060664010241400765,
+          "tp1": 0.06460965301146565,
+          "tp2": 0.06573697951719847,
+          "confidence": 69
+        },
+        {
+          "coin_id": "worldcoin-wld",
+          "symbol": "WLD",
+          "name": "Worldcoin",
+          "action": "SELL",
+          "entry": 0.495135,
+          "sl": 0.5025114541556541,
+          "tp1": 0.48529972779246117,
+          "tp2": 0.4803820916886918,
+          "confidence": 63
+        },
+        {
+          "coin_id": "polkadot",
+          "symbol": "DOT",
+          "name": "Polkadot",
+          "action": "SELL",
+          "entry": 1.11,
+          "sl": 1.1237246110689638,
+          "tp1": 1.0917005185747153,
+          "tp2": 1.0825507778620729,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
