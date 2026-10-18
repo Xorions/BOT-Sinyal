@@ -6148,6 +6148,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-18",
+      "session": "MALAM",
+      "saved_at": "2026-10-18T22:35:41+07:00",
+      "signals": [
+        {
+          "coin_id": "worldcoin-wld",
+          "symbol": "WLD",
+          "name": "Worldcoin",
+          "action": "SELL",
+          "entry": 0.474829,
+          "sl": 0.4832515201397895,
+          "tp1": 0.4635989731469473,
+          "tp2": 0.457983959720421,
+          "confidence": 76
+        },
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "SELL",
+          "entry": 0.00726769,
+          "sl": 0.007341948334745612,
+          "tp1": 0.007168678887005851,
+          "tp2": 0.007119173330508776,
+          "confidence": 69
+        },
+        {
+          "coin_id": "arbitrum",
+          "symbol": "ARB",
+          "name": "Arbitrum",
+          "action": "SELL",
+          "entry": 0.178456,
+          "sl": 0.18065826206973135,
+          "tp1": 0.17551965057369154,
+          "tp2": 0.17405147586053732,
+          "confidence": 69
+        },
+        {
+          "coin_id": "near",
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "action": "SELL",
+          "entry": 4.7,
+          "sl": 4.771181178671133,
+          "tp1": 4.605091761771823,
+          "tp2": 4.557637642657735,
+          "confidence": 69
+        },
+        {
+          "coin_id": "layerzero",
+          "symbol": "ZRO",
+          "name": "LayerZero",
+          "action": "SELL",
+          "entry": 1.74,
+          "sl": 1.7678533166949588,
+          "tp1": 1.7028622444067216,
+          "tp2": 1.6842933666100823,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
