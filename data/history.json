@@ -6210,6 +6210,35 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-10-19",
+      "session": "PAGI",
+      "saved_at": "2026-10-19T10:52:26+07:00",
+      "signals": [
+        {
+          "coin_id": "useless-3",
+          "symbol": "USELESS",
+          "name": "Useless Coin",
+          "action": "SELL",
+          "entry": 0.142977,
+          "sl": 0.1457426402038448,
+          "tp1": 0.1392894797282069,
+          "tp2": 0.13744571959231036,
+          "confidence": 63
+        },
+        {
+          "coin_id": "aerodrome-finance",
+          "symbol": "AERO",
+          "name": "Aerodrome Finance",
+          "action": "SELL",
+          "entry": 0.798641,
+          "sl": 0.8076258403955026,
+          "tp1": 0.7866612128059967,
+          "tp2": 0.780671319208995,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
