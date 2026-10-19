@@ -6239,6 +6239,24 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-20",
+      "session": "PAGI",
+      "saved_at": "2026-10-20T01:31:13+07:00",
+      "signals": [
+        {
+          "coin_id": "pyth-network",
+          "symbol": "PYTH",
+          "name": "Pyth Network",
+          "action": "SELL",
+          "entry": 0.072461,
+          "sl": 0.07338360361758617,
+          "tp1": 0.07123086184321843,
+          "tp2": 0.07061579276482764,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
