@@ -6243,18 +6243,51 @@
     {
       "date": "2026-10-20",
       "session": "PAGI",
-      "saved_at": "2026-10-20T01:31:13+07:00",
+      "saved_at": "2026-10-20T11:03:35+07:00",
       "signals": [
         {
-          "coin_id": "pyth-network",
-          "symbol": "PYTH",
-          "name": "Pyth Network",
-          "action": "SELL",
-          "entry": 0.072461,
-          "sl": 0.07338360361758617,
-          "tp1": 0.07123086184321843,
-          "tp2": 0.07061579276482764,
-          "confidence": 69
+          "coin_id": "arbitrum",
+          "symbol": "ARB",
+          "name": "Arbitrum",
+          "action": "BUY",
+          "entry": 0.202001,
+          "sl": 0.19985751458413267,
+          "tp1": 0.20485898055448973,
+          "tp2": 0.2062879708317346,
+          "confidence": 82
+        },
+        {
+          "coin_id": "celestia",
+          "symbol": "TIA",
+          "name": "Celestia",
+          "action": "BUY",
+          "entry": 0.620348,
+          "sl": 0.6116748565194419,
+          "tp1": 0.6319121913074109,
+          "tp2": 0.6376942869611163,
+          "confidence": 63
+        },
+        {
+          "coin_id": "basic-attention-token",
+          "symbol": "BAT",
+          "name": "Basic Attention",
+          "action": "BUY",
+          "entry": 0.196065,
+          "sl": 0.19214959194749845,
+          "tp1": 0.20128554407000204,
+          "tp2": 0.20389581610500307,
+          "confidence": 63
+        },
+        {
+          "coin_id": "collector-crypt",
+          "symbol": "CARDS",
+          "name": "Collector Crypt",
+          "action": "BUY",
+          "entry": 0.325942,
+          "sl": 0.3150473610085838,
+          "tp1": 0.3404681853218883,
+          "tp2": 0.3477312779828324,
+          "confidence": 63
         }
       ]
     }
