@@ -6290,6 +6290,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-20",
+      "session": "MALAM",
+      "saved_at": "2026-10-20T23:35:31+07:00",
+      "signals": [
+        {
+          "coin_id": "pearl-2",
+          "symbol": "PEARL",
+          "name": "Pearl",
+          "action": "BUY",
+          "entry": 2.18,
+          "sl": 2.1387868712743736,
+          "tp1": 2.2349508383008354,
+          "tp2": 2.262426257451253,
+          "confidence": 69
+        },
+        {
+          "coin_id": "monero",
+          "symbol": "XMR",
+          "name": "Monero",
+          "action": "BUY",
+          "entry": 621.73,
+          "sl": 616.4873483105516,
+          "tp1": 628.7202022525978,
+          "tp2": 632.2153033788967,
+          "confidence": 63
+        },
+        {
+          "coin_id": "grx-chain",
+          "symbol": "GRX",
+          "name": "GRX Chain",
+          "action": "SELL",
+          "entry": 16.1,
+          "sl": 17.902268085727158,
+          "tp1": 13.696975885697128,
+          "tp2": 12.495463828545692,
+          "confidence": 63
+        },
+        {
+          "coin_id": "celestia",
+          "symbol": "TIA",
+          "name": "Celestia",
+          "action": "BUY",
+          "entry": 0.629931,
+          "sl": 0.6192761176715584,
+          "tp1": 0.6441375097712555,
+          "tp2": 0.6512407646568832,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
