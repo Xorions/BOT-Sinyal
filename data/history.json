@@ -6403,6 +6403,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-21",
+      "session": "MALAM",
+      "saved_at": "2026-10-21T23:54:08+07:00",
+      "signals": [
+        {
+          "coin_id": "layerzero",
+          "symbol": "ZRO",
+          "name": "LayerZero",
+          "action": "BUY",
+          "entry": 2.08,
+          "sl": 2.0442752248162086,
+          "tp1": 2.127633033578389,
+          "tp2": 2.151449550367583,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "BUY",
+          "entry": 0.00827799,
+          "sl": 0.008200823372940008,
+          "tp1": 0.008380878836079991,
+          "tp2": 0.008432323254119987,
+          "confidence": 76
+        },
+        {
+          "coin_id": "arbitrum",
+          "symbol": "ARB",
+          "name": "Arbitrum",
+          "action": "BUY",
+          "entry": 0.195444,
+          "sl": 0.19316712554746385,
+          "tp1": 0.19847983260338156,
+          "tp2": 0.19999774890507235,
+          "confidence": 69
+        },
+        {
+          "coin_id": "near",
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "action": "BUY",
+          "entry": 5.32,
+          "sl": 5.239442092569284,
+          "tp1": 5.427410543240955,
+          "tp2": 5.481115814861433,
+          "confidence": 69
+        },
+        {
+          "coin_id": "backpack",
+          "symbol": "BP",
+          "name": "Backpack",
+          "action": "BUY",
+          "entry": 1.14,
+          "sl": 1.1301496009140606,
+          "tp1": 1.153133865447919,
+          "tp2": 1.1597007981718788,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
