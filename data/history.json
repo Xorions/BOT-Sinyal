@@ -6341,6 +6341,68 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-10-21",
+      "session": "PAGI",
+      "saved_at": "2026-10-21T10:51:55+07:00",
+      "signals": [
+        {
+          "coin_id": "collector-crypt",
+          "symbol": "CARDS",
+          "name": "Collector Crypt",
+          "action": "BUY",
+          "entry": 0.363705,
+          "sl": 0.3517910730657521,
+          "tp1": 0.37959023591233054,
+          "tp2": 0.38753285386849584,
+          "confidence": 69
+        },
+        {
+          "coin_id": "near",
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "action": "BUY",
+          "entry": 5.02,
+          "sl": 4.942552571758304,
+          "tp1": 5.1232632376555935,
+          "tp2": 5.17489485648339,
+          "confidence": 76
+        },
+        {
+          "coin_id": "dgrid-ai",
+          "symbol": "DGAI",
+          "name": "DGrid AI",
+          "action": "SELL",
+          "entry": 0.917694,
+          "sl": 0.9251425484520457,
+          "tp1": 0.9077626020639392,
+          "tp2": 0.9027969030959088,
+          "confidence": 69
+        },
+        {
+          "coin_id": "worldcoin-wld",
+          "symbol": "WLD",
+          "name": "Worldcoin",
+          "action": "BUY",
+          "entry": 0.590849,
+          "sl": 0.5830597898274237,
+          "tp1": 0.601234613563435,
+          "tp2": 0.6064274203451525,
+          "confidence": 63
+        },
+        {
+          "coin_id": "compound-governance-token",
+          "symbol": "COMP",
+          "name": "Compound",
+          "action": "BUY",
+          "entry": 26.27,
+          "sl": 25.61123443536216,
+          "tp1": 27.148354086183783,
+          "tp2": 27.587531129275675,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
