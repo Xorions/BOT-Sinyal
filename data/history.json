@@ -6527,6 +6527,68 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-10-22",
+      "session": "MALAM",
+      "saved_at": "2026-10-22T23:51:49+07:00",
+      "signals": [
+        {
+          "coin_id": "starknet",
+          "symbol": "STRK",
+          "name": "Starknet",
+          "action": "SELL",
+          "entry": 0.054049,
+          "sl": 0.05537204692291026,
+          "tp1": 0.052284937436119644,
+          "tp2": 0.051402906154179466,
+          "confidence": 69
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "SELL",
+          "entry": 0.197812,
+          "sl": 0.20077130568977689,
+          "tp1": 0.19386625908029745,
+          "tp2": 0.19189338862044616,
+          "confidence": 69
+        },
+        {
+          "coin_id": "fetch-ai",
+          "symbol": "FET",
+          "name": "Artificial Superintelligence Alliance",
+          "action": "SELL",
+          "entry": 0.183522,
+          "sl": 0.18560369365518534,
+          "tp1": 0.18074640845975287,
+          "tp2": 0.17935861268962933,
+          "confidence": 69
+        },
+        {
+          "coin_id": "worldcoin-wld",
+          "symbol": "WLD",
+          "name": "Worldcoin",
+          "action": "SELL",
+          "entry": 0.530972,
+          "sl": 0.5394778239692636,
+          "tp1": 0.5196309013743151,
+          "tp2": 0.5139603520614727,
+          "confidence": 69
+        },
+        {
+          "coin_id": "near",
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "action": "SELL",
+          "entry": 4.93,
+          "sl": 5.00015309447235,
+          "tp1": 4.836462540703533,
+          "tp2": 4.789693811055299,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
