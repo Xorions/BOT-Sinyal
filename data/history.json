@@ -6465,6 +6465,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-22",
+      "session": "PAGI",
+      "saved_at": "2026-10-22T10:51:47+07:00",
+      "signals": [
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "SELL",
+          "entry": 0.271073,
+          "sl": 0.2768362262919946,
+          "tp1": 0.2633886982773405,
+          "tp2": 0.25954654741601074,
+          "confidence": 63
+        },
+        {
+          "coin_id": "uniswap",
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "action": "SELL",
+          "entry": 7.23,
+          "sl": 7.327298359555629,
+          "tp1": 7.100268853925829,
+          "tp2": 7.035403280888744,
+          "confidence": 76
+        },
+        {
+          "coin_id": "optimism",
+          "symbol": "OP",
+          "name": "Optimism",
+          "action": "SELL",
+          "entry": 0.124244,
+          "sl": 0.12590466301804942,
+          "tp1": 0.12202978264260074,
+          "tp2": 0.1209226739639011,
+          "confidence": 69
+        },
+        {
+          "coin_id": "zksync",
+          "symbol": "ZK",
+          "name": "ZKsync",
+          "action": "SELL",
+          "entry": 0.01413869,
+          "sl": 0.014351992033563866,
+          "tp1": 0.013854287288581514,
+          "tp2": 0.013712085932872271,
+          "confidence": 69
+        },
+        {
+          "coin_id": "injective-protocol",
+          "symbol": "INJ",
+          "name": "Injective",
+          "action": "SELL",
+          "entry": 8.17,
+          "sl": 8.294842226158321,
+          "tp1": 8.003543698455571,
+          "tp2": 7.920315547683357,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
