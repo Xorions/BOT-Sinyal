@@ -6629,6 +6629,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-23",
+      "session": "MALAM",
+      "saved_at": "2026-10-23T23:43:41+07:00",
+      "signals": [
+        {
+          "coin_id": "pepe",
+          "symbol": "PEPE",
+          "name": "Pepe",
+          "action": "BUY",
+          "entry": 4.85e-06,
+          "sl": 4.769435225604149e-06,
+          "tp1": 4.957419699194469e-06,
+          "tp2": 5.011129548791703e-06,
+          "confidence": 76
+        },
+        {
+          "coin_id": "irys",
+          "symbol": "IRYS",
+          "name": "Irys",
+          "action": "BUY",
+          "entry": 0.099904,
+          "sl": 0.09265571338369899,
+          "tp1": 0.10956838215506803,
+          "tp2": 0.11440057323260204,
+          "confidence": 76
+        },
+        {
+          "coin_id": "starknet",
+          "symbol": "STRK",
+          "name": "Starknet",
+          "action": "SELL",
+          "entry": 0.052322,
+          "sl": 0.052995900975079495,
+          "tp1": 0.05142346536656067,
+          "tp2": 0.05097419804984101,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "BUY",
+          "entry": 0.00812083,
+          "sl": 0.008042316597431019,
+          "tp1": 0.008225514536758644,
+          "tp2": 0.008277856805137965,
+          "confidence": 69
+        },
+        {
+          "coin_id": "dash",
+          "symbol": "DASH",
+          "name": "Dash",
+          "action": "BUY",
+          "entry": 53.95,
+          "sl": 53.264234369701114,
+          "tp1": 54.864354173731854,
+          "tp2": 55.32153126059778,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
