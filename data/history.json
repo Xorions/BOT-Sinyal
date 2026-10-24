@@ -6691,6 +6691,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-24",
+      "session": "PAGI",
+      "saved_at": "2026-10-24T10:50:39+07:00",
+      "signals": [
+        {
+          "coin_id": "starknet",
+          "symbol": "STRK",
+          "name": "Starknet",
+          "action": "SELL",
+          "entry": 0.04913485,
+          "sl": 0.04989367202021043,
+          "tp1": 0.04812308730638609,
+          "tp2": 0.04761720595957914,
+          "confidence": 69
+        },
+        {
+          "coin_id": "beam-2",
+          "symbol": "BEAM",
+          "name": "Beam",
+          "action": "BUY",
+          "entry": 0.00328896,
+          "sl": 0.0032329036991192864,
+          "tp1": 0.0033637017345076185,
+          "tp2": 0.0034010726017614274,
+          "confidence": 63
+        },
+        {
+          "coin_id": "near",
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "action": "SELL",
+          "entry": 4.65,
+          "sl": 4.719563248033954,
+          "tp1": 4.557249002621396,
+          "tp2": 4.5108735039320935,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
