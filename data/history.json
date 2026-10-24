@@ -6731,6 +6731,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-24",
+      "session": "MALAM",
+      "saved_at": "2026-10-24T22:38:19+07:00",
+      "signals": [
+        {
+          "coin_id": "celestia",
+          "symbol": "TIA",
+          "name": "Celestia",
+          "action": "SELL",
+          "entry": 0.526623,
+          "sl": 0.5349495937461369,
+          "tp1": 0.5155208750051506,
+          "tp2": 0.5099698125077261,
+          "confidence": 76
+        },
+        {
+          "coin_id": "sonic-3",
+          "symbol": "S",
+          "name": "Sonic",
+          "action": "SELL",
+          "entry": 0.04775914,
+          "sl": 0.04831261808865869,
+          "tp1": 0.04702116921512174,
+          "tp2": 0.046652183822682616,
+          "confidence": 63
+        },
+        {
+          "coin_id": "useless-3",
+          "symbol": "USELESS",
+          "name": "Useless Coin",
+          "action": "SELL",
+          "entry": 0.151469,
+          "sl": 0.15504465066398984,
+          "tp1": 0.14670146578134685,
+          "tp2": 0.1443176986720203,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "SELL",
+          "entry": 0.00741958,
+          "sl": 0.00750440652851678,
+          "tp1": 0.007306477961977628,
+          "tp2": 0.007249926942966441,
+          "confidence": 76
+        },
+        {
+          "coin_id": "near",
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "action": "SELL",
+          "entry": 4.36,
+          "sl": 4.426371058265385,
+          "tp1": 4.271505255646154,
+          "tp2": 4.227257883469231,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
