@@ -6811,6 +6811,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-25",
+      "session": "MALAM",
+      "saved_at": "2026-10-25T22:48:36+07:00",
+      "signals": [
+        {
+          "coin_id": "grass",
+          "symbol": "GRASS",
+          "name": "Grass",
+          "action": "BUY",
+          "entry": 0.705721,
+          "sl": 0.6913668981550349,
+          "tp1": 0.7248598024599535,
+          "tp2": 0.7344292036899301,
+          "confidence": 69
+        },
+        {
+          "coin_id": "cap-4",
+          "symbol": "CAP",
+          "name": "Cap",
+          "action": "BUY",
+          "entry": 0.103516,
+          "sl": 0.10005412024957695,
+          "tp1": 0.10813183966723071,
+          "tp2": 0.11043975950084607,
+          "confidence": 69
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "BUY",
+          "entry": 0.203937,
+          "sl": 0.20042737538503955,
+          "tp1": 0.20861649948661395,
+          "tp2": 0.21095624922992093,
+          "confidence": 76
+        },
+        {
+          "coin_id": "useless-3",
+          "symbol": "USELESS",
+          "name": "Useless Coin",
+          "action": "BUY",
+          "entry": 0.173764,
+          "sl": 0.16970352240858724,
+          "tp1": 0.1791779701218837,
+          "tp2": 0.18188495518282552,
+          "confidence": 63
+        },
+        {
+          "coin_id": "chain-2",
+          "symbol": "XCN",
+          "name": "Onyxcoin",
+          "action": "BUY",
+          "entry": 0.00408227,
+          "sl": 0.0038916382712730325,
+          "tp1": 0.004336445638302623,
+          "tp2": 0.0044635334574539345,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
