@@ -6793,6 +6793,24 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-25",
+      "session": "PAGI",
+      "saved_at": "2026-10-25T10:50:27+07:00",
+      "signals": [
+        {
+          "coin_id": "eigenlayer",
+          "symbol": "EIGEN",
+          "name": "EigenCloud (prev. EigenLayer)",
+          "action": "SELL",
+          "entry": 0.200804,
+          "sl": 0.20270147796047322,
+          "tp1": 0.19827402938603575,
+          "tp2": 0.19700904407905362,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
