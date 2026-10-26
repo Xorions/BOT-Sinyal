@@ -6924,6 +6924,57 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-10-27",
+      "session": "PAGI",
+      "saved_at": "2026-10-27T01:28:06+07:00",
+      "signals": [
+        {
+          "coin_id": "apecoin",
+          "symbol": "APE",
+          "name": "ApeCoin",
+          "action": "SELL",
+          "entry": 0.121969,
+          "sl": 0.12321839854710911,
+          "tp1": 0.12030313527052117,
+          "tp2": 0.11947020290578177,
+          "confidence": 63
+        },
+        {
+          "coin_id": "quack-ai",
+          "symbol": "Q",
+          "name": "Quack AI",
+          "action": "BUY",
+          "entry": 0.074921,
+          "sl": 0.07100188971887186,
+          "tp1": 0.08014648037483753,
+          "tp2": 0.08275922056225629,
+          "confidence": 69
+        },
+        {
+          "coin_id": "beam-2",
+          "symbol": "BEAM",
+          "name": "Beam",
+          "action": "BUY",
+          "entry": 0.00332482,
+          "sl": 0.0032577773835128134,
+          "tp1": 0.003414210155316249,
+          "tp2": 0.0034589052329743737,
+          "confidence": 63
+        },
+        {
+          "coin_id": "ecash",
+          "symbol": "XEC",
+          "name": "eCash",
+          "action": "BUY",
+          "entry": 6.97e-06,
+          "sl": 6.883164602450298e-06,
+          "tp1": 7.0857805300662705e-06,
+          "tp2": 7.143670795099406e-06,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
