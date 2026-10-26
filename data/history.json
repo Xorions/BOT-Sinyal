@@ -6873,6 +6873,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-26",
+      "session": "PAGI",
+      "saved_at": "2026-10-26T10:55:08+07:00",
+      "signals": [
+        {
+          "coin_id": "sonic-3",
+          "symbol": "S",
+          "name": "Sonic",
+          "action": "SELL",
+          "entry": 0.04626896,
+          "sl": 0.04667768223968822,
+          "tp1": 0.04572399701374904,
+          "tp2": 0.04545151552062356,
+          "confidence": 69
+        },
+        {
+          "coin_id": "lido-dao",
+          "symbol": "LDO",
+          "name": "Lido DAO",
+          "action": "SELL",
+          "entry": 0.36026,
+          "sl": 0.3630909531543845,
+          "tp1": 0.3564853957941541,
+          "tp2": 0.35459809369123113,
+          "confidence": 69
+        },
+        {
+          "coin_id": "fartcoin",
+          "symbol": "FARTCOIN",
+          "name": "Fartcoin",
+          "action": "SELL",
+          "entry": 0.122795,
+          "sl": 0.12402694309661288,
+          "tp1": 0.12115240920451616,
+          "tp2": 0.12033111380677423,
+          "confidence": 63
+        },
+        {
+          "coin_id": "starknet",
+          "symbol": "STRK",
+          "name": "Starknet",
+          "action": "SELL",
+          "entry": 0.04480252,
+          "sl": 0.04524563085195038,
+          "tp1": 0.04421170553073282,
+          "tp2": 0.043916298296099235,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
