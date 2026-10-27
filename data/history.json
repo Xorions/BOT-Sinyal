@@ -6975,6 +6975,57 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-10-28",
+      "session": "PAGI",
+      "saved_at": "2026-10-28T00:45:11+07:00",
+      "signals": [
+        {
+          "coin_id": "dash",
+          "symbol": "DASH",
+          "name": "Dash",
+          "action": "BUY",
+          "entry": 55.11,
+          "sl": 54.45358860045921,
+          "tp1": 55.98521519938771,
+          "tp2": 56.422822799081565,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pepe",
+          "symbol": "PEPE",
+          "name": "Pepe",
+          "action": "BUY",
+          "entry": 4.49e-06,
+          "sl": 4.440175039801699e-06,
+          "tp1": 4.556433280264401e-06,
+          "tp2": 4.589649920396602e-06,
+          "confidence": 76
+        },
+        {
+          "coin_id": "quack-ai",
+          "symbol": "Q",
+          "name": "Quack AI",
+          "action": "SELL",
+          "entry": 0.056006,
+          "sl": 0.07207635269113097,
+          "tp1": 0.03457886307849205,
+          "tp2": 0.023865294617738078,
+          "confidence": 69
+        },
+        {
+          "coin_id": "collector-crypt",
+          "symbol": "CARDS",
+          "name": "Collector Crypt",
+          "action": "SELL",
+          "entry": 0.291985,
+          "sl": 0.2969559986169615,
+          "tp1": 0.2853570018440514,
+          "tp2": 0.282043002766077,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
