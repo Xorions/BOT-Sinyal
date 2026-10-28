@@ -7037,6 +7037,57 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-10-29",
+      "session": "PAGI",
+      "saved_at": "2026-10-29T01:07:14+07:00",
+      "signals": [
+        {
+          "coin_id": "lighter",
+          "symbol": "LIT",
+          "name": "Lighter",
+          "action": "SELL",
+          "entry": 2.93,
+          "sl": 2.958334018467578,
+          "tp1": 2.892221308709896,
+          "tp2": 2.873331963064844,
+          "confidence": 63
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "SELL",
+          "entry": 0.196563,
+          "sl": 0.19910321086217722,
+          "tp1": 0.19317605218376369,
+          "tp2": 0.19148257827564555,
+          "confidence": 63
+        },
+        {
+          "coin_id": "injective-protocol",
+          "symbol": "INJ",
+          "name": "Injective",
+          "action": "SELL",
+          "entry": 7.76,
+          "sl": 7.829529282274376,
+          "tp1": 7.6672942903008305,
+          "tp2": 7.620941435451246,
+          "confidence": 69
+        },
+        {
+          "coin_id": "starknet",
+          "symbol": "STRK",
+          "name": "Starknet",
+          "action": "SELL",
+          "entry": 0.04571104,
+          "sl": 0.0463674637103726,
+          "tp1": 0.04483580838616987,
+          "tp2": 0.04439819257925481,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
