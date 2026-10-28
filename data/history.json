@@ -6979,28 +6979,17 @@
     {
       "date": "2026-10-28",
       "session": "PAGI",
-      "saved_at": "2026-10-28T00:45:11+07:00",
+      "saved_at": "2026-10-28T11:45:31+07:00",
       "signals": [
         {
-          "coin_id": "dash",
-          "symbol": "DASH",
-          "name": "Dash",
-          "action": "BUY",
-          "entry": 55.11,
-          "sl": 54.45358860045921,
-          "tp1": 55.98521519938771,
-          "tp2": 56.422822799081565,
-          "confidence": 63
-        },
-        {
-          "coin_id": "pepe",
-          "symbol": "PEPE",
-          "name": "Pepe",
-          "action": "BUY",
-          "entry": 4.49e-06,
-          "sl": 4.440175039801699e-06,
-          "tp1": 4.556433280264401e-06,
-          "tp2": 4.589649920396602e-06,
+          "coin_id": "bedrock-token",
+          "symbol": "BR",
+          "name": "Bedrock",
+          "action": "SELL",
+          "entry": 0.482709,
+          "sl": 0.4913884924434406,
+          "tp1": 0.4711363434087459,
+          "tp2": 0.4653500151131188,
           "confidence": 76
         },
         {
@@ -7008,22 +6997,44 @@
           "symbol": "Q",
           "name": "Quack AI",
           "action": "SELL",
-          "entry": 0.056006,
-          "sl": 0.07207635269113097,
-          "tp1": 0.03457886307849205,
-          "tp2": 0.023865294617738078,
+          "entry": 0.04931101,
+          "sl": 0.05730384011010056,
+          "tp1": 0.038653903186532584,
+          "tp2": 0.033325349779798875,
           "confidence": 69
         },
         {
-          "coin_id": "collector-crypt",
-          "symbol": "CARDS",
-          "name": "Collector Crypt",
+          "coin_id": "aethir",
+          "symbol": "ATH",
+          "name": "Aethir",
+          "action": "BUY",
+          "entry": 0.00587464,
+          "sl": 0.005807854568037558,
+          "tp1": 0.0059636872426165905,
+          "tp2": 0.0060082108639248856,
+          "confidence": 69
+        },
+        {
+          "coin_id": "akedo",
+          "symbol": "AKE",
+          "name": "Akedo",
           "action": "SELL",
-          "entry": 0.291985,
-          "sl": 0.2969559986169615,
-          "tp1": 0.2853570018440514,
-          "tp2": 0.282043002766077,
+          "entry": 0.0217087,
+          "sl": 0.022743494178641074,
+          "tp1": 0.02032897442847857,
+          "tp2": 0.019639111642717855,
           "confidence": 63
+        },
+        {
+          "coin_id": "useless-3",
+          "symbol": "USELESS",
+          "name": "Useless Coin",
+          "action": "BUY",
+          "entry": 0.166072,
+          "sl": 0.16375162596196405,
+          "tp1": 0.16916583205071462,
+          "tp2": 0.17071274807607192,
+          "confidence": 69
         }
       ]
     }
