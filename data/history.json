@@ -7099,6 +7099,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-30",
+      "session": "PAGI",
+      "saved_at": "2026-10-30T01:13:54+07:00",
+      "signals": [
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "SELL",
+          "entry": 0.265967,
+          "sl": 0.27204499162528056,
+          "tp1": 0.25786301116629257,
+          "tp2": 0.2538110167494389,
+          "confidence": 63
+        },
+        {
+          "coin_id": "quack-ai",
+          "symbol": "Q",
+          "name": "Quack AI",
+          "action": "SELL",
+          "entry": 0.03794885,
+          "sl": 0.04240746555855413,
+          "tp1": 0.032004029255261156,
+          "tp2": 0.029031618882891738,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pepe",
+          "symbol": "PEPE",
+          "name": "Pepe",
+          "action": "BUY",
+          "entry": 5.37e-06,
+          "sl": 5.238717119487053e-06,
+          "tp1": 5.545043840683931e-06,
+          "tp2": 5.632565761025896e-06,
+          "confidence": 63
+        },
+        {
+          "coin_id": "cap-4",
+          "symbol": "CAP",
+          "name": "Cap",
+          "action": "BUY",
+          "entry": 0.074891,
+          "sl": 0.07289029738570807,
+          "tp1": 0.07755860348572258,
+          "tp2": 0.07889240522858386,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
