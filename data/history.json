@@ -7161,6 +7161,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-10-31",
+      "session": "PAGI",
+      "saved_at": "2026-10-31T00:54:12+07:00",
+      "signals": [
+        {
+          "coin_id": "lighter",
+          "symbol": "LIT",
+          "name": "Lighter",
+          "action": "SELL",
+          "entry": 2.75,
+          "sl": 2.8237332663110513,
+          "tp1": 2.651688978251932,
+          "tp2": 2.6025334673778975,
+          "confidence": 63
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "SELL",
+          "entry": 0.187557,
+          "sl": 0.19207911902427305,
+          "tp1": 0.18152750796763595,
+          "tp2": 0.17851276195145394,
+          "confidence": 63
+        },
+        {
+          "coin_id": "apecoin",
+          "symbol": "APE",
+          "name": "ApeCoin",
+          "action": "SELL",
+          "entry": 0.112916,
+          "sl": 0.11405428109928777,
+          "tp1": 0.11139829186761632,
+          "tp2": 0.11063943780142449,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
