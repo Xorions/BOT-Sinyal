@@ -7201,6 +7201,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-01",
+      "session": "MALAM",
+      "saved_at": "2026-11-01T00:03:10+07:00",
+      "signals": [
+        {
+          "coin_id": "kinetiq",
+          "symbol": "KNTQ",
+          "name": "Kinetiq",
+          "action": "BUY",
+          "entry": 0.554864,
+          "sl": 0.5414524107119294,
+          "tp1": 0.5727461190507609,
+          "tp2": 0.5816871785761414,
+          "confidence": 69
+        },
+        {
+          "coin_id": "quack-ai",
+          "symbol": "Q",
+          "name": "Quack AI",
+          "action": "SELL",
+          "entry": 0.03151589,
+          "sl": 0.033947673561621615,
+          "tp1": 0.02827351191783784,
+          "tp2": 0.026652322876756764,
+          "confidence": 76
+        },
+        {
+          "coin_id": "lighter",
+          "symbol": "LIT",
+          "name": "Lighter",
+          "action": "BUY",
+          "entry": 2.97,
+          "sl": 2.911754134987812,
+          "tp1": 3.047661153349584,
+          "tp2": 3.086491730024376,
+          "confidence": 82
+        },
+        {
+          "coin_id": "injective-protocol",
+          "symbol": "INJ",
+          "name": "Injective",
+          "action": "BUY",
+          "entry": 7.43,
+          "sl": 7.329623407292862,
+          "tp1": 7.56383545694285,
+          "tp2": 7.6307531854142745,
+          "confidence": 76
+        },
+        {
+          "coin_id": "plasma",
+          "symbol": "XPL",
+          "name": "Plasma",
+          "action": "BUY",
+          "entry": 0.080923,
+          "sl": 0.07990384152001379,
+          "tp1": 0.08228187797331495,
+          "tp2": 0.08296131695997241,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
