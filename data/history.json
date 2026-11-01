@@ -7252,6 +7252,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-02",
+      "session": "PAGI",
+      "saved_at": "2026-11-02T00:46:56+07:00",
+      "signals": [
+        {
+          "coin_id": "quack-ai",
+          "symbol": "Q",
+          "name": "Quack AI",
+          "action": "SELL",
+          "entry": 0.02876744,
+          "sl": 0.0296917312121658,
+          "tp1": 0.02753505171711226,
+          "tp2": 0.026918857575668392,
+          "confidence": 69
+        },
+        {
+          "coin_id": "starknet",
+          "symbol": "STRK",
+          "name": "Starknet",
+          "action": "SELL",
+          "entry": 0.04333586,
+          "sl": 0.04368082869228004,
+          "tp1": 0.042875901743626606,
+          "tp2": 0.04264592261543991,
+          "confidence": 69
+        },
+        {
+          "coin_id": "layerzero",
+          "symbol": "ZRO",
+          "name": "LayerZero",
+          "action": "BUY",
+          "entry": 1.89,
+          "sl": 1.8661512671358336,
+          "tp1": 1.9217983104855552,
+          "tp2": 1.9376974657283328,
+          "confidence": 63
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "SELL",
+          "entry": 0.183837,
+          "sl": 0.18517137501121061,
+          "tp1": 0.18205783331838588,
+          "tp2": 0.1811682499775788,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "BUY",
+          "entry": 0.238419,
+          "sl": 0.23543689711662433,
+          "tp1": 0.2423951371778342,
+          "tp2": 0.2443832057667513,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
