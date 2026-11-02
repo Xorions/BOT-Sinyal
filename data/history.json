@@ -7354,6 +7354,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-03",
+      "session": "PAGI",
+      "saved_at": "2026-11-03T04:33:19+07:00",
+      "signals": [
+        {
+          "coin_id": "shuffle-2",
+          "symbol": "SHFL",
+          "name": "Shuffle",
+          "action": "SELL",
+          "entry": 0.356518,
+          "sl": 0.36532671426684454,
+          "tp1": 0.3447730476442073,
+          "tp2": 0.338900571466311,
+          "confidence": 69
+        },
+        {
+          "coin_id": "circle-internet-group-bstock",
+          "symbol": "CRCLB",
+          "name": "Circle Internet Group (bStocks Tokenized Stock)",
+          "action": "SELL",
+          "entry": 71.99,
+          "sl": 72.7011376506398,
+          "tp1": 71.0418164658136,
+          "tp2": 70.5677246987204,
+          "confidence": 76
+        },
+        {
+          "coin_id": "collector-crypt",
+          "symbol": "CARDS",
+          "name": "Collector Crypt",
+          "action": "SELL",
+          "entry": 0.216197,
+          "sl": 0.22065935536152592,
+          "tp1": 0.21024719285129875,
+          "tp2": 0.20727228927694813,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pancakeswap-token",
+          "symbol": "CAKE",
+          "name": "PancakeSwap",
+          "action": "SELL",
+          "entry": 1.85,
+          "sl": 1.8616767353408301,
+          "tp1": 1.8344310195455602,
+          "tp2": 1.82664652931834,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
