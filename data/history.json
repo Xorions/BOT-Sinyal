@@ -7314,6 +7314,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-02",
+      "session": "MALAM",
+      "saved_at": "2026-11-02T12:04:30+07:00",
+      "signals": [
+        {
+          "coin_id": "quack-ai",
+          "symbol": "Q",
+          "name": "Quack AI",
+          "action": "SELL",
+          "entry": 0.02988399,
+          "sl": 0.031088272119230164,
+          "tp1": 0.028278280507693113,
+          "tp2": 0.02747542576153967,
+          "confidence": 63
+        },
+        {
+          "coin_id": "bitway",
+          "symbol": "BTW",
+          "name": "Bitway",
+          "action": "SELL",
+          "entry": 1.047,
+          "sl": 1.070838734891032,
+          "tp1": 1.0152150201452903,
+          "tp2": 0.9993225302179356,
+          "confidence": 69
+        },
+        {
+          "coin_id": "akedo",
+          "symbol": "AKE",
+          "name": "Akedo",
+          "action": "SELL",
+          "entry": 0.00676289,
+          "sl": 0.007277125454122976,
+          "tp1": 0.006077242727836032,
+          "tp2": 0.005734419091754048,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
