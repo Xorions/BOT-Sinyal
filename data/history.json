@@ -7405,6 +7405,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-03",
+      "session": "MALAM",
+      "saved_at": "2026-11-03T12:51:53+07:00",
+      "signals": [
+        {
+          "coin_id": "circle-internet-group-bstock",
+          "symbol": "CRCLB",
+          "name": "Circle Internet Group (bStocks Tokenized Stock)",
+          "action": "SELL",
+          "entry": 71.34,
+          "sl": 71.88895065627946,
+          "tp1": 70.6080657916274,
+          "tp2": 70.24209868744109,
+          "confidence": 76
+        },
+        {
+          "coin_id": "official-trump",
+          "symbol": "TRUMP",
+          "name": "Official Trump",
+          "action": "SELL",
+          "entry": 1.59,
+          "sl": 1.6051314038334465,
+          "tp1": 1.569824794888738,
+          "tp2": 1.559737192333107,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pendle",
+          "symbol": "PENDLE",
+          "name": "Pendle",
+          "action": "SELL",
+          "entry": 1.74,
+          "sl": 1.7535994623101432,
+          "tp1": 1.721867383586476,
+          "tp2": 1.7128010753797138,
+          "confidence": 63
+        },
+        {
+          "coin_id": "axie-infinity",
+          "symbol": "AXS",
+          "name": "Axie Infinity",
+          "action": "SELL",
+          "entry": 0.824144,
+          "sl": 0.8290650834459218,
+          "tp1": 0.8175825554054376,
+          "tp2": 0.8143018331081564,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
