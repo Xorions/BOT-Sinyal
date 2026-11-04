@@ -7558,6 +7558,57 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-11-05",
+      "session": "PAGI",
+      "saved_at": "2026-11-05T02:33:34+07:00",
+      "signals": [
+        {
+          "coin_id": "blockstack",
+          "symbol": "STX",
+          "name": "Stacks",
+          "action": "BUY",
+          "entry": 0.352904,
+          "sl": 0.3456217666908372,
+          "tp1": 0.36261364441221705,
+          "tp2": 0.36746846661832555,
+          "confidence": 69
+        },
+        {
+          "coin_id": "layerzero",
+          "symbol": "ZRO",
+          "name": "LayerZero",
+          "action": "SELL",
+          "entry": 1.8,
+          "sl": 1.8300110444117332,
+          "tp1": 1.759985274117689,
+          "tp2": 1.7399779111765334,
+          "confidence": 76
+        },
+        {
+          "coin_id": "beam-2",
+          "symbol": "BEAM",
+          "name": "Beam",
+          "action": "BUY",
+          "entry": 0.00445936,
+          "sl": 0.004331260145522304,
+          "tp1": 0.00463015980597026,
+          "tp2": 0.00471555970895539,
+          "confidence": 63
+        },
+        {
+          "coin_id": "cap-4",
+          "symbol": "CAP",
+          "name": "Cap",
+          "action": "BUY",
+          "entry": 0.091913,
+          "sl": 0.08882383389162765,
+          "tp1": 0.09603188814449647,
+          "tp2": 0.0980913322167447,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
