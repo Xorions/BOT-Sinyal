@@ -7496,6 +7496,68 @@
           "confidence": 76
         }
       ]
+    },
+    {
+      "date": "2026-11-04",
+      "session": "MALAM",
+      "saved_at": "2026-11-04T12:28:23+07:00",
+      "signals": [
+        {
+          "coin_id": "pepe",
+          "symbol": "PEPE",
+          "name": "Pepe",
+          "action": "BUY",
+          "entry": 4.91e-06,
+          "sl": 4.857678240611041e-06,
+          "tp1": 4.979762345851944e-06,
+          "tp2": 5.014643518777917e-06,
+          "confidence": 63
+        },
+        {
+          "coin_id": "stable-2",
+          "symbol": "STABLE",
+          "name": "​​Stable",
+          "action": "BUY",
+          "entry": 0.02823514,
+          "sl": 0.02798602789637904,
+          "tp1": 0.02856728947149461,
+          "tp2": 0.028733364207241915,
+          "confidence": 63
+        },
+        {
+          "coin_id": "zcash",
+          "symbol": "ZEC",
+          "name": "Zcash",
+          "action": "BUY",
+          "entry": 1233.01,
+          "sl": 1212.7380088929685,
+          "tp1": 1260.039321476042,
+          "tp2": 1273.5539822140631,
+          "confidence": 82
+        },
+        {
+          "coin_id": "bonk",
+          "symbol": "BONK",
+          "name": "Bonk",
+          "action": "BUY",
+          "entry": 2.92e-06,
+          "sl": 2.888945400251942e-06,
+          "tp1": 2.961406132997411e-06,
+          "tp2": 2.9821091994961163e-06,
+          "confidence": 76
+        },
+        {
+          "coin_id": "monad",
+          "symbol": "MON",
+          "name": "Monad",
+          "action": "BUY",
+          "entry": 0.01825547,
+          "sl": 0.017957503595342802,
+          "tp1": 0.01865275853954293,
+          "tp2": 0.018851402809314393,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
