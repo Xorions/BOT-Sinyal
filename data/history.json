@@ -7609,6 +7609,46 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-11-05",
+      "session": "MALAM",
+      "saved_at": "2026-11-05T12:46:37+07:00",
+      "signals": [
+        {
+          "coin_id": "rain",
+          "symbol": "RAIN",
+          "name": "Rain",
+          "action": "SELL",
+          "entry": 0.00591435,
+          "sl": 0.006018450232259089,
+          "tp1": 0.005775549690321213,
+          "tp2": 0.005706149535481819,
+          "confidence": 63
+        },
+        {
+          "coin_id": "worldcoin-wld",
+          "symbol": "WLD",
+          "name": "Worldcoin",
+          "action": "SELL",
+          "entry": 0.375108,
+          "sl": 0.3801973684665563,
+          "tp1": 0.36832217537792494,
+          "tp2": 0.36492926306688744,
+          "confidence": 69
+        },
+        {
+          "coin_id": "sui",
+          "symbol": "SUI",
+          "name": "Sui",
+          "action": "BUY",
+          "entry": 0.924373,
+          "sl": 0.9155053833275784,
+          "tp1": 0.9361964888965623,
+          "tp2": 0.9421082333448433,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
