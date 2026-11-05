@@ -7649,6 +7649,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-06",
+      "session": "PAGI",
+      "saved_at": "2026-11-06T02:43:28+07:00",
+      "signals": [
+        {
+          "coin_id": "dgrid-ai",
+          "symbol": "DGAI",
+          "name": "DGrid AI",
+          "action": "SELL",
+          "entry": 0.749782,
+          "sl": 0.7715345187793439,
+          "tp1": 0.7207786416275413,
+          "tp2": 0.7062769624413121,
+          "confidence": 69
+        },
+        {
+          "coin_id": "sonic-3",
+          "symbol": "S",
+          "name": "Sonic",
+          "action": "SELL",
+          "entry": 0.03856255,
+          "sl": 0.03929155162733941,
+          "tp1": 0.03759054783021412,
+          "tp2": 0.03710454674532118,
+          "confidence": 63
+        },
+        {
+          "coin_id": "starknet",
+          "symbol": "STRK",
+          "name": "Starknet",
+          "action": "SELL",
+          "entry": 0.04006432,
+          "sl": 0.04092298618628486,
+          "tp1": 0.03891943175162019,
+          "tp2": 0.03834698762743028,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pieverse",
+          "symbol": "PIEVERSE",
+          "name": "Pieverse",
+          "action": "BUY",
+          "entry": 1.25,
+          "sl": 1.2241141975108945,
+          "tp1": 1.2845144033188074,
+          "tp2": 1.301771604978211,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
