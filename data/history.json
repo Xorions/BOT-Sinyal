@@ -7740,6 +7740,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-07",
+      "session": "PAGI",
+      "saved_at": "2026-11-07T02:05:17+07:00",
+      "signals": [
+        {
+          "coin_id": "spacex-bstocks-tokenized-stock",
+          "symbol": "SPCXB",
+          "name": "SpaceX (bStocks Tokenized Stock)",
+          "action": "BUY",
+          "entry": 133.1,
+          "sl": 131.63613649720472,
+          "tp1": 135.05181800372702,
+          "tp2": 136.02772700559055,
+          "confidence": 69
+        },
+        {
+          "coin_id": "cap-4",
+          "symbol": "CAP",
+          "name": "Cap",
+          "action": "SELL",
+          "entry": 0.101006,
+          "sl": 0.102737417828656,
+          "tp1": 0.09869744289512533,
+          "tp2": 0.09754316434268799,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
