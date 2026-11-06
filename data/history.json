@@ -7700,6 +7700,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-06",
+      "session": "MALAM",
+      "saved_at": "2026-11-06T12:44:16+07:00",
+      "signals": [
+        {
+          "coin_id": "collector-crypt",
+          "symbol": "CARDS",
+          "name": "Collector Crypt",
+          "action": "SELL",
+          "entry": 0.245091,
+          "sl": 0.255371010285001,
+          "tp1": 0.23138431961999872,
+          "tp2": 0.22453097942999808,
+          "confidence": 76
+        },
+        {
+          "coin_id": "pieverse",
+          "symbol": "PIEVERSE",
+          "name": "Pieverse",
+          "action": "BUY",
+          "entry": 1.37,
+          "sl": 1.3404544103934424,
+          "tp1": 1.4093941194754103,
+          "tp2": 1.4290911792131153,
+          "confidence": 76
+        },
+        {
+          "coin_id": "celestia",
+          "symbol": "TIA",
+          "name": "Celestia",
+          "action": "SELL",
+          "entry": 0.417877,
+          "sl": 0.42458014104390107,
+          "tp1": 0.4089394786081319,
+          "tp2": 0.40447071791219785,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
