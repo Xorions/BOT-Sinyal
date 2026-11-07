@@ -7769,6 +7769,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-07",
+      "session": "MALAM",
+      "saved_at": "2026-11-07T12:14:33+07:00",
+      "signals": [
+        {
+          "coin_id": "raydium",
+          "symbol": "RAY",
+          "name": "Raydium",
+          "action": "BUY",
+          "entry": 1.78,
+          "sl": 1.7630385675316316,
+          "tp1": 1.802615243291158,
+          "tp2": 1.813922864936737,
+          "confidence": 63
+        },
+        {
+          "coin_id": "geodnet",
+          "symbol": "GEOD",
+          "name": "Geodnet",
+          "action": "BUY",
+          "entry": 0.28764,
+          "sl": 0.28059253924205513,
+          "tp1": 0.29703661434392653,
+          "tp2": 0.3017349215158898,
+          "confidence": 82
+        }
+      ]
     }
   ]
 }
