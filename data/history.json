@@ -7798,6 +7798,24 @@
           "confidence": 82
         }
       ]
+    },
+    {
+      "date": "2026-11-08",
+      "session": "PAGI",
+      "saved_at": "2026-11-08T00:38:25+07:00",
+      "signals": [
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "SELL",
+          "entry": 0.183716,
+          "sl": 0.1866007167473804,
+          "tp1": 0.17986971100349275,
+          "tp2": 0.17794656650523913,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
