@@ -7867,6 +7867,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-09",
+      "session": "PAGI",
+      "saved_at": "2026-11-09T00:48:20+07:00",
+      "signals": [
+        {
+          "coin_id": "plasma",
+          "symbol": "XPL",
+          "name": "Plasma",
+          "action": "SELL",
+          "entry": 0.054329,
+          "sl": 0.05483483302566913,
+          "tp1": 0.05365455596577449,
+          "tp2": 0.053317333948661734,
+          "confidence": 69
+        },
+        {
+          "coin_id": "janction",
+          "symbol": "JCT",
+          "name": "Janction",
+          "action": "BUY",
+          "entry": 0.01193725,
+          "sl": 0.010565646968096726,
+          "tp1": 0.013766054042537699,
+          "tp2": 0.014680456063806548,
+          "confidence": 76
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "SELL",
+          "entry": 0.152715,
+          "sl": 0.15410324893525776,
+          "tp1": 0.1508640014196563,
+          "tp2": 0.14993850212948445,
+          "confidence": 63
+        },
+        {
+          "coin_id": "kinetiq",
+          "symbol": "KNTQ",
+          "name": "Kinetiq",
+          "action": "SELL",
+          "entry": 0.443028,
+          "sl": 0.4548338192898658,
+          "tp1": 0.4272869076135122,
+          "tp2": 0.4194163614202682,
+          "confidence": 76
+        }
+      ]
     }
   ]
 }
