@@ -7816,6 +7816,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-08",
+      "session": "MALAM",
+      "saved_at": "2026-11-08T12:10:11+07:00",
+      "signals": [
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "SELL",
+          "entry": 0.00632497,
+          "sl": 0.006356628981701439,
+          "tp1": 0.006282758024398081,
+          "tp2": 0.0062616520365971215,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pons",
+          "symbol": "PONS",
+          "name": "Pons",
+          "action": "SELL",
+          "entry": 0.169315,
+          "sl": 0.17269029375969894,
+          "tp1": 0.16481460832040137,
+          "tp2": 0.16256441248060208,
+          "confidence": 63
+        },
+        {
+          "coin_id": "optimism",
+          "symbol": "OP",
+          "name": "Optimism",
+          "action": "SELL",
+          "entry": 0.10086,
+          "sl": 0.10157464621191255,
+          "tp1": 0.0999071383841166,
+          "tp2": 0.0994307075761749,
+          "confidence": 63
+        },
+        {
+          "coin_id": "meteora",
+          "symbol": "MET",
+          "name": "Meteora",
+          "action": "BUY",
+          "entry": 0.319299,
+          "sl": 0.31392362764032833,
+          "tp1": 0.32646616314622895,
+          "tp2": 0.3300497447193434,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
