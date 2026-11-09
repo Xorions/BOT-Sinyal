@@ -7936,6 +7936,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-10",
+      "session": "PAGI",
+      "saved_at": "2026-11-10T05:06:31+07:00",
+      "signals": [
+        {
+          "coin_id": "arbitrum",
+          "symbol": "ARB",
+          "name": "Arbitrum",
+          "action": "BUY",
+          "entry": 0.174163,
+          "sl": 0.17136898592145475,
+          "tp1": 0.17788835210472703,
+          "tp2": 0.17975102815709054,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pieverse",
+          "symbol": "PIEVERSE",
+          "name": "Pieverse",
+          "action": "BUY",
+          "entry": 2.02,
+          "sl": 1.9265260995718874,
+          "tp1": 2.1446318672374836,
+          "tp2": 2.2069478008562253,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
