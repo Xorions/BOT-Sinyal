@@ -7918,6 +7918,24 @@
           "confidence": 76
         }
       ]
+    },
+    {
+      "date": "2026-11-09",
+      "session": "MALAM",
+      "saved_at": "2026-11-09T12:20:19+07:00",
+      "signals": [
+        {
+          "coin_id": "sonic-3",
+          "symbol": "S",
+          "name": "Sonic",
+          "action": "SELL",
+          "entry": 0.03568311,
+          "sl": 0.03612988834458671,
+          "tp1": 0.035087405540551043,
+          "tp2": 0.03478955331082656,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
