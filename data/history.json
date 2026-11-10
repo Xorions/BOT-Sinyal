@@ -7965,6 +7965,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-10",
+      "session": "MALAM",
+      "saved_at": "2026-11-10T13:32:47+07:00",
+      "signals": [
+        {
+          "coin_id": "non-playable-coin",
+          "symbol": "NPC",
+          "name": "Non-Playable Coin",
+          "action": "SELL",
+          "entry": 0.01370529,
+          "sl": 0.013853282451579955,
+          "tp1": 0.013507966731226725,
+          "tp2": 0.013409305096840088,
+          "confidence": 76
+        },
+        {
+          "coin_id": "pieverse",
+          "symbol": "PIEVERSE",
+          "name": "Pieverse",
+          "action": "BUY",
+          "entry": 2.08,
+          "sl": 2.0119965649382276,
+          "tp1": 2.17067124674903,
+          "tp2": 2.216006870123545,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
