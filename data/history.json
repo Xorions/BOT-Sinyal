@@ -7994,6 +7994,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-11",
+      "session": "PAGI",
+      "saved_at": "2026-11-11T02:30:21+07:00",
+      "signals": [
+        {
+          "coin_id": "sonic-3",
+          "symbol": "S",
+          "name": "Sonic",
+          "action": "SELL",
+          "entry": 0.03609164,
+          "sl": 0.03655540357215285,
+          "tp1": 0.03547328857046286,
+          "tp2": 0.0351641128556943,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "SELL",
+          "entry": 0.00610859,
+          "sl": 0.006171991052032109,
+          "tp1": 0.006024055263957188,
+          "tp2": 0.005981787895935783,
+          "confidence": 69
+        },
+        {
+          "coin_id": "circle-internet-group-bstock",
+          "symbol": "CRCLB",
+          "name": "Circle Internet Group (bStocks Tokenized Stock)",
+          "action": "SELL",
+          "entry": 64.25,
+          "sl": 65.14513564143905,
+          "tp1": 63.05648581141459,
+          "tp2": 62.459728717121884,
+          "confidence": 63
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "SELL",
+          "entry": 0.147654,
+          "sl": 0.14958817525849785,
+          "tp1": 0.14507509965533621,
+          "tp2": 0.14378564948300432,
+          "confidence": 63
+        },
+        {
+          "coin_id": "filecoin",
+          "symbol": "FIL",
+          "name": "Filecoin",
+          "action": "SELL",
+          "entry": 0.743549,
+          "sl": 0.7504013325112223,
+          "tp1": 0.7344125566517037,
+          "tp2": 0.7298443349775555,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
