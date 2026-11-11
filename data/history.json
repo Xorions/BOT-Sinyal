@@ -8056,6 +8056,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-11",
+      "session": "MALAM",
+      "saved_at": "2026-11-11T12:21:08+07:00",
+      "signals": [
+        {
+          "coin_id": "collector-crypt",
+          "symbol": "CARDS",
+          "name": "Collector Crypt",
+          "action": "SELL",
+          "entry": 0.208201,
+          "sl": 0.21356218141446245,
+          "tp1": 0.20105275811405007,
+          "tp2": 0.19747863717107508,
+          "confidence": 63
+        },
+        {
+          "coin_id": "uniswap",
+          "symbol": "UNI",
+          "name": "Uniswap",
+          "action": "SELL",
+          "entry": 6.63,
+          "sl": 6.699117646790341,
+          "tp1": 6.537843137612879,
+          "tp2": 6.4917647064193185,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
