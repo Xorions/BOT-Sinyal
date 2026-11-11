@@ -8085,6 +8085,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-12",
+      "session": "PAGI",
+      "saved_at": "2026-11-12T02:24:43+07:00",
+      "signals": [
+        {
+          "coin_id": "build-on",
+          "symbol": "B",
+          "name": "BUILDon",
+          "action": "SELL",
+          "entry": 0.113324,
+          "sl": 0.11457672251218814,
+          "tp1": 0.11165370331708246,
+          "tp2": 0.11081855497562369,
+          "confidence": 76
+        },
+        {
+          "coin_id": "bitway",
+          "symbol": "BTW",
+          "name": "Bitway",
+          "action": "SELL",
+          "entry": 1.042,
+          "sl": 1.086282391841086,
+          "tp1": 0.9829568108785522,
+          "tp2": 0.9534352163178283,
+          "confidence": 63
+        },
+        {
+          "coin_id": "chain-2",
+          "symbol": "XCN",
+          "name": "Onyxcoin",
+          "action": "BUY",
+          "entry": 0.00358619,
+          "sl": 0.0034633949420505754,
+          "tp1": 0.003749916743932566,
+          "tp2": 0.0038317801158988495,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pepe",
+          "symbol": "PEPE",
+          "name": "Pepe",
+          "action": "SELL",
+          "entry": 4.88e-06,
+          "sl": 4.946103480311142e-06,
+          "tp1": 4.79186202625181e-06,
+          "tp2": 4.747793039377714e-06,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
