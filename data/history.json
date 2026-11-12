@@ -8176,6 +8176,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-13",
+      "session": "PAGI",
+      "saved_at": "2026-11-13T02:43:14+07:00",
+      "signals": [
+        {
+          "coin_id": "layerzero",
+          "symbol": "ZRO",
+          "name": "LayerZero",
+          "action": "SELL",
+          "entry": 1.51,
+          "sl": 1.5281543841766188,
+          "tp1": 1.485794154431175,
+          "tp2": 1.4736912316467625,
+          "confidence": 69
+        },
+        {
+          "coin_id": "worldcoin-wld",
+          "symbol": "WLD",
+          "name": "Worldcoin",
+          "action": "SELL",
+          "entry": 0.299645,
+          "sl": 0.3020281558564442,
+          "tp1": 0.29646745885807435,
+          "tp2": 0.2948786882871115,
+          "confidence": 69
+        },
+        {
+          "coin_id": "chain-2",
+          "symbol": "XCN",
+          "name": "Onyxcoin",
+          "action": "SELL",
+          "entry": 0.0033178,
+          "sl": 0.003393175611581688,
+          "tp1": 0.0032172991845577496,
+          "tp2": 0.0031670487768366245,
+          "confidence": 63
+        },
+        {
+          "coin_id": "fetch-ai",
+          "symbol": "FET",
+          "name": "Artificial Superintelligence Alliance",
+          "action": "SELL",
+          "entry": 0.145793,
+          "sl": 0.14699965678567292,
+          "tp1": 0.14418412428576946,
+          "tp2": 0.1433796864286542,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
