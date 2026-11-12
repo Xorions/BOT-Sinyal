@@ -8136,6 +8136,46 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-11-12",
+      "session": "MALAM",
+      "saved_at": "2026-11-12T13:24:27+07:00",
+      "signals": [
+        {
+          "coin_id": "injective-protocol",
+          "symbol": "INJ",
+          "name": "Injective",
+          "action": "SELL",
+          "entry": 7.38,
+          "sl": 7.483152351557532,
+          "tp1": 7.242463531256624,
+          "tp2": 7.173695296884937,
+          "confidence": 69
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "SELL",
+          "entry": 0.142664,
+          "sl": 0.14418596116332746,
+          "tp1": 0.14063471844889677,
+          "tp2": 0.13962007767334514,
+          "confidence": 63
+        },
+        {
+          "coin_id": "plasma",
+          "symbol": "XPL",
+          "name": "Plasma",
+          "action": "SELL",
+          "entry": 0.050968,
+          "sl": 0.051376965412487055,
+          "tp1": 0.050422712783350594,
+          "tp2": 0.05015006917502589,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
