@@ -8227,6 +8227,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-13",
+      "session": "MALAM",
+      "saved_at": "2026-11-13T12:43:51+07:00",
+      "signals": [
+        {
+          "coin_id": "collector-crypt",
+          "symbol": "CARDS",
+          "name": "Collector Crypt",
+          "action": "SELL",
+          "entry": 0.184867,
+          "sl": 0.18909242538304932,
+          "tp1": 0.17923309948926758,
+          "tp2": 0.17641614923390136,
+          "confidence": 69
+        },
+        {
+          "coin_id": "near",
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "action": "SELL",
+          "entry": 3.32,
+          "sl": 3.36266668215819,
+          "tp1": 3.2631110904557463,
+          "tp2": 3.2346666356836193,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pearl-2",
+          "symbol": "PEARL",
+          "name": "Pearl",
+          "action": "SELL",
+          "entry": 1.25,
+          "sl": 1.2996594176895213,
+          "tp1": 1.183787443080638,
+          "tp2": 1.1506811646209572,
+          "confidence": 63
+        },
+        {
+          "coin_id": "arbitrum",
+          "symbol": "ARB",
+          "name": "Arbitrum",
+          "action": "SELL",
+          "entry": 0.142988,
+          "sl": 0.14460239415467085,
+          "tp1": 0.14083547446043887,
+          "tp2": 0.1397592116906583,
+          "confidence": 69
+        },
+        {
+          "coin_id": "thorchain",
+          "symbol": "RUNE",
+          "name": "THORChain",
+          "action": "SELL",
+          "entry": 0.551538,
+          "sl": 0.5564472451930063,
+          "tp1": 0.5449923397426583,
+          "tp2": 0.5417195096139874,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
