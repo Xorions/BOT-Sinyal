@@ -8369,6 +8369,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-15",
+      "session": "PAGI",
+      "saved_at": "2026-11-15T00:50:08+07:00",
+      "signals": [
+        {
+          "coin_id": "pendle",
+          "symbol": "PENDLE",
+          "name": "Pendle",
+          "action": "SELL",
+          "entry": 1.46,
+          "sl": 1.4812342848191173,
+          "tp1": 1.431687620241177,
+          "tp2": 1.4175314303617654,
+          "confidence": 63
+        },
+        {
+          "coin_id": "aerodrome-finance",
+          "symbol": "AERO",
+          "name": "Aerodrome Finance",
+          "action": "SELL",
+          "entry": 0.442381,
+          "sl": 0.44947526798773707,
+          "tp1": 0.43292197601635063,
+          "tp2": 0.42819246402452593,
+          "confidence": 69
+        },
+        {
+          "coin_id": "injective-protocol",
+          "symbol": "INJ",
+          "name": "Injective",
+          "action": "SELL",
+          "entry": 7.43,
+          "sl": 7.592696659358989,
+          "tp1": 7.213071120854681,
+          "tp2": 7.104606681282021,
+          "confidence": 69
+        },
+        {
+          "coin_id": "aster-2",
+          "symbol": "ASTER",
+          "name": "Aster",
+          "action": "SELL",
+          "entry": 0.62878,
+          "sl": 0.6357179360958694,
+          "tp1": 0.6195294185388408,
+          "tp2": 0.6149041278082613,
+          "confidence": 63
+        },
+        {
+          "coin_id": "arbitrum",
+          "symbol": "ARB",
+          "name": "Arbitrum",
+          "action": "SELL",
+          "entry": 0.136087,
+          "sl": 0.13808748139950847,
+          "tp1": 0.13341969146732208,
+          "tp2": 0.1320860372009831,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
