@@ -8329,6 +8329,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-14",
+      "session": "MALAM",
+      "saved_at": "2026-11-14T12:34:25+07:00",
+      "signals": [
+        {
+          "coin_id": "pieverse",
+          "symbol": "PIEVERSE",
+          "name": "Pieverse",
+          "action": "BUY",
+          "entry": 1.72,
+          "sl": 1.6887013630310532,
+          "tp1": 1.7617315159585958,
+          "tp2": 1.7825972739378937,
+          "confidence": 69
+        },
+        {
+          "coin_id": "kinesis-silver",
+          "symbol": "KAG",
+          "name": "Kinesis Silver",
+          "action": "SELL",
+          "entry": 48.96,
+          "sl": 49.26454744281216,
+          "tp1": 48.55393674291713,
+          "tp2": 48.35090511437569,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pepe",
+          "symbol": "PEPE",
+          "name": "Pepe",
+          "action": "SELL",
+          "entry": 4.21e-06,
+          "sl": 4.259884768449323e-06,
+          "tp1": 4.143486975400903e-06,
+          "tp2": 4.110230463101354e-06,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
