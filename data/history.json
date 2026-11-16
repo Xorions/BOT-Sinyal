@@ -8544,6 +8544,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-17",
+      "session": "PAGI",
+      "saved_at": "2026-11-17T04:48:38+07:00",
+      "signals": [
+        {
+          "coin_id": "nvidia-xstock",
+          "symbol": "NVDAX",
+          "name": "NVIDIA xStock",
+          "action": "SELL",
+          "entry": 156.85,
+          "sl": 158.53802684489943,
+          "tp1": 154.59929754013405,
+          "tp2": 153.4739463102011,
+          "confidence": 63
+        },
+        {
+          "coin_id": "nvidia-bstocks",
+          "symbol": "NVDAB",
+          "name": "NVIDIA (bStocks Tokenized Stock)",
+          "action": "SELL",
+          "entry": 156.62,
+          "sl": 158.27701554175587,
+          "tp1": 154.4106459443255,
+          "tp2": 153.30596891648827,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
