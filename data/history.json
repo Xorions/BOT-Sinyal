@@ -8482,6 +8482,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-16",
+      "session": "MALAM",
+      "saved_at": "2026-11-16T12:31:32+07:00",
+      "signals": [
+        {
+          "coin_id": "useless-3",
+          "symbol": "USELESS",
+          "name": "Useless Coin",
+          "action": "SELL",
+          "entry": 0.098745,
+          "sl": 0.10043042598837224,
+          "tp1": 0.09649776534883701,
+          "tp2": 0.09537414802325551,
+          "confidence": 63
+        },
+        {
+          "coin_id": "injective-protocol",
+          "symbol": "INJ",
+          "name": "Injective",
+          "action": "SELL",
+          "entry": 6.79,
+          "sl": 6.894160835297211,
+          "tp1": 6.651118886270385,
+          "tp2": 6.581678329405578,
+          "confidence": 63
+        },
+        {
+          "coin_id": "origintrail",
+          "symbol": "TRAC",
+          "name": "OriginTrail",
+          "action": "SELL",
+          "entry": 0.290136,
+          "sl": 0.2944190292441896,
+          "tp1": 0.28442529434108055,
+          "tp2": 0.2815699415116208,
+          "confidence": 63
+        },
+        {
+          "coin_id": "lighter",
+          "symbol": "LIT",
+          "name": "Lighter",
+          "action": "SELL",
+          "entry": 2.71,
+          "sl": 2.759702384042917,
+          "tp1": 2.643730154609444,
+          "tp2": 2.6105952319141656,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pepe",
+          "symbol": "PEPE",
+          "name": "Pepe",
+          "action": "SELL",
+          "entry": 3.81e-06,
+          "sl": 3.8536908130794225e-06,
+          "tp1": 3.75174558256077e-06,
+          "tp2": 3.7226183738411547e-06,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
