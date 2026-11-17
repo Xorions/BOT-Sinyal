@@ -8624,6 +8624,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-18",
+      "session": "PAGI",
+      "saved_at": "2026-11-18T03:40:10+07:00",
+      "signals": [
+        {
+          "coin_id": "dgrid-ai",
+          "symbol": "DGAI",
+          "name": "DGrid AI",
+          "action": "SELL",
+          "entry": 0.672225,
+          "sl": 0.6805868328584186,
+          "tp1": 0.6610758895221085,
+          "tp2": 0.6555013342831628,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "SELL",
+          "entry": 0.00469303,
+          "sl": 0.004778618324731491,
+          "tp1": 0.004578912233691346,
+          "tp2": 0.004521853350537019,
+          "confidence": 63
+        },
+        {
+          "coin_id": "terra-luna",
+          "symbol": "LUNC",
+          "name": "Terra Luna Classic",
+          "action": "BUY",
+          "entry": 4.151e-05,
+          "sl": 4.064797349901689e-05,
+          "tp1": 4.265936866797747e-05,
+          "tp2": 4.323405300196621e-05,
+          "confidence": 76
+        }
+      ]
     }
   ]
 }
