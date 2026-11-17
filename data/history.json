@@ -8573,6 +8573,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-17",
+      "session": "MALAM",
+      "saved_at": "2026-11-17T14:10:11+07:00",
+      "signals": [
+        {
+          "coin_id": "sentient",
+          "symbol": "SENT",
+          "name": "Sentient",
+          "action": "BUY",
+          "entry": 0.01794176,
+          "sl": 0.01775023675027261,
+          "tp1": 0.018197124332969855,
+          "tp2": 0.018324806499454782,
+          "confidence": 69
+        },
+        {
+          "coin_id": "optimism",
+          "symbol": "OP",
+          "name": "Optimism",
+          "action": "SELL",
+          "entry": 0.077791,
+          "sl": 0.07872916218561457,
+          "tp1": 0.07654011708584724,
+          "tp2": 0.07591467562877086,
+          "confidence": 63
+        },
+        {
+          "coin_id": "backpack",
+          "symbol": "BP",
+          "name": "Backpack",
+          "action": "BUY",
+          "entry": 1.012,
+          "sl": 0.9572122402305963,
+          "tp1": 1.085050346359205,
+          "tp2": 1.1215755195388075,
+          "confidence": 63
+        },
+        {
+          "coin_id": "dgrid-ai",
+          "symbol": "DGAI",
+          "name": "DGrid AI",
+          "action": "BUY",
+          "entry": 0.702367,
+          "sl": 0.6937088869495455,
+          "tp1": 0.7139111507339393,
+          "tp2": 0.719683226100909,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
