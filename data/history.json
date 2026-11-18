@@ -8664,6 +8664,57 @@
           "confidence": 76
         }
       ]
+    },
+    {
+      "date": "2026-11-18",
+      "session": "MALAM",
+      "saved_at": "2026-11-18T13:33:24+07:00",
+      "signals": [
+        {
+          "coin_id": "sonic-3",
+          "symbol": "S",
+          "name": "Sonic",
+          "action": "SELL",
+          "entry": 0.03237596,
+          "sl": 0.032739196151703474,
+          "tp1": 0.03189164513106204,
+          "tp2": 0.03164948769659306,
+          "confidence": 63
+        },
+        {
+          "coin_id": "basic-attention-token",
+          "symbol": "BAT",
+          "name": "Basic Attention",
+          "action": "SELL",
+          "entry": 0.093486,
+          "sl": 0.09431714222610743,
+          "tp1": 0.09237781036519009,
+          "tp2": 0.09182371554778514,
+          "confidence": 69
+        },
+        {
+          "coin_id": "aster-2",
+          "symbol": "ASTER",
+          "name": "Aster",
+          "action": "SELL",
+          "entry": 0.549898,
+          "sl": 0.5602881603265966,
+          "tp1": 0.5360444528978712,
+          "tp2": 0.5291176793468069,
+          "confidence": 63
+        },
+        {
+          "coin_id": "lighter",
+          "symbol": "LIT",
+          "name": "Lighter",
+          "action": "SELL",
+          "entry": 2.84,
+          "sl": 2.8862982347294452,
+          "tp1": 2.778269020360739,
+          "tp2": 2.747403530541109,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
