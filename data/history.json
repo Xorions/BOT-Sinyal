@@ -8733,6 +8733,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-20",
+      "session": "PAGI",
+      "saved_at": "2026-11-20T03:13:37+07:00",
+      "signals": [
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "SELL",
+          "entry": 0.10534,
+          "sl": 0.10666409431298689,
+          "tp1": 0.10357454091601749,
+          "tp2": 0.10269181137402623,
+          "confidence": 63
+        },
+        {
+          "coin_id": "terra-luna",
+          "symbol": "LUNC",
+          "name": "Terra Luna Classic",
+          "action": "BUY",
+          "entry": 4.73e-05,
+          "sl": 4.5981106312387705e-05,
+          "tp1": 4.9058524916816384e-05,
+          "tp2": 4.9937787375224583e-05,
+          "confidence": 69
+        },
+        {
+          "coin_id": "crypto-com-chain",
+          "symbol": "CRO",
+          "name": "Cronos",
+          "action": "SELL",
+          "entry": 0.041188,
+          "sl": 0.041608916380474724,
+          "tp1": 0.04062677815936704,
+          "tp2": 0.040346167239050566,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
