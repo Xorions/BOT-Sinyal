@@ -8813,6 +8813,68 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-21",
+      "session": "PAGI",
+      "saved_at": "2026-11-21T02:46:54+07:00",
+      "signals": [
+        {
+          "coin_id": "quack-ai",
+          "symbol": "Q",
+          "name": "Quack AI",
+          "action": "SELL",
+          "entry": 0.02319695,
+          "sl": 0.0236448180811463,
+          "tp1": 0.022599792558471603,
+          "tp2": 0.022301213837707404,
+          "confidence": 76
+        },
+        {
+          "coin_id": "akedo",
+          "symbol": "AKE",
+          "name": "Akedo",
+          "action": "SELL",
+          "entry": 0.00637533,
+          "sl": 0.007411653910701061,
+          "tp1": 0.004993564785731919,
+          "tp2": 0.004302682178597878,
+          "confidence": 69
+        },
+        {
+          "coin_id": "circle-internet-group-bstock",
+          "symbol": "CRCLB",
+          "name": "Circle Internet Group (bStocks Tokenized Stock)",
+          "action": "SELL",
+          "entry": 49.19,
+          "sl": 49.98447972931082,
+          "tp1": 48.13069369425224,
+          "tp2": 47.60104054137835,
+          "confidence": 69
+        },
+        {
+          "coin_id": "starknet",
+          "symbol": "STRK",
+          "name": "Starknet",
+          "action": "SELL",
+          "entry": 0.02985309,
+          "sl": 0.03025373130184082,
+          "tp1": 0.029318901597545573,
+          "tp2": 0.02905180739631836,
+          "confidence": 63
+        },
+        {
+          "coin_id": "the-open-network",
+          "symbol": "GRAM",
+          "name": "Gram (prev. Toncoin)",
+          "action": "SELL",
+          "entry": 0.982473,
+          "sl": 0.9929901710564739,
+          "tp1": 0.9684501052580349,
+          "tp2": 0.9614386578870523,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
