@@ -8773,6 +8773,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-20",
+      "session": "MALAM",
+      "saved_at": "2026-11-20T13:24:11+07:00",
+      "signals": [
+        {
+          "coin_id": "dogwifcoin",
+          "symbol": "WIF",
+          "name": "dogwifhat",
+          "action": "SELL",
+          "entry": 0.129111,
+          "sl": 0.13043639886055042,
+          "tp1": 0.1273438015192661,
+          "tp2": 0.12646020227889918,
+          "confidence": 63
+        },
+        {
+          "coin_id": "axie-infinity",
+          "symbol": "AXS",
+          "name": "Axie Infinity",
+          "action": "SELL",
+          "entry": 0.647315,
+          "sl": 0.6537450885614968,
+          "tp1": 0.6387415485846708,
+          "tp2": 0.6344548228770062,
+          "confidence": 63
+        },
+        {
+          "coin_id": "official-trump",
+          "symbol": "TRUMP",
+          "name": "Official Trump",
+          "action": "SELL",
+          "entry": 0.926633,
+          "sl": 0.9373626273037655,
+          "tp1": 0.9123268302616461,
+          "tp2": 0.905173745392469,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
