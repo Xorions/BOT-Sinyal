@@ -8937,6 +8937,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-22",
+      "session": "PAGI",
+      "saved_at": "2026-11-22T01:54:29+07:00",
+      "signals": [
+        {
+          "coin_id": "celestia",
+          "symbol": "TIA",
+          "name": "Celestia",
+          "action": "BUY",
+          "entry": 0.327767,
+          "sl": 0.3223280760038978,
+          "tp1": 0.33501889866146956,
+          "tp2": 0.33864484799220435,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pieverse",
+          "symbol": "PIEVERSE",
+          "name": "Pieverse",
+          "action": "BUY",
+          "entry": 3.39,
+          "sl": 3.2815482468478416,
+          "tp1": 3.5346023375362114,
+          "tp2": 3.606903506304317,
+          "confidence": 63
+        },
+        {
+          "coin_id": "ethereum",
+          "symbol": "ETH",
+          "name": "Ethereum",
+          "action": "BUY",
+          "entry": 1680.79,
+          "sl": 1661.661103474727,
+          "tp1": 1706.2951953670306,
+          "tp2": 1719.0477930505458,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
