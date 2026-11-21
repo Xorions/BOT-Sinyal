@@ -8875,6 +8875,68 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-11-21",
+      "session": "MALAM",
+      "saved_at": "2026-11-21T13:11:42+07:00",
+      "signals": [
+        {
+          "coin_id": "pendle",
+          "symbol": "PENDLE",
+          "name": "Pendle",
+          "action": "SELL",
+          "entry": 1.21,
+          "sl": 1.2302957022030827,
+          "tp1": 1.182939063729223,
+          "tp2": 1.1694085955938347,
+          "confidence": 69
+        },
+        {
+          "coin_id": "akash-network",
+          "symbol": "AKT",
+          "name": "Akash Network",
+          "action": "SELL",
+          "entry": 0.477379,
+          "sl": 0.4900226121974077,
+          "tp1": 0.46052085040345636,
+          "tp2": 0.45209177560518454,
+          "confidence": 69
+        },
+        {
+          "coin_id": "injective-protocol",
+          "symbol": "INJ",
+          "name": "Injective",
+          "action": "SELL",
+          "entry": 5.92,
+          "sl": 6.027991206420815,
+          "tp1": 5.776011724772247,
+          "tp2": 5.704017587158371,
+          "confidence": 69
+        },
+        {
+          "coin_id": "celestia",
+          "symbol": "TIA",
+          "name": "Celestia",
+          "action": "SELL",
+          "entry": 0.305934,
+          "sl": 0.3111329908778883,
+          "tp1": 0.2990020121628155,
+          "tp2": 0.2955360182442233,
+          "confidence": 63
+        },
+        {
+          "coin_id": "plasma",
+          "symbol": "XPL",
+          "name": "Plasma",
+          "action": "SELL",
+          "entry": 0.04467623,
+          "sl": 0.04531659503258728,
+          "tp1": 0.04382240995655028,
+          "tp2": 0.04339549993482543,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
