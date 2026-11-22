@@ -8977,6 +8977,46 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-22",
+      "session": "MALAM",
+      "saved_at": "2026-11-22T12:45:43+07:00",
+      "signals": [
+        {
+          "coin_id": "pearl-2",
+          "symbol": "PEARL",
+          "name": "Pearl",
+          "action": "BUY",
+          "entry": 1.96,
+          "sl": 1.905357725154471,
+          "tp1": 2.032856366460705,
+          "tp2": 2.0692845496910577,
+          "confidence": 63
+        },
+        {
+          "coin_id": "derive",
+          "symbol": "DRV",
+          "name": "Derive",
+          "action": "BUY",
+          "entry": 0.329542,
+          "sl": 0.3193852066962086,
+          "tp1": 0.34308439107172184,
+          "tp2": 0.34985558660758276,
+          "confidence": 63
+        },
+        {
+          "coin_id": "dash",
+          "symbol": "DASH",
+          "name": "Dash",
+          "action": "BUY",
+          "entry": 34.14,
+          "sl": 33.774567027193896,
+          "tp1": 34.62724396374148,
+          "tp2": 34.870865945612216,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
