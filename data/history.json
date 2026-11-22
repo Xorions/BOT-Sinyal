@@ -9017,6 +9017,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-23",
+      "session": "PAGI",
+      "saved_at": "2026-11-23T02:15:30+07:00",
+      "signals": [
+        {
+          "coin_id": "monad",
+          "symbol": "MON",
+          "name": "Monad",
+          "action": "SELL",
+          "entry": 0.01269165,
+          "sl": 0.012848742147322297,
+          "tp1": 0.012482193803570272,
+          "tp2": 0.012377465705355408,
+          "confidence": 63
+        },
+        {
+          "coin_id": "derive",
+          "symbol": "DRV",
+          "name": "Derive",
+          "action": "BUY",
+          "entry": 0.374173,
+          "sl": 0.3611488697923081,
+          "tp1": 0.3915385069435892,
+          "tp2": 0.4002212604153838,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
