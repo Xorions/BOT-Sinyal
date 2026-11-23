@@ -9046,6 +9046,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-23",
+      "session": "MALAM",
+      "saved_at": "2026-11-23T13:32:26+07:00",
+      "signals": [
+        {
+          "coin_id": "dgrid-ai",
+          "symbol": "DGAI",
+          "name": "DGrid AI",
+          "action": "BUY",
+          "entry": 0.994741,
+          "sl": 0.9746848983139808,
+          "tp1": 1.0214824689146922,
+          "tp2": 1.0348532033720383,
+          "confidence": 63
+        },
+        {
+          "coin_id": "ethena",
+          "symbol": "ENA",
+          "name": "Ethena",
+          "action": "BUY",
+          "entry": 0.102675,
+          "sl": 0.10156324731097137,
+          "tp1": 0.10415733691870485,
+          "tp2": 0.10489850537805728,
+          "confidence": 69
+        },
+        {
+          "coin_id": "thorchain",
+          "symbol": "RUNE",
+          "name": "THORChain",
+          "action": "BUY",
+          "entry": 0.509355,
+          "sl": 0.5045949357005141,
+          "tp1": 0.5157017523993146,
+          "tp2": 0.518875128598972,
+          "confidence": 69
+        },
+        {
+          "coin_id": "the-sandbox",
+          "symbol": "SAND",
+          "name": "The Sandbox",
+          "action": "BUY",
+          "entry": 0.03403611,
+          "sl": 0.033777989419332466,
+          "tp1": 0.034380270774223384,
+          "tp2": 0.03455235116133507,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
