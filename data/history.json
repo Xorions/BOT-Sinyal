@@ -9097,6 +9097,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-24",
+      "session": "PAGI",
+      "saved_at": "2026-11-24T06:37:22+07:00",
+      "signals": [
+        {
+          "coin_id": "pump-fun",
+          "symbol": "PUMP",
+          "name": "Pump.fun",
+          "action": "SELL",
+          "entry": 0.00253292,
+          "sl": 0.0025724003243669945,
+          "tp1": 0.0024802795675106745,
+          "tp2": 0.0024539593512660114,
+          "confidence": 63
+        },
+        {
+          "coin_id": "monad",
+          "symbol": "MON",
+          "name": "Monad",
+          "action": "SELL",
+          "entry": 0.01144875,
+          "sl": 0.011708717418789434,
+          "tp1": 0.01110212677494742,
+          "tp2": 0.010928815162421132,
+          "confidence": 69
+        },
+        {
+          "coin_id": "layerzero",
+          "symbol": "ZRO",
+          "name": "LayerZero",
+          "action": "SELL",
+          "entry": 1.15,
+          "sl": 1.1730545458339259,
+          "tp1": 1.1192606055547654,
+          "tp2": 1.1038909083321482,
+          "confidence": 69
+        },
+        {
+          "coin_id": "terra-luna",
+          "symbol": "LUNC",
+          "name": "Terra Luna Classic",
+          "action": "BUY",
+          "entry": 4.227e-05,
+          "sl": 4.165964319627112e-05,
+          "tp1": 4.308380907163851e-05,
+          "tp2": 4.3490713607457765e-05,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
