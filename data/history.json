@@ -9199,6 +9199,57 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-11-25",
+      "session": "PAGI",
+      "saved_at": "2026-11-25T05:06:18+07:00",
+      "signals": [
+        {
+          "coin_id": "sonic-3",
+          "symbol": "S",
+          "name": "Sonic",
+          "action": "SELL",
+          "entry": 0.02736369,
+          "sl": 0.02772662495649037,
+          "tp1": 0.0268797767246795,
+          "tp2": 0.026637820087019252,
+          "confidence": 69
+        },
+        {
+          "coin_id": "fetch-ai",
+          "symbol": "FET",
+          "name": "Artificial Superintelligence Alliance",
+          "action": "SELL",
+          "entry": 0.10591,
+          "sl": 0.10734516037274677,
+          "tp1": 0.10399645283633764,
+          "tp2": 0.10303967925450645,
+          "confidence": 63
+        },
+        {
+          "coin_id": "dogwifcoin",
+          "symbol": "WIF",
+          "name": "dogwifhat",
+          "action": "SELL",
+          "entry": 0.120529,
+          "sl": 0.12187445022754215,
+          "tp1": 0.11873506636327713,
+          "tp2": 0.1178380995449157,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pudgy-penguins",
+          "symbol": "PENGU",
+          "name": "Pudgy Penguins",
+          "action": "SELL",
+          "entry": 0.00423574,
+          "sl": 0.0042880510164990055,
+          "tp1": 0.004165991978001327,
+          "tp2": 0.004131117967001989,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
