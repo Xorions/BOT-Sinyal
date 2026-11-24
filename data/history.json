@@ -9148,6 +9148,57 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-11-24",
+      "session": "MALAM",
+      "saved_at": "2026-11-24T16:01:00+07:00",
+      "signals": [
+        {
+          "coin_id": "layerzero",
+          "symbol": "ZRO",
+          "name": "LayerZero",
+          "action": "SELL",
+          "entry": 1.086,
+          "sl": 1.1087289038044905,
+          "tp1": 1.055694794927346,
+          "tp2": 1.0405421923910192,
+          "confidence": 69
+        },
+        {
+          "coin_id": "official-trump",
+          "symbol": "TRUMP",
+          "name": "Official Trump",
+          "action": "SELL",
+          "entry": 0.862353,
+          "sl": 0.8731600155033022,
+          "tp1": 0.8479436459955971,
+          "tp2": 0.8407389689933956,
+          "confidence": 63
+        },
+        {
+          "coin_id": "zcash",
+          "symbol": "ZEC",
+          "name": "Zcash",
+          "action": "SELL",
+          "entry": 753.87,
+          "sl": 766.303123421442,
+          "tp1": 737.292502104744,
+          "tp2": 729.003753157116,
+          "confidence": 69
+        },
+        {
+          "coin_id": "starknet",
+          "symbol": "STRK",
+          "name": "Starknet",
+          "action": "SELL",
+          "entry": 0.03091482,
+          "sl": 0.031313434462892094,
+          "tp1": 0.03038333404947721,
+          "tp2": 0.030117591074215813,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
