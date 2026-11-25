@@ -9250,6 +9250,57 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-25",
+      "session": "MALAM",
+      "saved_at": "2026-11-25T14:38:55+07:00",
+      "signals": [
+        {
+          "coin_id": "worldcoin-wld",
+          "symbol": "WLD",
+          "name": "Worldcoin",
+          "action": "SELL",
+          "entry": 0.23128,
+          "sl": 0.23359646925993932,
+          "tp1": 0.22819137432008096,
+          "tp2": 0.22664706148012143,
+          "confidence": 76
+        },
+        {
+          "coin_id": "pharos-network",
+          "symbol": "PROS",
+          "name": "Pharos",
+          "action": "BUY",
+          "entry": 0.743574,
+          "sl": 0.7224409909681977,
+          "tp1": 0.7717513453757362,
+          "tp2": 0.7858400180636044,
+          "confidence": 76
+        },
+        {
+          "coin_id": "fetch-ai",
+          "symbol": "FET",
+          "name": "Artificial Superintelligence Alliance",
+          "action": "SELL",
+          "entry": 0.105695,
+          "sl": 0.10685987270180218,
+          "tp1": 0.10414183639759708,
+          "tp2": 0.10336525459639563,
+          "confidence": 63
+        },
+        {
+          "coin_id": "dogwifcoin",
+          "symbol": "WIF",
+          "name": "dogwifhat",
+          "action": "SELL",
+          "entry": 0.121796,
+          "sl": 0.12301273334881294,
+          "tp1": 0.12017368886824943,
+          "tp2": 0.11936253330237415,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
