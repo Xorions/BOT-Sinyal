@@ -9301,6 +9301,46 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-11-26",
+      "session": "PAGI",
+      "saved_at": "2026-11-26T04:21:22+07:00",
+      "signals": [
+        {
+          "coin_id": "unibase",
+          "symbol": "UB",
+          "name": "Unibase",
+          "action": "BUY",
+          "entry": 0.106317,
+          "sl": 0.10514217939780847,
+          "tp1": 0.1078834274695887,
+          "tp2": 0.10866664120438306,
+          "confidence": 69
+        },
+        {
+          "coin_id": "near",
+          "symbol": "NEAR",
+          "name": "NEAR Protocol",
+          "action": "BUY",
+          "entry": 3.01,
+          "sl": 2.963365451364936,
+          "tp1": 3.0721793981800847,
+          "tp2": 3.1032690972701267,
+          "confidence": 69
+        },
+        {
+          "coin_id": "thorchain",
+          "symbol": "RUNE",
+          "name": "THORChain",
+          "action": "BUY",
+          "entry": 0.538534,
+          "sl": 0.5322036833567708,
+          "tp1": 0.546974422190972,
+          "tp2": 0.5511946332864581,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
