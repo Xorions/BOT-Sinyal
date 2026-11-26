@@ -9381,6 +9381,24 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-27",
+      "session": "PAGI",
+      "saved_at": "2026-11-27T04:09:03+07:00",
+      "signals": [
+        {
+          "coin_id": "monad",
+          "symbol": "MON",
+          "name": "Monad",
+          "action": "SELL",
+          "entry": 0.01038762,
+          "sl": 0.01054366049632476,
+          "tp1": 0.01017956600490032,
+          "tp2": 0.01007553900735048,
+          "confidence": 63
+        }
+      ]
     }
   ]
 }
