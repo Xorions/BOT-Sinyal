@@ -9399,6 +9399,35 @@
           "confidence": 63
         }
       ]
+    },
+    {
+      "date": "2026-11-27",
+      "session": "MALAM",
+      "saved_at": "2026-11-27T14:24:47+07:00",
+      "signals": [
+        {
+          "coin_id": "stable-2",
+          "symbol": "STABLE",
+          "name": "​​Stable",
+          "action": "BUY",
+          "entry": 0.02566787,
+          "sl": 0.025406391242697036,
+          "tp1": 0.026016508343070614,
+          "tp2": 0.026190827514605924,
+          "confidence": 63
+        },
+        {
+          "coin_id": "pearl-2",
+          "symbol": "PEARL",
+          "name": "Pearl",
+          "action": "SELL",
+          "entry": 1.83,
+          "sl": 1.8693707785557934,
+          "tp1": 1.7775056285922757,
+          "tp2": 1.7512584428884135,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
