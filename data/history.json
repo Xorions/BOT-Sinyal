@@ -9428,6 +9428,46 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-11-28",
+      "session": "PAGI",
+      "saved_at": "2026-11-28T03:52:50+07:00",
+      "signals": [
+        {
+          "coin_id": "layerzero",
+          "symbol": "ZRO",
+          "name": "LayerZero",
+          "action": "SELL",
+          "entry": 1.057,
+          "sl": 1.0701575448556329,
+          "tp1": 1.039456606859156,
+          "tp2": 1.030684910288734,
+          "confidence": 69
+        },
+        {
+          "coin_id": "sky",
+          "symbol": "SKY",
+          "name": "Sky",
+          "action": "BUY",
+          "entry": 0.050684,
+          "sl": 0.049585593129999404,
+          "tp1": 0.05214854249333412,
+          "tp2": 0.052880813740001184,
+          "confidence": 82
+        },
+        {
+          "coin_id": "midnight-3",
+          "symbol": "NIGHT",
+          "name": "Midnight",
+          "action": "BUY",
+          "entry": 0.050011,
+          "sl": 0.0491816668722533,
+          "tp1": 0.05111677750366226,
+          "tp2": 0.05166966625549339,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
