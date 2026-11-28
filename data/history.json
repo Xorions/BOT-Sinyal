@@ -9468,6 +9468,68 @@
           "confidence": 69
         }
       ]
+    },
+    {
+      "date": "2026-11-28",
+      "session": "MALAM",
+      "saved_at": "2026-11-28T13:57:28+07:00",
+      "signals": [
+        {
+          "coin_id": "virtual-protocol",
+          "symbol": "VIRTUAL",
+          "name": "Virtuals Protocol",
+          "action": "SELL",
+          "entry": 0.361803,
+          "sl": 0.365531843092757,
+          "tp1": 0.35683120920965733,
+          "tp2": 0.35434531381448603,
+          "confidence": 69
+        },
+        {
+          "coin_id": "jito-governance-token",
+          "symbol": "JTO",
+          "name": "Jito",
+          "action": "SELL",
+          "entry": 0.230264,
+          "sl": 0.23324105678223386,
+          "tp1": 0.2262945909570215,
+          "tp2": 0.22430988643553226,
+          "confidence": 69
+        },
+        {
+          "coin_id": "pepe",
+          "symbol": "PEPE",
+          "name": "Pepe",
+          "action": "SELL",
+          "entry": 3.49e-06,
+          "sl": 3.524062319622387e-06,
+          "tp1": 3.4445835738368173e-06,
+          "tp2": 3.4218753607552262e-06,
+          "confidence": 69
+        },
+        {
+          "coin_id": "world-liberty-financial",
+          "symbol": "WLFI",
+          "name": "World Liberty Financial",
+          "action": "SELL",
+          "entry": 0.01937488,
+          "sl": 0.021488889359828366,
+          "tp1": 0.01655620085356218,
+          "tp2": 0.015146861280343269,
+          "confidence": 69
+        },
+        {
+          "coin_id": "the-sandbox",
+          "symbol": "SAND",
+          "name": "The Sandbox",
+          "action": "SELL",
+          "entry": 0.03365713,
+          "sl": 0.03395991580973471,
+          "tp1": 0.033253415587020385,
+          "tp2": 0.03305155838053058,
+          "confidence": 69
+        }
+      ]
     }
   ]
 }
